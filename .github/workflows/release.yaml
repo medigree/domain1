@@ -25,11 +25,13 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: HL7/fhir-ig-history-template
+          path: './history-template'
           
       - name: Check out my other private repo
         uses: actions/checkout@master
         with:
           repository: FHIR/ig-registry
+          path: './ig-registry'
 
 
       - name: Hello world
