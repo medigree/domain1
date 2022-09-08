@@ -17,7 +17,11 @@ jobs:
     steps:
    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
+        with:
+          repository: medigree/mpd
+          path: './'
+
 #      - name: Create gh-pages branch if it doesn't exist
 #        uses: christopherdavenport/create-ghpages-ifnotexists@v1    
 
