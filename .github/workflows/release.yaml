@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           repository: medigree/mpd
-          path: './'
+          path: './my-ig'
 
 #      - name: Create gh-pages branch if it doesn't exist
 #        uses: christopherdavenport/create-ghpages-ifnotexists@v1    
@@ -30,7 +30,14 @@ jobs:
         with:
           repository: HL7/fhir-ig-history-template
           path: './history-template'
-          
+
+      - name: Check out current publication folder
+        uses: actions/checkout@master
+        with:
+          repository: medigree/current-publication
+          path: './webroot'
+
+
       - name: Check out my other private repo
         uses: actions/checkout@master
         with:
@@ -52,8 +59,12 @@ jobs:
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           # Run the publisher - don't run the batch script but run the line directly
-          args: java -jar ./input-cache/publisher.jar publisher -ig .
+#          args: java -jar ./input-cache/publisher.jar publisher -ig .
+          args: java -jar publisher.jar -go-publish -source myig -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history
 
       - name: Get branch names
         id: branch-name
         uses: tj-actions/branch-names@v4.3
+
+
+
