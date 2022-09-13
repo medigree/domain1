@@ -45,7 +45,7 @@ jobs:
           path: './ig-registry'
 
 
-      - name: Hello world
+      - name: List
         run: |
           ls
           
@@ -53,10 +53,12 @@ jobs:
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           # Get the latest publisher - don't run the batch script but run the line directly
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
 
       - name: Run the IG publisher
-        run: java -jar publisher.jar -go-publish -source myig -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: java -jar publisher.jar -go-publish -source myig -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history
 
       - name: Get branch names
         id: branch-name
