@@ -24,7 +24,7 @@ jobs:
 
       - uses: actions/checkout@master
         with:
-          repository: medigree/mpd
+          repository: FHIR/sample-ig
           path: './myig'
 
 #      - name: Create gh-pages branch if it doesn't exist
