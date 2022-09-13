@@ -57,13 +57,13 @@ jobs:
         run: |
           ls
 
-      - name: Run the IG publisher first
+      - name: First, build the IG
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: java -jar ./publisher.jar publisher -ig core
 
 
-      - name: Run the IG publisher
+      - name: Run publication
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: java -jar publisher.jar -go-publish -source ./core -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
