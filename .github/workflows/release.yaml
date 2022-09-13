@@ -57,7 +57,7 @@ jobs:
       - name: Run the IG publisher first
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar ./publisher.jar publisher -ig ./myig
+          args: java -jar ./publisher.jar publisher -ig myig
 
 
       - name: Run the IG publisher
