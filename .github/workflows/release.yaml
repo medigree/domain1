@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: medigree/current-publication
-          path: './webroot'
+          path: './'
 
 
       - name: Check out my other private repo
