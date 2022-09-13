@@ -53,7 +53,12 @@ jobs:
       - name: List
         run: |
           ls
-          
+
+      - name: Run the IG publisher first
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: java -jar ./input-cache/publisher.jar publisher -ig ./myig
+
 
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
