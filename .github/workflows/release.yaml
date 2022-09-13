@@ -15,8 +15,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-   
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+
+      - name: Update the image to the latest publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          # Get the latest publisher - don't run the batch script but run the line directly
+          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
+
       - uses: actions/checkout@master
         with:
           repository: medigree/mpd
@@ -49,11 +54,6 @@ jobs:
         run: |
           ls
           
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          # Get the latest publisher - don't run the batch script but run the line directly
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
 
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
