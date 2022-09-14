@@ -24,7 +24,7 @@ jobs:
 
       - uses: actions/checkout@master
         with:
-          repository: hl7-be/core
+          repository: costateixeira/core
           path: './core'
 
 #      - name: Create gh-pages branch if it doesn't exist
