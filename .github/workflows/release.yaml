@@ -77,4 +77,12 @@ jobs:
         run: |
           ls
           
- 
+
+      - name: Deploy main
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+#        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./webroot # The folder the action should deploy.
+          commit-message: Deploy main branch
+#          clean-exclude: branches 
