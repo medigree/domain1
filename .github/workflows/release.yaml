@@ -43,6 +43,12 @@ jobs:
           repository: medigree/current-publication
           path: './webroot'
 
+      - name: List
+        run: |
+          ls $(pwd)/webroot
+
+
+
 #      - name: List
 #        run: |
 #          cp webroot/core/package-list.json core
@@ -67,7 +73,7 @@ jobs:
       - name: Then, run the -go-publish
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar publisher.jar -go-publish -source ./core -destination $PWD/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
+          args: java -jar publisher.jar -go-publish -source ./core -destination $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
 
 #      - name: Get branch names
 #        id: branch-name
