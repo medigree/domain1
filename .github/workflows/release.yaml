@@ -42,9 +42,9 @@ jobs:
           repository: medigree/current-publication
           path: './webroot'
 
-      - name: List
-        run: |
-          cp webroot/core/package-list.json core
+#      - name: List
+#        run: |
+#          cp webroot/core/package-list.json core
 
       - name: Check out my other private repo
         uses: actions/checkout@master
