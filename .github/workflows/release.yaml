@@ -28,9 +28,6 @@ jobs:
           repository: costateixeira/core
           path: './core'
 
-#      - name: Create gh-pages branch if it doesn't exist
-#        uses: christopherdavenport/create-ghpages-ifnotexists@v1    
-
       - name: Check out history
         uses: actions/checkout@master
         with:
@@ -43,48 +40,25 @@ jobs:
           repository: medigree/current-publication
           path: './webroot'
 
-      - name: List
-        run: |
-          ls $(pwd)/webroot
-
-
-
-#      - name: List
-#        run: |
-#          cp webroot/core/package-list.json core
-
       - name: Check out IG registry
         uses: actions/checkout@master
         with:
           repository: FHIR/ig-registry
           path: './ig-registry'
 
-
-      - name: List
-        run: |
-          ls
-
-      - name: First, build the IG
+      - name: First, build the IG normally
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: java -jar ./publisher.jar publisher -ig core
 
 
-      - name: Then, run the -go-publish
+      - name: Then, run the -go-publish for preparing the publication
+      ## destination should be a full path to ./webroot - this is not working now.
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: java -jar publisher.jar -go-publish -source ./core -destination $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
 
-#      - name: Get branch names
-#        id: branch-name
-#        uses: tj-actions/branch-names@v4.3
-
-      - name: List
-        run: |
-          ls webroot
-          
-
-      - name: Deploy main
+      - name: Deploy webroot to gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: ${{ steps.branch-name.outputs.is_default }} == 'true'
         with:
