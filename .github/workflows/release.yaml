@@ -52,19 +52,23 @@ jobs:
           args: java -jar ./publisher.jar publisher -ig core
 
 
-#      - name: Then, run the -go-publish for preparing the publication
-#      ## destination should be a full path to ./webroot - this is not working now.
-#        uses: docker://hl7fhir/ig-publisher-base:latest
-#        with:
-#          args: java -jar publisher.jar -go-publish -source ./core -destination $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
-
-
       - name: Build Implementation Guide with the -go-publish for preparing the publication
         run: |
-          docker run \
-            -v $(pwd):/home/publisher/ig \
-            hl7fhir/ig-publisher-base:latest \
-            sh -c "java -jar publisher.jar -go-publish -source ./core -destination $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template"
+          pwd
+
+      - name: Then, run the -go-publish for preparing the publication
+      ## destination should be a full path to ./webroot - this is not working now.
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: java -jar publisher.jar -go-publish -source ./core -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
+
+
+#      - name: Build Implementation Guide with the -go-publish for preparing the publication
+#        run: |
+#          docker run \
+#            -v $(pwd):/home/publisher/ig \
+#            hl7fhir/ig-publisher-base:latest \
+#            sh -c "java -jar publisher.jar -go-publish -source ./core -destination $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template"
 
 
       - name: Deploy webroot to gh-pages
