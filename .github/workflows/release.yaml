@@ -55,6 +55,7 @@ jobs:
       - name: Build Implementation Guide with the -go-publish for preparing the publication
         run: |
           pwd
+          ls ./webroot
 
       - name: Then, run the -go-publish for preparing the publication
       ## destination should be a full path to ./webroot - this is not working now.
@@ -81,7 +82,7 @@ jobs:
 
       - name: Deploy webroot to gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+#        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./webroot # The folder the action should deploy.
