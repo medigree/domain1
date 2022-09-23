@@ -60,7 +60,15 @@ jobs:
       ## destination should be a full path to ./webroot - this is not working now.
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
+          args: curl -L https://github.com/jkiddo/test-ig/raw/main/publisher.jar -o ./publisher.jar
+
+
+      - name: Then, run the -go-publish for preparing the publication
+      ## destination should be a full path to ./webroot - this is not working now.
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
           args: java -jar publisher.jar -go-publish -source ./core -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
+
 
 
 #      - name: Build Implementation Guide with the -go-publish for preparing the publication
