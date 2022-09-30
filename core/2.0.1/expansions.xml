@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="71944ca1-3a84-4591-a8c7-1c84c0edf589"/>
+  <id value="203b904c-e60b-4859-b8b2-b2690e7ad341"/>
   <meta>
-    <lastUpdated value="2022-09-30T14:22:12.381+00:00"/>
+    <lastUpdated value="2022-09-30T15:02:07.317+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -252,8 +252,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:50b2adc1-c834-4f98-a328-960569d2a046"/>
-          <timestamp value="2022-09-30T14:22:36+00:00"/>
+          <identifier value="urn:uuid:4bb10644-d57e-487d-97be-166e165f320e"/>
+          <timestamp value="2022-09-30T15:02:26+00:00"/>
           <total value="23"/>
           <parameter>
             <name value="excludeNested"/>
@@ -604,7 +604,7 @@
         <version value="2.0.1"/>
         <name value="BeCivilstate"/>
         <status value="active"/>
-        <date value="2022-09-30T14:22:12+00:00"/>
+        <date value="2022-09-30T15:02:07+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -634,8 +634,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:267ebf22-d64a-4d32-b46c-4fef8493d2ce"/>
-          <timestamp value="2022-09-30T14:22:39+00:00"/>
+          <identifier value="urn:uuid:70cb6f5d-0d28-4431-b053-44b8eb05a5a3"/>
+          <timestamp value="2022-09-30T15:02:29+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1135,7 +1135,7 @@
         <version value="2.0.1"/>
         <name value="BeContactPerson"/>
         <status value="active"/>
-        <date value="2022-09-30T14:22:12+00:00"/>
+        <date value="2022-09-30T15:02:07+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -1165,8 +1165,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:98f42aa8-153b-4e99-81d3-d090c4ac50ad"/>
-          <timestamp value="2022-09-30T14:22:39+00:00"/>
+          <identifier value="urn:uuid:f876a643-948a-4ff5-8cae-c31a1db1fb6c"/>
+          <timestamp value="2022-09-30T15:02:29+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1614,8 +1614,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d1ec2f73-4b6a-4122-86d4-365846135084"/>
-          <timestamp value="2022-09-30T14:22:40+00:00"/>
+          <identifier value="urn:uuid:be6bdcfd-d184-4d3e-8c3c-381468b3776b"/>
+          <timestamp value="2022-09-30T15:02:29+00:00"/>
           <total value="25"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3e0928c5-f7da-48be-8f3f-8812f2e4f38f-35",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3e0928c5-f7da-48be-8f3f-8812f2e4f38f-35",
+  "id" : "33f2166e-e760-4022-bcad-692a6132a445-35",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/33f2166e-e760-4022-bcad-692a6132a445-35",
   "name" : "UnionBePractitionerRoleAndBePractitionerRole",
   "title" : "Union of BePractitionerRole And BePractitionerRole",
   "status" : "active",
-  "date" : "2022-09-30T14:22:30+00:00",
+  "date" : "2022-09-30T15:02:22+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -2,8 +2,8 @@
 =========================================
 
 err = 3, warn = 23, info = 6
-IG Publisher Version: 1.2.4-SNAPSHOT Out of date - current version is 1.2.4
-Generated Fri Sep 30 14:25:09 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.core#2.0.1 (canonical = https://www.ehealth.fgov.be/standards/fhir/core)
+IG Publisher Version: 1.2.4
+Generated Fri Sep 30 15:04:54 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.core#2.0.1 (canonical = https://www.ehealth.fgov.be/standards/fhir/core)
  Build Errors : 1 / 8 / 0
  /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-be-cs-care-location : 0 / 2 / 2
  /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-cd-civilstate : 0 / 0 / 1
@@ -51,18 +51,18 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /tmp/hl7.fhir.be.core#2.0.1/output/Provenance-provenance1.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 549: The link 'Practitioner/2/_history/1' for "Practitioner/2/_history/1" cannot be resolved
 == fsh-generated/resources/CodeSystem-be-cs-care-location.json ==
 INFORMATION: CodeSystem/be-cs-care-location: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/be-cs-care-location: CodeSystem: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: CodeSystem/be-cs-care-location: CodeSystem: The ShareableValueSet profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: CodeSystem/be-cs-care-location: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/be-cs-care-location: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-cd-civilstate.json ==
 == fsh-generated/resources/CodeSystem-cd-contact-person.json ==
 == fsh-generated/resources/CodeSystem-cd-fed-country.json ==
 INFORMATION: CodeSystem/cd-fed-country: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cd-fed-country: CodeSystem: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: CodeSystem/cd-fed-country: CodeSystem: The ShareableValueSet profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: CodeSystem/cd-fed-country: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cd-fed-country: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-cd-hcparty.json ==
 INFORMATION: CodeSystem/cd-hcparty: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cd-hcparty: CodeSystem: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: CodeSystem/cd-hcparty: CodeSystem: The ShareableValueSet profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: CodeSystem/cd-hcparty: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cd-hcparty: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.core.json ==
 WARNING: ImplementationGuide/hl7.fhir.be.core: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/NamingSystem-be-cbe.json ==

@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "BeCdContactPerson"];
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-09-30T14:22:12+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-09-30T15:02:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;
