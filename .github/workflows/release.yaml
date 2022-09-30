@@ -61,7 +61,7 @@ jobs:
       ## destination should be a full path to ./webroot - this is not working now.
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar
+          args: curl -L https://github.com/costateixeira/publisher/raw/main/publisher.jar -o ./publisher.jar
 
       - name: Then, run the -go-publish for preparing the publication
       ## destination should be a full path to ./webroot - this is not working now.
