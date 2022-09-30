@@ -3,7 +3,7 @@
   "name": "hl7fhirbecore",
   "package-id": "hl7.fhir.be.core",
   "ig-ver": "2.0.1",
-  "date": "Fri, 30 Sep, 2022 20:02:55 +0000",
+  "date": "Fri, 30 Sep, 2022 20:22:22 +0000",
   "errs": 3,
   "warnings": 23,
   "hints": 6,

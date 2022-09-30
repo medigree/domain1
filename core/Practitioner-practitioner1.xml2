@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner1"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-07-01T13:30:55.864+00:00"/>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="practitioner1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner "practitioner1" Version "1" Updated "2019-07-01 01:30:55+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-be-practitioner.html">BePractitioner</a></p></div><p><b>identifier</b>: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL)</p><p><b>name</b>: Katherine Pulaski (OFFICIAL)</p><p><b>telecom</b>: ph: 022675198(WORK), <a href="mailto:katherine.pulaski@enterprisehospital.be">katherine.pulaski@enterprisehospital.be</a>, fax: 022675209(WORK)</p><p><b>address</b>: Jupiterlaan 5, 1853 Grimbergen(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+    <value value="79121137740"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+    <value value="18749704477"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Pulaski"/>
+    <given value="Katherine"/>
+    <suffix value="MD"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="022675198"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="katherine.pulaski@enterprisehospital.be"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="022675209"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <text value="Jupiterlaan 5, 1853 Grimbergen"/>
+    <line value="Jupiterlaan 5">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Jupiterlaan"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="5"/>
+      </extension>
+    </line>
+    <city value="Grimbergen"/>
+    <postalCode value="1853"/>
+    <country value="BE"/>
+  </address>
+  <gender value="female"/>
+  <birthDate value="1979-12-11"/>
+</Practitioner>

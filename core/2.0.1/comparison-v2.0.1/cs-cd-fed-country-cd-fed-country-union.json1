@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "1c5954ee-19fb-44ba-99d8-51335bcd1529-11",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1c5954ee-19fb-44ba-99d8-51335bcd1529-11",
+  "id" : "c157a6da-3155-429a-b968-f6335fea9b23-11",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/c157a6da-3155-429a-b968-f6335fea9b23-11",
   "name" : "UnionCdfedcountryAndCdfedcountry",
   "title" : "Union of BeCdFedCountry And BeCdFedCountry",
   "status" : "active",
-  "date" : "2022-09-30T20:03:14+00:00",
+  "date" : "2022-09-30T20:22:41+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
