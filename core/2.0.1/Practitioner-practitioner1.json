@@ -1,0 +1,84 @@
+{
+  "resourceType": "Practitioner",
+  "id": "practitioner1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-07-01T13:30:55.864+00:00",
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"practitioner1\" Version \"1\" Updated \"2019-07-01 01:30:55+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-practitioner.html\">BePractitioner</a></p></div><p><b>identifier</b>: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL)</p><p><b>name</b>: Katherine Pulaski (OFFICIAL)</p><p><b>telecom</b>: ph: 022675198(WORK), <a href=\"mailto:katherine.pulaski@enterprisehospital.be\">katherine.pulaski@enterprisehospital.be</a>, fax: 022675209(WORK)</p><p><b>address</b>: Jupiterlaan 5, 1853 Grimbergen(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+      "value": "79121137740"
+    },
+    {
+      "use": "official",
+      "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+      "value": "18749704477"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Pulaski",
+      "given": [
+        "Katherine"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "022675198",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "katherine.pulaski@enterprisehospital.be",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "022675209",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "text": "Jupiterlaan 5, 1853 Grimbergen",
+      "line": [
+        "Jupiterlaan 5"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Jupiterlaan"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "5"
+            }
+          ]
+        }
+      ],
+      "city": "Grimbergen",
+      "postalCode": "1853",
+      "country": "BE"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1979-12-11"
+}

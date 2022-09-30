@@ -1,0 +1,133 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "d9b37ef1-8aa5-4233-98f6-7cef79fe4434-48",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d9b37ef1-8aa5-4233-98f6-7cef79fe4434-48",
+  "name" : "IntersectionBeVSCareLocationAndBeVSCareLocation",
+  "title" : "Intersection of Care Location Value Set And Care Location Value Set",
+  "status" : "active",
+  "date" : "2022-09-30T19:44:45+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "hospital",
+      "display" : "Hospital"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "patient-home",
+      "display" : "Patient home"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "nursing-home",
+      "display" : "Nursing home"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "recovery-home",
+      "display" : "Recovery home"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "workplace",
+      "display" : "Workplace"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "medical-center",
+      "display" : "Medical center"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "clinic",
+      "display" : "Clinic"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "pediatric-ic",
+      "display" : "Pediatric ic"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "neonatal-ic",
+      "display" : "Neonatal ic"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "prenatal-consult",
+      "display" : "Prenatal consult"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "m-accueil",
+      "display" : "m-accueil"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "child-consult",
+      "display" : "Child consult"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "one",
+      "display" : "ONE"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "kind-gezin",
+      "display" : "Kind en gezin"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "ambulance",
+      "display" : "Ambulance"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "school",
+      "display" : "School"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "school-health-serv",
+      "display" : "School health services"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "pharmacy",
+      "display" : "Pharmacy"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "med-monde",
+      "display" : "Med monde"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "ngo",
+      "display" : "Non-Governmental Organization"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "family-planning",
+      "display" : "Family planning"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "abroad",
+      "display" : "Abroad"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "code" : "other",
+      "display" : "other"
+    }]
+  }
+}

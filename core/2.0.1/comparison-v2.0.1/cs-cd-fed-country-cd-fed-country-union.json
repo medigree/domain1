@@ -1,0 +1,20 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "d9b37ef1-8aa5-4233-98f6-7cef79fe4434-11",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d9b37ef1-8aa5-4233-98f6-7cef79fe4434-11",
+  "name" : "UnionCdfedcountryAndCdfedcountry",
+  "title" : "Union of BeCdFedCountry And BeCdFedCountry",
+  "status" : "active",
+  "date" : "2022-09-30T19:44:45+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "concept" : [{
+    "code" : "BE",
+    "display" : "Belgium"
+  }]
+}

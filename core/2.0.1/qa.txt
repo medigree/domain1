@@ -1,0 +1,108 @@
+﻿hl7fhirbecore : Validation Results
+=========================================
+
+err = 3, warn = 23, info = 6
+IG Publisher Version: (unknown) Out of date - current version is 1.2.4
+Generated Fri Sep 30 19:47:23 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.core#2.0.1 (canonical = https://www.ehealth.fgov.be/standards/fhir/core)
+ Build Errors : 1 / 8 / 0
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-be-cs-care-location : 0 / 2 / 2
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-cd-civilstate : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-cd-contact-person : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-cd-fed-country : 0 / 2 / 2
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-cd-hcparty : 0 / 2 / 2
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.core : 0 / 1 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-cbe : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-ehp : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-insurancenumber : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-insurancymembership : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-nihdi : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-ns-nihdi-professional : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/NamingSystem-be-ssin : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/Organization-organization1 : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/Patient-patient1 : 0 / 0 / 2
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/Patient-patient2 : 0 / 0 / 2
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/Practitioner-practitioner1 : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/PractitionerRole-practitionerrole1 : 1 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/Provenance-provenance1 : 2 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/RelatedPerson-relatedperson : 0 / 0 / 2
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-address : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-ext-recorder : 0 / 1 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-ext-simple-note : 0 / 1 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-organization : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-patient : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-practitioner : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-practitionerrole : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/StructureDefinition-be-provenance : 0 / 0 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/ValueSet-be-civilstate : 0 / 2 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/ValueSet-be-contactperson : 0 / 2 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/ValueSet-be-vs-care-location : 0 / 1 / 1
+ /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/ValueSet-be-vs-patient-relationship-type : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/organization1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/practitionerrole1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/provenance1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/relatedperson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /tmp/hl7.fhir.be.core#2.0.1/output/Provenance-provenance1.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 549: The link 'Practitioner/2/_history/1' for "Practitioner/2/_history/1" cannot be resolved
+== fsh-generated/resources/CodeSystem-be-cs-care-location.json ==
+INFORMATION: CodeSystem/be-cs-care-location: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-care-location: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/be-cs-care-location: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-cd-civilstate.json ==
+== fsh-generated/resources/CodeSystem-cd-contact-person.json ==
+== fsh-generated/resources/CodeSystem-cd-fed-country.json ==
+INFORMATION: CodeSystem/cd-fed-country: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cd-fed-country: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cd-fed-country: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-cd-hcparty.json ==
+INFORMATION: CodeSystem/cd-hcparty: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cd-hcparty: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cd-hcparty: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.core.json ==
+WARNING: ImplementationGuide/hl7.fhir.be.core: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/NamingSystem-be-cbe.json ==
+== fsh-generated/resources/NamingSystem-be-ehp.json ==
+== fsh-generated/resources/NamingSystem-be-insurancenumber.json ==
+== fsh-generated/resources/NamingSystem-be-insurancymembership.json ==
+== fsh-generated/resources/NamingSystem-be-nihdi.json ==
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-organization.json ==
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-professional.json ==
+== fsh-generated/resources/NamingSystem-be-ssin.json ==
+== fsh-generated/resources/Organization-organization1.json ==
+== fsh-generated/resources/Patient-patient1.json ==
+INFORMATION: Patient/patient1: Patient.identifier[1]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+== fsh-generated/resources/Patient-patient2.json ==
+INFORMATION: Patient/patient2: Patient.identifier[1]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+== fsh-generated/resources/Practitioner-practitioner1.json ==
+== fsh-generated/resources/PractitionerRole-practitionerrole1.json ==
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.practitioner: Unable to resolve resource with reference 'https://www.anotherfhirserver.be/fhir/Practitioner/01'
+== fsh-generated/resources/Provenance-provenance1.json ==
+ERROR: Provenance/provenance1: Provenance.target[0]: Unable to resolve resource with reference 'Practitioner/2/_history/1'
+ERROR: Provenance/provenance1: Provenance.agent[0].who: Unable to resolve resource with reference 'https://www.anotherfhirserver.be/fhir/Organization/02'
+== fsh-generated/resources/RelatedPerson-relatedperson.json ==
+INFORMATION: RelatedPerson/relatedperson: RelatedPerson.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#444191003)
+== fsh-generated/resources/StructureDefinition-be-address.json ==
+== fsh-generated/resources/StructureDefinition-be-ext-recorder.json ==
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-be-ext-simple-note.json ==
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-simple-note'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-be-organization.json ==
+== fsh-generated/resources/StructureDefinition-be-patient.json ==
+== fsh-generated/resources/StructureDefinition-be-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-be-practitionerrole.json ==
+== fsh-generated/resources/StructureDefinition-be-provenance.json ==
+== fsh-generated/resources/ValueSet-be-civilstate.json ==
+WARNING: ValueSet/be-civilstate: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/be-civilstate: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-be-contactperson.json ==
+WARNING: ValueSet/be-contactperson: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/be-contactperson: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-be-vs-care-location.json ==
+WARNING: ValueSet/be-vs-care-location: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-be-vs-patient-relationship-type.json ==
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
