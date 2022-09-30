@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "33f2166e-e760-4022-bcad-692a6132a445-51",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/33f2166e-e760-4022-bcad-692a6132a445-51",
+  "id" : "2517bbc2-6391-43b0-ae53-eabc47072563-51",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2517bbc2-6391-43b0-ae53-eabc47072563-51",
   "name" : "IntersectionBeVSPatientRelationshipTypeAndBeVSPatientRelationshipType",
   "title" : "Intersection of Patient Relationship Type Value Set And Patient Relationship Type Value Set",
   "status" : "active",
-  "date" : "2022-09-30T15:02:22+00:00",
+  "date" : "2022-09-30T15:05:23+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -3,7 +3,7 @@
 
 err = 3, warn = 23, info = 6
 IG Publisher Version: 1.2.4
-Generated Fri Sep 30 15:04:54 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.core#2.0.1 (canonical = https://www.ehealth.fgov.be/standards/fhir/core)
+Generated Fri Sep 30 15:08:03 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.core#2.0.1 (canonical = https://www.ehealth.fgov.be/standards/fhir/core)
  Build Errors : 1 / 8 / 0
  /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-be-cs-care-location : 0 / 2 / 2
  /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/resources/CodeSystem-cd-civilstate : 0 / 0 / 1
