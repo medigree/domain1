@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "2517bbc2-6391-43b0-ae53-eabc47072563-30",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2517bbc2-6391-43b0-ae53-eabc47072563-30",
+  "id" : "8b6e9841-f2dc-4ce6-813f-c72ade011f79-30",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8b6e9841-f2dc-4ce6-813f-c72ade011f79-30",
   "name" : "IntersectionBePatientAndBePatient",
   "title" : "Intersection of BePatient And BePatient",
   "status" : "active",
-  "date" : "2022-09-30T15:05:23+00:00",
+  "date" : "2022-09-30T15:26:33+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

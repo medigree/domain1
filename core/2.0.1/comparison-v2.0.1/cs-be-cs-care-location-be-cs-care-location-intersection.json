@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "2517bbc2-6391-43b0-ae53-eabc47072563-3",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/2517bbc2-6391-43b0-ae53-eabc47072563-3",
+  "id" : "8b6e9841-f2dc-4ce6-813f-c72ade011f79-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8b6e9841-f2dc-4ce6-813f-c72ade011f79-3",
   "name" : "IntersectionBeCSCareLocationAndBeCSCareLocation",
   "title" : "Intersection of BeCSCareLocation And BeCSCareLocation",
   "status" : "active",
-  "date" : "2022-09-30T15:05:23+00:00",
+  "date" : "2022-09-30T15:26:33+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
