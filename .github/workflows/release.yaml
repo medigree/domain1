@@ -80,10 +80,17 @@ jobs:
 #            sh -c "java -jar publisher.jar -go-publish -source ./core -destination $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template"
 
 
-      - name: Deploy webroot to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4
-#        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+#      - name: Deploy webroot to gh-pages
+#        uses: JamesIves/github-pages-deploy-action@v4
+##        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+#        with:
+#          branch: gh-pages # The branch the action should deploy to.
+#          folder: ./webroot # The folder the action should deploy.
+#          commit-message: Deploy main branch
+          
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: ./webroot # The folder the action should deploy.
-          commit-message: Deploy main branch
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./webroot
+
