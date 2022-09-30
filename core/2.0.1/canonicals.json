@@ -1,0 +1,184 @@
+[
+  {
+    "id": "be-cs-care-location",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+    "version": "2.0.1",
+    "name": "BeCSCareLocation"
+  },
+  {
+    "id": "cd-civilstate",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate",
+    "version": "2.0.1",
+    "name": "CivilState"
+  },
+  {
+    "id": "cd-contact-person",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person",
+    "version": "2.0.1",
+    "name": "ContactPerson"
+  },
+  {
+    "id": "cd-fed-country",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country",
+    "version": "2.0.1",
+    "name": "Cdfedcountry"
+  },
+  {
+    "id": "cd-hcparty",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+    "version": "2.0.1",
+    "name": "HCParty"
+  },
+  {
+    "id": "hl7.fhir.be.core",
+    "type": "ImplementationGuide",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core",
+    "version": "2.0.1",
+    "name": "hl7fhirbecore"
+  },
+  {
+    "id": "be-cbe",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-cbe",
+    "version": "2.0.1",
+    "name": "BeCBENamingSystem"
+  },
+  {
+    "id": "be-ehp",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ehp",
+    "version": "2.0.1",
+    "name": "BeEhealthPartnerIDNamingSystem"
+  },
+  {
+    "id": "be-insurancenumber",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-insurancenumber",
+    "version": "2.0.1",
+    "name": "BeInsuranceNumberNamingSystem"
+  },
+  {
+    "id": "be-insurancymembership",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-insurancymembership",
+    "version": "2.0.1",
+    "name": "BeInsurancymembershipNamingSystem"
+  },
+  {
+    "id": "be-nihdi",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-nihdi",
+    "version": "2.0.1",
+    "name": "BeNIHDINamingSystem"
+  },
+  {
+    "id": "be-ns-nihdi-organization",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-organization",
+    "version": "2.0.1",
+    "name": "BeNSNIHDIOrganization"
+  },
+  {
+    "id": "be-ns-nihdi-professional",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-professional",
+    "version": "2.0.1",
+    "name": "BeNSNIHDIProfessional"
+  },
+  {
+    "id": "be-ssin",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ssin",
+    "version": "2.0.1",
+    "name": "BeSSINNamingSystem"
+  },
+  {
+    "id": "be-address",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-address",
+    "version": "2.0.1",
+    "name": "BeAddress"
+  },
+  {
+    "id": "be-ext-recorder",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+    "version": "2.0.1",
+    "name": "BeExtRecorder"
+  },
+  {
+    "id": "be-ext-simple-note",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-simple-note",
+    "version": "2.0.1",
+    "name": "BeExtSimpleNote"
+  },
+  {
+    "id": "be-organization",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization",
+    "version": "2.0.1",
+    "name": "BeOrganization"
+  },
+  {
+    "id": "be-patient",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient",
+    "version": "2.0.1",
+    "name": "BePatient"
+  },
+  {
+    "id": "be-practitioner",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner",
+    "version": "2.0.1",
+    "name": "BePractitioner"
+  },
+  {
+    "id": "be-practitionerrole",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole",
+    "version": "2.0.1",
+    "name": "BePractitionerRole"
+  },
+  {
+    "id": "be-provenance",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-provenance",
+    "version": "2.0.1",
+    "name": "BeProvenance"
+  },
+  {
+    "id": "be-civilstate",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-civilstate",
+    "version": "2.0.1",
+    "name": "BeCivilstate"
+  },
+  {
+    "id": "be-contactperson",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson",
+    "version": "2.0.1",
+    "name": "BeContactPerson"
+  },
+  {
+    "id": "be-vs-care-location",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location",
+    "version": "2.0.1",
+    "name": "BeVSCareLocation"
+  },
+  {
+    "id": "be-vs-patient-relationship-type",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-patient-relationship-type",
+    "version": "2.0.1",
+    "name": "BeVSPatientRelationshipType"
+  }
+]

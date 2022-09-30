@@ -1,0 +1,612 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3e0928c5-f7da-48be-8f3f-8812f2e4f38f-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3e0928c5-f7da-48be-8f3f-8812f2e4f38f-2",
+  "name" : "UnionBeCSCareLocationAndBeCSCareLocation",
+  "title" : "Union of BeCSCareLocation And BeCSCareLocation",
+  "status" : "active",
+  "date" : "2022-09-30T14:22:30+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "concept" : [{
+    "code" : "hospital",
+    "display" : "Hospital",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "A l’hôpital"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Ziekenhuis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A l’hôpital"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Ziekenhuis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A l’hôpital"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Ziekenhuis"
+    }]
+  },
+  {
+    "code" : "patient-home",
+    "display" : "Patient home",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "A domicile"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Thuis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A domicile"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Thuis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A domicile"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Thuis"
+    }]
+  },
+  {
+    "code" : "nursing-home",
+    "display" : "Nursing home",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "En maison de repos"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Rusthuis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En maison de repos"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Rusthuis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En maison de repos"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Rusthuis"
+    }]
+  },
+  {
+    "code" : "recovery-home",
+    "display" : "Recovery home",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "En maison de revalidation"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "In huis van revalidatie"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En maison de revalidation"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "In huis van revalidatie"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En maison de revalidation"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "In huis van revalidatie"
+    }]
+  },
+  {
+    "code" : "workplace",
+    "display" : "Workplace",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Au cabinet"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "In het kantoor"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Au cabinet"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "In het kantoor"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Au cabinet"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "In het kantoor"
+    }]
+  },
+  {
+    "code" : "medical-center",
+    "display" : "Medical center",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "En maison médicale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Medisch huis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En maison médicale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Medisch huis"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En maison médicale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Medisch huis"
+    }]
+  },
+  {
+    "code" : "clinic",
+    "display" : "Clinic",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "A la clinique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Kliniek"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A la clinique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Kliniek"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A la clinique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Kliniek"
+    }]
+  },
+  {
+    "code" : "pediatric-ic",
+    "display" : "Pediatric ic",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "En unité de soins intensive pédiatrique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Pediatrische intensive care"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En unité de soins intensive pédiatrique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Pediatrische intensive care"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En unité de soins intensive pédiatrique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Pediatrische intensive care"
+    }]
+  },
+  {
+    "code" : "neonatal-ic",
+    "display" : "Neonatal ic",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "En unité de soins intensive pédiatrique néonatal"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Neonatale pediatrische intensive care"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En unité de soins intensive pédiatrique néonatal"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Neonatale pediatrische intensive care"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "En unité de soins intensive pédiatrique néonatal"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Neonatale pediatrische intensive care"
+    }]
+  },
+  {
+    "code" : "prenatal-consult",
+    "display" : "Prenatal consult",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Consultation prénatale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "prenataal consult"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Consultation prénatale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "prenataal consult"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Consultation prénatale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "prenataal consult"
+    }]
+  },
+  {
+    "code" : "m-accueil",
+    "display" : "m-accueil",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Milieu d’accueil"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "kinderopvang"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Milieu d’accueil"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "kinderopvang"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Milieu d’accueil"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "kinderopvang"
+    }]
+  },
+  {
+    "code" : "child-consult",
+    "display" : "Child consult",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Consultation pour enfant"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "kind consult"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Consultation pour enfant"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "kind consult"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Consultation pour enfant"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "kind consult"
+    }]
+  },
+  {
+    "code" : "one",
+    "display" : "ONE",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "ONE"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "ONE"
+    }]
+  },
+  {
+    "code" : "kind-gezin",
+    "display" : "Kind en gezin",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Kind&Gezin"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Kind&Gezin"
+    }]
+  },
+  {
+    "code" : "ambulance",
+    "display" : "Ambulance",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Ambulance"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Ambulance"
+    }]
+  },
+  {
+    "code" : "school",
+    "display" : "School",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "A l’école"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "School"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A l’école"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "School"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A l’école"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "School"
+    }]
+  },
+  {
+    "code" : "school-health-serv",
+    "display" : "School health services",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "services de santé scolaire"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "gezondheidsdiensten op school"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "services de santé scolaire"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "gezondheidsdiensten op school"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "services de santé scolaire"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "gezondheidsdiensten op school"
+    }]
+  },
+  {
+    "code" : "pharmacy",
+    "display" : "Pharmacy",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Pharmacie"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Apotheek"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Pharmacie"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Apotheek"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Pharmacie"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Apotheek"
+    }]
+  },
+  {
+    "code" : "med-monde",
+    "display" : "Med monde",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Médecin du monde"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "dokters van de wereld"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Médecin du monde"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "dokters van de wereld"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Médecin du monde"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "dokters van de wereld"
+    }]
+  },
+  {
+    "code" : "ngo",
+    "display" : "Non-Governmental Organization",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "ONG"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "NGO"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "ONG"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "NGO"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "ONG"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "NGO"
+    }]
+  },
+  {
+    "code" : "family-planning",
+    "display" : "Family planning",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Centre planning familial"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Centrum gezinsplanning"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Centre planning familial"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Centrum gezinsplanning"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Centre planning familial"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Centrum gezinsplanning"
+    }]
+  },
+  {
+    "code" : "abroad",
+    "display" : "Abroad",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "A l’étranger"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Buitenland"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A l’étranger"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Buitenland"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "A l’étranger"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Buitenland"
+    }]
+  },
+  {
+    "code" : "other",
+    "display" : "other",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Autre"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Andere"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Autre"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Andere"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Autre"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Andere"
+    }]
+  }]
+}
