@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c4703c05-56fd-4d30-b3d3-f819469654bd-27",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c4703c05-56fd-4d30-b3d3-f819469654bd-27",
+  "id" : "210562a0-6d50-420c-86f1-ce3a9080a9ed-27",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/210562a0-6d50-420c-86f1-ce3a9080a9ed-27",
   "name" : "IntersectionBeOrganizationAndBeOrganization",
   "title" : "Intersection of BeOrganization And BeOrganization",
   "status" : "active",
-  "date" : "2022-09-30T20:26:06+00:00",
+  "date" : "2022-10-03T19:39:32+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

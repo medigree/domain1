@@ -5,60 +5,60 @@ FHIR IG Publisher Version (unknown) (Git# null). Built null (?vu-duration?)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1738MB available
 dir = /github/workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/hl7.fhir.be.core#2.0.1 -resetTx -publish https://www.ehealth.fgov.be/standards/fhir/core/2.0.1 -no-exit
-Start Clock @ Friday, September 30, 2022 at 8:21:30 PM Coordinated Universal Time (2022-09-30T20:21:30Z)
+Start Clock @ Monday, October 3, 2022 at 7:35:00 PM Coordinated Universal Time (2022-10-03T19:35:00Z)
 
 Build Formal Publication package, intended for https://www.ehealth.fgov.be/standards/fhir/core/2.0.1 (00:00.005)
-API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.009)
-Package Cache: /home/publisher/.fhir/packages                                    (00:00.013)
-Run Sushi on /tmp/hl7.fhir.be.core#2.0.1                                         (00:00.013)
-Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.526)
-Sushi: info  Arguments:                                                          (00:00.528)
-Sushi: info    --out /tmp/hl7.fhir.be.core#2.0.1                                 (00:00.531)
-Sushi: info    /tmp/hl7.fhir.be.core#2.0.1                                       (00:00.533)
-Sushi: info  Using configuration file: /tmp/hl7.fhir.be.core#2.0.1/sushi-config.yaml (00:01.134)
-Sushi: info  Importing FSH text...                                               (00:01.148)
-Sushi: info  Preprocessed 34 documents with 35 aliases.                          (00:01.558)
-Sushi: info  Imported 15 definitions and 18 instances.                           (00:01.638)
-Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:01.640)
-Sushi: info  Did not find hl7.fhir.r4.core#4.0.1 in local cache.                 (00:01.642)
-Sushi: info  Downloading hl7.fhir.r4.core#4.0.1...                               (00:01.643)
-Sushi: info  Downloaded hl7.fhir.r4.core#4.0.1                                   (00:05.247)
-Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:07.055)
-Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:07.131)
-Sushi: info  Converting FSH to FHIR resources...                                 (00:07.148)
-Sushi: info  Converted 8 FHIR StructureDefinitions.                              (00:08.325)
-Sushi: info  Converted 5 FHIR CodeSystems.                                       (00:14.323)
-Sushi: info  Converted 2 FHIR ValueSets.                                         (00:14.514)
-Sushi: info  Converted 18 FHIR instances.                                        (00:15.419)
-Sushi: info  Exporting FHIR resources as JSON...                                 (00:15.420)
-Sushi: info  Exported 32 FHIR resources as JSON.                                 (00:15.465)
-Sushi: info  Assembling Implementation Guide sources...                          (00:15.467)
-Sushi: info  Generated ImplementationGuide-hl7.fhir.be.core.json                 (00:15.473)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:15.475)
-Sushi:                                                                           (00:15.477)
-Sushi: ========================= SUSHI RESULTS ===========================       (00:15.480)
-Sushi: |  -------------------------------------------------------------  |       (00:15.481)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:15.481)
-Sushi: | |-------------------------------------------------------------| |       (00:15.482)
-Sushi: | |       6       |      2       |      0       |       0       | |       (00:15.482)
-Sushi: |  -------------------------------------------------------------  |       (00:15.483)
-Sushi: |  -------------------------------------------------------------  |       (00:15.483)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:15.484)
-Sushi: | |-------------------------------------------------------------| |       (00:15.485)
-Sushi: | |         2          |         5         |         18         | |       (00:15.485)
-Sushi: |  -------------------------------------------------------------  |       (00:15.486)
-Sushi: |                                                                 |       (00:15.486)
-Sushi: ===================================================================       (00:15.487)
-Sushi: | Everything is ship-shape!              0 Errors      0 Warnings |       (00:15.488)
-Sushi: ===================================================================       (00:15.488)
-Sushi:                                                                           (00:15.489)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:16.263)
-Load Template from hl7.be.fhir.template#current                                  (00:17.045)
+API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.008)
+Package Cache: /home/publisher/.fhir/packages                                    (00:00.011)
+Run Sushi on /tmp/hl7.fhir.be.core#2.0.1                                         (00:00.012)
+Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.549)
+Sushi: info  Arguments:                                                          (00:00.551)
+Sushi: info    --out /tmp/hl7.fhir.be.core#2.0.1                                 (00:00.553)
+Sushi: info    /tmp/hl7.fhir.be.core#2.0.1                                       (00:00.554)
+Sushi: info  Using configuration file: /tmp/hl7.fhir.be.core#2.0.1/sushi-config.yaml (00:01.125)
+Sushi: info  Importing FSH text...                                               (00:01.139)
+Sushi: info  Preprocessed 34 documents with 35 aliases.                          (00:01.539)
+Sushi: info  Imported 15 definitions and 18 instances.                           (00:01.617)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:01.619)
+Sushi: info  Did not find hl7.fhir.r4.core#4.0.1 in local cache.                 (00:01.619)
+Sushi: info  Downloading hl7.fhir.r4.core#4.0.1...                               (00:01.621)
+Sushi: info  Downloaded hl7.fhir.r4.core#4.0.1                                   (00:04.944)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:06.893)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:06.949)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:06.972)
+Sushi: info  Converted 8 FHIR StructureDefinitions.                              (00:08.049)
+Sushi: info  Converted 5 FHIR CodeSystems.                                       (00:13.622)
+Sushi: info  Converted 2 FHIR ValueSets.                                         (00:13.792)
+Sushi: info  Converted 18 FHIR instances.                                        (00:14.683)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:14.683)
+Sushi: info  Exported 32 FHIR resources as JSON.                                 (00:14.723)
+Sushi: info  Assembling Implementation Guide sources...                          (00:14.724)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.be.core.json                 (00:14.732)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:14.733)
+Sushi:                                                                           (00:14.735)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:14.736)
+Sushi: |  -------------------------------------------------------------  |       (00:14.737)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:14.738)
+Sushi: | |-------------------------------------------------------------| |       (00:14.739)
+Sushi: | |       6       |      2       |      0       |       0       | |       (00:14.740)
+Sushi: |  -------------------------------------------------------------  |       (00:14.742)
+Sushi: |  -------------------------------------------------------------  |       (00:14.743)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:14.744)
+Sushi: | |-------------------------------------------------------------| |       (00:14.745)
+Sushi: | |         2          |         5         |         18         | |       (00:14.746)
+Sushi: |  -------------------------------------------------------------  |       (00:14.747)
+Sushi: |                                                                 |       (00:14.748)
+Sushi: ===================================================================       (00:14.749)
+Sushi: | You've proven any-fin is possible.     0 Errors      0 Warnings |       (00:14.757)
+Sushi: ===================================================================       (00:14.757)
+Sushi:                                                                           (00:14.758)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:15.394)
+Load Template from hl7.be.fhir.template#current                                  (00:16.045)
 Installing hl7.be.fhir.template#current to the package cache
   Fetching:
 .
   Installing: . done.
- Load Template from fhir.base.template#current                                   (00:18.408)
+ Load Template from fhir.base.template#current                                   (00:17.405)
 Installing fhir.base.template#current to the package cache
   Fetching:
 .
@@ -73,11 +73,11 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /tmp/hl7.fhir.be.core#2.0.1                                      (00:21.768)
+Root directory: /tmp/hl7.fhir.be.core#2.0.1                                      (00:20.580)
 Core Package hl7.fhir.r4.core#4.0.1
-Terminology Cache is at /tmp/hl7.fhir.be.core#2.0.1/input-cache/txcache. Clearing now (00:27.744)
-Connect to Terminology Server at http://tx.fhir.org                              (00:27.747)
-2022-09-30 20:21:58.606 [main] INFO  o.h.f.u.npm.BasePackageCacheManager [BasePackageCacheManager.java:83] Failed to resolve package hl7.fhir.pubpack#0.1.1 from server: http://packages.fhir.org (Invalid HTTP response 404 from http://packages.fhir.org/hl7.fhir.pubpack/0.1.1 (Not Found) (content in /tmp/fhir-http-2.log))
+Terminology Cache is at /tmp/hl7.fhir.be.core#2.0.1/input-cache/txcache. Clearing now (00:25.858)
+Connect to Terminology Server at http://tx.fhir.org                              (00:25.861)
+2022-10-03 19:35:27.039 [main] INFO  o.h.f.u.npm.BasePackageCacheManager [BasePackageCacheManager.java:83] Failed to resolve package hl7.fhir.pubpack#0.1.1 from server: http://packages.fhir.org (Invalid HTTP response 404 from http://packages.fhir.org/hl7.fhir.pubpack/0.1.1 (Not Found) (content in /tmp/fhir-http-2.log))
 Installing hl7.fhir.pubpack#0.1.1 to the package cache
   Fetching:
 ..........
@@ -103,19 +103,19 @@ Load R5 ExtensionsInstalling hl7.fhir.r5.core#current to the package cache
   Fetching:
 .............................................................................................
   Installing: ............................................................................................. done.
- - 123 resources (00:50.266)
-Initialization complete                                                          (00:50.428)
-Fetch https://www.ehealth.fgov.be/standards/fhir/core/package-list.json for version check (00:50.431)
-Load Content                                                                     (00:51.750)
+ - 123 resources (00:47.075)
+Initialization complete                                                          (00:47.162)
+Fetch https://www.ehealth.fgov.be/standards/fhir/core/package-list.json for version check (00:47.165)
+Load Content                                                                     (00:48.488)
 loadPrePages from FetchedFile[/tmp/hl7.fhir.be.core#2.0.1/fsh-generated/includes] as /tmp/hl7.fhir.be.core#2.0.1/fsh-generated/includes
 loadPrePages from FetchedFile[/tmp/hl7.fhir.be.core#2.0.1/input/data] as /tmp/hl7.fhir.be.core#2.0.1/input/data
 loadPrePages from FetchedFile[/tmp/hl7.fhir.be.core#2.0.1/input/pagecontent] as /tmp/hl7.fhir.be.core#2.0.1/input/pagecontent
-Processing Conformance Resources                                                 (00:52.081)
-Generating Snapshots                                                             (00:52.303)
-Propagating status                                                               (00:52.671)
-Generating Narratives                                                            (00:52.672)
-....Validating Conformance Resources                                                 (00:59.758)
-.Installing hl7.fhir.be.core#2.0.1 to the package cache
+Processing Conformance Resources                                                 (00:48.927)
+Generating Snapshots                                                             (00:49.100)
+Propagating status                                                               (00:49.545)
+Generating Narratives                                                            (00:49.546)
+...Validating Conformance Resources                                                 (00:56.389)
+..Installing hl7.fhir.be.core#2.0.1 to the package cache
   Fetching:
 
   Installing:  done.
@@ -123,10 +123,10 @@ Installing hl7.terminology.r4#3.1.0 to the package cache
   Fetching:
 ...................................................................................
   Installing: ................................................................................... done.
-Validating Resources                                                             (01:11.682)
-Processing Provenance Records                                                    (01:11.950)
-Generating Outputs in /tmp/hl7.fhir.be.core#2.0.1/output                         (01:11.952)
-Run Template                                                                     (01:12.412)
+Validating Resources                                                             (01:09.546)
+Processing Provenance Records                                                    (01:09.753)
+Generating Outputs in /tmp/hl7.fhir.be.core#2.0.1/output                         (01:09.755)
+Run Template                                                                     (01:10.317)
 
 onGenerate.checkVersions:
      [xslt] Processing /tmp/hl7.fhir.be.core#2.0.1/template/onGenerate-ig-working.xml to /tmp/hl7.fhir.be.core#2.0.1/template/versions.txt
@@ -226,86 +226,86 @@ Warning: Nashorn engine is planned to be removed from a future JDK release
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                    (01:15.318)
-Generating Summary Outputs                                                       (01:23.675)
-Sending Usage Stats to Server                                                    (03:35.627)
-## Memory (MB): Use = 890, Free = 511, Total = 1402, Max =1738
+Template Done                                                                    (01:12.911)
+Generating Summary Outputs                                                       (01:21.880)
+Sending Usage Stats to Server                                                    (03:32.761)
+## Memory (MB): Use = 748, Free = 566, Total = 1315, Max =1738
 Reclaiming memory...
-## Memory (MB): Use = 465, Free = 936, Total = 1402, Max =1738
-Run jekyll: jekyll build --destination "/tmp/hl7.fhir.be.core#2.0.1/output" (in folder /tmp/hl7.fhir.be.core#2.0.1/temp/pages) (03:37.765)
-Jekyll: Source: /tmp/hl7.fhir.be.core#2.0.1/temp/pages                           (03:38.300)
-Jekyll: Generating...                                                            (03:38.303)
-Jekyll: done in 1.185 seconds.                                                   (03:39.485)
+## Memory (MB): Use = 465, Free = 849, Total = 1315, Max =1738
+Run jekyll: jekyll build --destination "/tmp/hl7.fhir.be.core#2.0.1/output" (in folder /tmp/hl7.fhir.be.core#2.0.1/temp/pages) (03:34.900)
+Jekyll: Source: /tmp/hl7.fhir.be.core#2.0.1/temp/pages                           (03:35.380)
+Jekyll: Generating...                                                            (03:35.381)
+Jekyll: done in 1.184 seconds.                                                   (03:36.564)
 Installing hl7.fhir.be.core#2.0.1 to the package cache
   Fetching:
 
-  Installing: Checking Output HTML                                                             (03:40.226)
-found 853 files                                                                  (03:40.232)
+  Installing: Checking Output HTML                                                             (03:37.217)
+found 853 files                                                                  (03:37.223)
 ........................................
 ........................................
-  ... 853 html files, 0 pages invalid xhtml (0%)                                 (03:46.524)
-  ... 83941 links, 1 broken links (0%)                                           (03:46.525)
-Build final .zip                                                                 (03:46.525)
-Final .zip built                                                                 (03:48.030)
-Built. Times: loading: 00:00.329, generate: 02:58.704, narrative generation: 00:07.084, realm-rules: 00:00.001, previous-version: 00:09.754, jekyll: 00:01.735, validation: 00:02.374 (#33), template: 00:02.905 (#3) (03:50.786)
+  ... 853 html files, 0 pages invalid xhtml (0%)                                 (03:44.261)
+  ... 83941 links, 1 broken links (0%)                                           (03:44.262)
+Build final .zip                                                                 (03:44.263)
+Final .zip built                                                                 (03:45.600)
+Built. Times: loading: 00:00.437, generate: 02:59.269, narrative generation: 00:06.841, realm-rules: 00:00.001, previous-version: 00:10.427, jekyll: 00:01.681, validation: 00:02.902 (#33), template: 00:02.594 (#3) (03:48.198)
 Validation output in /tmp/hl7.fhir.be.core#2.0.1/output/qa.html
-Errors: 3, Warnings: 23, Info: 6, Broken Links: 1 (03:51.174)
-Finished                                                                         (03:51.175)
-Done                                                                             (03:51.176)
+Errors: 3, Warnings: 23, Info: 6, Broken Links: 1 (03:48.585)
+Finished                                                                         (03:48.586)
+Done                                                                             (03:48.587)
 Prepare Build space in /tmp/hl7.fhir.be.core#2.0.1-milestone
 Build IG at /github/workspace/core: final copy suitable for publication (in /tmp/hl7.fhir.be.core#2.0.1-milestone) (milestone build)
 FHIR IG Publisher Version (unknown) (Git# null). Built null (?vu-duration?)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1738MB available
 dir = /github/workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/hl7.fhir.be.core#2.0.1-milestone -publish https://www.ehealth.fgov.be/standards/fhir/core/2.0.1 -milestone -no-exit
-Start Clock @ Friday, September 30, 2022 at 8:25:23 PM Coordinated Universal Time (2022-09-30T20:25:23Z)
+Start Clock @ Monday, October 3, 2022 at 7:38:51 PM Coordinated Universal Time (2022-10-03T19:38:51Z)
 
-Build Formal Publication package, intended for https://www.ehealth.fgov.be/standards/fhir/core/2.0.1 (00:00.001)
-API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.003)
-Package Cache: /home/publisher/.fhir/packages                                    (00:00.004)
-Run Sushi on /tmp/hl7.fhir.be.core#2.0.1-milestone                               (00:00.004)
-Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.531)
-Sushi: info  Arguments:                                                          (00:00.532)
-Sushi: info    --out /tmp/hl7.fhir.be.core#2.0.1-milestone                       (00:00.534)
-Sushi: info    /tmp/hl7.fhir.be.core#2.0.1-milestone                             (00:00.534)
-Sushi: info  Using configuration file: /tmp/hl7.fhir.be.core#2.0.1-milestone/sushi-config.yaml (00:01.082)
-Sushi: info  Importing FSH text...                                               (00:01.100)
-Sushi: info  Preprocessed 34 documents with 35 aliases.                          (00:01.534)
-Sushi: info  Imported 15 definitions and 18 instances.                           (00:01.618)
-Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:01.619)
-Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:02.146)
-Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:02.147)
-Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:02.272)
-Sushi: info  Converting FSH to FHIR resources...                                 (00:02.295)
-Sushi: info  Converted 8 FHIR StructureDefinitions.                              (00:03.635)
-Sushi: info  Converted 5 FHIR CodeSystems.                                       (00:11.317)
-Sushi: info  Converted 2 FHIR ValueSets.                                         (00:11.551)
-Sushi: info  Converted 18 FHIR instances.                                        (00:12.534)
-Sushi: info  Exporting FHIR resources as JSON...                                 (00:12.535)
-Sushi: info  Exported 32 FHIR resources as JSON.                                 (00:12.578)
-Sushi: info  Assembling Implementation Guide sources...                          (00:12.579)
-Sushi: info  Generated ImplementationGuide-hl7.fhir.be.core.json                 (00:12.587)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:12.588)
-Sushi:                                                                           (00:12.590)
-Sushi: ========================= SUSHI RESULTS ===========================       (00:12.595)
-Sushi: |  -------------------------------------------------------------  |       (00:12.595)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:12.596)
-Sushi: | |-------------------------------------------------------------| |       (00:12.600)
-Sushi: | |       6       |      2       |      0       |       0       | |       (00:12.601)
-Sushi: |  -------------------------------------------------------------  |       (00:12.602)
-Sushi: |  -------------------------------------------------------------  |       (00:12.604)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:12.605)
-Sushi: | |-------------------------------------------------------------| |       (00:12.605)
-Sushi: | |         2          |         5         |         18         | |       (00:12.606)
-Sushi: |  -------------------------------------------------------------  |       (00:12.606)
-Sushi: |                                                                 |       (00:12.607)
-Sushi: ===================================================================       (00:12.608)
-Sushi: | Why pun? Just for for the halibut.     0 Errors      0 Warnings |       (00:12.609)
-Sushi: ===================================================================       (00:12.609)
-Sushi:                                                                           (00:12.610)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:12.623)
-Load Template from hl7.be.fhir.template#current                                  (00:12.637)
- Load Template from fhir.base.template#current                                   (00:13.323)
+Build Formal Publication package, intended for https://www.ehealth.fgov.be/standards/fhir/core/2.0.1 (00:00.002)
+API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.007)
+Package Cache: /home/publisher/.fhir/packages                                    (00:00.008)
+Run Sushi on /tmp/hl7.fhir.be.core#2.0.1-milestone                               (00:00.009)
+Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.566)
+Sushi: info  Arguments:                                                          (00:00.566)
+Sushi: info    --out /tmp/hl7.fhir.be.core#2.0.1-milestone                       (00:00.567)
+Sushi: info    /tmp/hl7.fhir.be.core#2.0.1-milestone                             (00:00.571)
+Sushi: info  Using configuration file: /tmp/hl7.fhir.be.core#2.0.1-milestone/sushi-config.yaml (00:01.224)
+Sushi: info  Importing FSH text...                                               (00:01.240)
+Sushi: info  Preprocessed 34 documents with 35 aliases.                          (00:01.651)
+Sushi: info  Imported 15 definitions and 18 instances.                           (00:01.733)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:01.735)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:02.287)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:02.288)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:02.413)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:02.426)
+Sushi: info  Converted 8 FHIR StructureDefinitions.                              (00:03.502)
+Sushi: info  Converted 5 FHIR CodeSystems.                                       (00:09.343)
+Sushi: info  Converted 2 FHIR ValueSets.                                         (00:09.517)
+Sushi: info  Converted 18 FHIR instances.                                        (00:10.429)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:10.430)
+Sushi: info  Exported 32 FHIR resources as JSON.                                 (00:10.467)
+Sushi: info  Assembling Implementation Guide sources...                          (00:10.469)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.be.core.json                 (00:10.476)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:10.476)
+Sushi:                                                                           (00:10.477)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:10.478)
+Sushi: |  -------------------------------------------------------------  |       (00:10.479)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:10.479)
+Sushi: | |-------------------------------------------------------------| |       (00:10.480)
+Sushi: | |       6       |      2       |      0       |       0       | |       (00:10.481)
+Sushi: |  -------------------------------------------------------------  |       (00:10.481)
+Sushi: |  -------------------------------------------------------------  |       (00:10.482)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:10.486)
+Sushi: | |-------------------------------------------------------------| |       (00:10.486)
+Sushi: | |         2          |         5         |         18         | |       (00:10.486)
+Sushi: |  -------------------------------------------------------------  |       (00:10.487)
+Sushi: |                                                                 |       (00:10.488)
+Sushi: ===================================================================       (00:10.488)
+Sushi: | You swim with the sharks!              0 Errors      0 Warnings |       (00:10.489)
+Sushi: ===================================================================       (00:10.489)
+Sushi:                                                                           (00:10.490)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:10.498)
+Load Template from hl7.be.fhir.template#current                                  (00:10.512)
+ Load Template from fhir.base.template#current                                   (00:11.158)
 
 onLoad.findSpreadsheets:
 
@@ -316,31 +316,31 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /tmp/hl7.fhir.be.core#2.0.1-milestone                            (00:15.620)
+Root directory: /tmp/hl7.fhir.be.core#2.0.1-milestone                            (00:12.977)
 Core Package hl7.fhir.r4.core#4.0.1
-Terminology Cache is at /tmp/hl7.fhir.be.core#2.0.1-milestone/input-cache/txcache. 4 files in cache (00:19.038)
-Connect to Terminology Server at http://tx.fhir.org                              (00:19.039)
+Terminology Cache is at /tmp/hl7.fhir.be.core#2.0.1-milestone/input-cache/txcache. 4 files in cache (00:16.550)
+Connect to Terminology Server at http://tx.fhir.org                              (00:16.551)
 Load Package hl7.fhir.pubpack#0.1.1
 Load Package hl7.fhir.xver-extensions#0.0.11
 Load Package hl7.terminology.r4#4.0.0
 Load Package hl7.fhir.uv.tools#current
 Load Package hl7.terminology.r4#4.0.0
-Load R5 Extensions - 123 resources (00:28.389)
-Initialization complete                                                          (00:28.433)
-Fetch https://www.ehealth.fgov.be/standards/fhir/core/package-list.json for version check (00:28.434)
-Load Content                                                                     (00:29.735)
+Load R5 Extensions - 123 resources (00:25.276)
+Initialization complete                                                          (00:25.329)
+Fetch https://www.ehealth.fgov.be/standards/fhir/core/package-list.json for version check (00:25.330)
+Load Content                                                                     (00:25.972)
 loadPrePages from FetchedFile[/tmp/hl7.fhir.be.core#2.0.1-milestone/fsh-generated/includes] as /tmp/hl7.fhir.be.core#2.0.1-milestone/fsh-generated/includes
 loadPrePages from FetchedFile[/tmp/hl7.fhir.be.core#2.0.1-milestone/input/data] as /tmp/hl7.fhir.be.core#2.0.1-milestone/input/data
 loadPrePages from FetchedFile[/tmp/hl7.fhir.be.core#2.0.1-milestone/input/pagecontent] as /tmp/hl7.fhir.be.core#2.0.1-milestone/input/pagecontent
-Processing Conformance Resources                                                 (00:29.884)
-Generating Snapshots                                                             (00:30.007)
-Propagating status                                                               (00:30.188)
-Generating Narratives                                                            (00:30.188)
-Validating Conformance Resources                                                 (00:36.189)
-Validating Resources                                                             (00:44.532)
-Processing Provenance Records                                                    (00:46.442)
-Generating Outputs in /tmp/hl7.fhir.be.core#2.0.1-milestone/output               (00:46.442)
-Run Template                                                                     (00:46.937)
+Processing Conformance Resources                                                 (00:26.177)
+Generating Snapshots                                                             (00:26.271)
+Propagating status                                                               (00:26.517)
+Generating Narratives                                                            (00:26.517)
+Validating Conformance Resources                                                 (00:32.782)
+Validating Resources                                                             (00:41.803)
+Processing Provenance Records                                                    (00:44.128)
+Generating Outputs in /tmp/hl7.fhir.be.core#2.0.1-milestone/output               (00:44.128)
+Run Template                                                                     (00:44.402)
 
 onGenerate.checkVersions:
      [xslt] Processing /tmp/hl7.fhir.be.core#2.0.1-milestone/template/onGenerate-ig-working.xml to /tmp/hl7.fhir.be.core#2.0.1-milestone/template/versions.txt
@@ -440,32 +440,32 @@ Warning: Nashorn engine is planned to be removed from a future JDK release
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                    (00:48.483)
-Generating Summary Outputs                                                       (00:53.823)
-Sending Usage Stats to Server                                                    (00:55.707)
-## Memory (MB): Use = 972, Free = 655, Total = 1628, Max =1738
+Template Done                                                                    (00:45.994)
+Generating Summary Outputs                                                       (00:52.223)
+Sending Usage Stats to Server                                                    (00:54.158)
+## Memory (MB): Use = 857, Free = 819, Total = 1677, Max =1738
 Reclaiming memory...
-## Memory (MB): Use = 466, Free = 1097, Total = 1564, Max =1738
-Run jekyll: jekyll build --destination "/tmp/hl7.fhir.be.core#2.0.1-milestone/output" (in folder /tmp/hl7.fhir.be.core#2.0.1-milestone/temp/pages) (00:57.834)
-Jekyll: Source: /tmp/hl7.fhir.be.core#2.0.1-milestone/temp/pages                 (00:58.355)
-Jekyll: Generating...                                                            (00:58.358)
-Jekyll: done in 1.182 seconds.                                                   (00:59.538)
+## Memory (MB): Use = 465, Free = 1098, Total = 1564, Max =1738
+Run jekyll: jekyll build --destination "/tmp/hl7.fhir.be.core#2.0.1-milestone/output" (in folder /tmp/hl7.fhir.be.core#2.0.1-milestone/temp/pages) (00:56.082)
+Jekyll: Source: /tmp/hl7.fhir.be.core#2.0.1-milestone/temp/pages                 (00:56.559)
+Jekyll: Generating...                                                            (00:56.561)
+Jekyll: done in 1.208 seconds.                                                   (00:57.768)
 Installing hl7.fhir.be.core#2.0.1 to the package cache
   Fetching:
 
-  Installing: Checking Output HTML                                                             (01:00.208)
-found 853 files                                                                  (01:00.215)
+  Installing: Checking Output HTML                                                             (00:58.284)
+found 853 files                                                                  (00:58.290)
 ........................................
 ........................................
-  ... 853 html files, 0 pages invalid xhtml (0%)                                 (01:06.312)
-  ... 83941 links, 1 broken links (0%)                                           (01:06.312)
-Build final .zip                                                                 (01:06.313)
-Final .zip built                                                                 (01:07.816)
-Built. Times: loading: 00:00.148, generate: 00:40.390, narrative generation: 00:05.999, realm-rules: 00:00.000, previous-version: 00:05.166, jekyll: 00:01.719, validation: 00:05.064 (#33), template: 00:01.545 (#3) (01:10.281)
+  ... 853 html files, 0 pages invalid xhtml (0%)                                 (01:03.441)
+  ... 83941 links, 1 broken links (0%)                                           (01:03.442)
+Build final .zip                                                                 (01:03.443)
+Final .zip built                                                                 (01:04.717)
+Built. Times: loading: 00:00.204, generate: 00:41.145, narrative generation: 00:06.264, realm-rules: 00:00.000, previous-version: 00:06.044, jekyll: 00:01.696, validation: 00:05.283 (#33), template: 00:01.590 (#3) (01:07.328)
 Validation output in /tmp/hl7.fhir.be.core#2.0.1-milestone/output/qa.html
-Errors: 3, Warnings: 23, Info: 6, Broken Links: 1 (01:10.531)
-Finished                                                                         (01:10.532)
-Done                                                                             (01:10.533)
+Errors: 3, Warnings: 23, Info: 6, Broken Links: 1 (01:07.581)
+Finished                                                                         (01:07.582)
+Done                                                                             (01:07.583)
 Keep a copy of the build directory at /github/workspace/webroot/ig-build-zips/hl7.fhir.be.core#2.0.1.zip
 
 ok. All checks passed. Publish v2.0.1 to /github/workspace/webroot/core/2.0.1

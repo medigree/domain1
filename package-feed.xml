@@ -5,20 +5,20 @@
     <description>New Packages published by HL7Belgium></description>
     <link>https://www.ehealth.fgov.be/standards/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Fri, 30 Sep 2022 08:26:43 +0000 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Oct 2022 07:40:07 +0000 GMT</lastBuildDate>
     <atom:link href="https://www.ehealth.fgov.be/standards/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Sep 2022 08:26:43 +0000</pubDate>
+    <pubDate>Mon, 03 Oct 2022 07:40:07 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
       <title>hl7.fhir.be.core#2.0.1</title>
-      <description>eHealth Platform Federal Core Profiles (built Fri, Sep 30, 2022 20:21+0000+00:00)</description>
+      <description>eHealth Platform Federal Core Profiles (built Mon, Oct 3, 2022 19:35+0000+00:00)</description>
       <link>https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/package.tgz</link>
       <guid isPermaLink="true">https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/package.tgz</guid>
       <dc:creator>HL7Belgium</dc:creator>
       <fhir:version>4.0.1</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Fri, 30 Sep 2022 12:00:00 +0000 GMT</pubDate>
+      <pubDate>Mon, 03 Oct 2022 12:00:00 +0000 GMT</pubDate>
     </item>
   </channel>
 </rss>

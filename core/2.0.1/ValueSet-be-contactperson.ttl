@@ -16,7 +16,7 @@
   fhir:ValueSet.version [ fhir:value "2.0.1"];
   fhir:ValueSet.name [ fhir:value "BeContactPerson"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-30T20:22:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-10-03T19:35:49+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;
