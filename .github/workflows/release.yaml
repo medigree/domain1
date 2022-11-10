@@ -18,9 +18,9 @@ jobs:
 
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          # Get the latest publisher - don't run the batch script but run the line directly
-          args: curl -L https://github.com/costateixeira/publisher/raw/main/publisher.jar -o ./publisher.jar --create-dirs
+#        with:
+#          # Get the latest publisher - don't run the batch script but run the line directly
+#          args: curl -L https://github.com/costateixeira/publisher/raw/main/publisher.jar -o ./publisher.jar --create-dirs
 
       - name: Check out IG
         uses: actions/checkout@master
