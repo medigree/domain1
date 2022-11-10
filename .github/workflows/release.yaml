@@ -57,17 +57,15 @@ jobs:
           pwd
           ls ./webroot
 
-      - name: Then, run the -go-publish for preparing the publication
-      ## destination should be a full path to ./webroot - this is not working now.
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: curl -L https://github.com/costateixeira/publisher/raw/main/publisher.jar -o ./publisher.jar
+#      - name: Then, run the -go-publish for preparing the publication
+#        uses: docker://hl7fhir/ig-publisher-base:latest
+#        with:
+#          args: curl -L https://github.com/costateixeira/publisher/raw/main/publisher.jar -o ./publisher.jar
 
       - name: Then, run the -go-publish for preparing the publication
-      ## destination should be a full path to ./webroot - this is not working now.
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar publisher.jar -go-publish -source core -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -milestone
+          args: java -jar publisher.jar -go-publish -source core -destination webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template
 
 
 
