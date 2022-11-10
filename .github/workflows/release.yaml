@@ -25,7 +25,7 @@ jobs:
       - name: Check out IG
         uses: actions/checkout@master
         with:
-          repository: costateixeira/core
+          repository: costateixeira/r5demo
           path: './core'
 
       - name: Check out history
