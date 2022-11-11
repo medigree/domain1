@@ -1,0 +1,67 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "Actor1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"grid\"><tr><td><b>Actor: Actor1</b></td><td>Actor 1</td><td>Type: system</td><td colspan=\"2\"><a href=\"http://example.com\">http://example.com</a></td><td colspan=\"2\"><a href=\"http://example.org/fhirCapStatementActor1\">http://example.org/fhirCapStatementActor1</a></td></tr><tr><td colspan=\"3\"><div><p>This actor has</p>\n<ul>\n<li>url</li>\n<li>identifier.value</li>\n<li>version</li>\n<li>name</li>\n<li>title</li>\n<li>status</li>\n<li>experimental</li>\n<li>date</li>\n<li>publisher</li>\n<li>contact.name</li>\n<li>description</li>\n<li>jurisdiction</li>\n<li>purpose</li>\n<li>copyright</li>\n<li>copyrightLabel</li>\n<li>type</li>\n<li>documentation</li>\n<li>reference</li>\n<li>capabilities</li>\n</ul>\n</div></td></tr><tr><td>References:</td></tr><tr><td>Capabilities:</td></tr></table></div>"
+  },
+  "url": "http://example.org/fhir/actor1",
+  "identifier": [
+    {
+      "value": "A1"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "Actor1",
+  "title": "Actor 1",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-09-11",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Actor description text here\nand here\n* option 1\n* option 2",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "purpose": "For demonstrating the use of actor definitions.  \nThis actor participates in the following use cases:\n* use case 2\n* use case 5",
+  "copyright": "You may copy this anytime.",
+  "copyrightLabel": "Myself 2022",
+  "type": "system",
+  "documentation": "This actor has\n* url\n* identifier.value\n* version\n* name\n* title\n* status\n* experimental\n* date\n* publisher\n* contact.name\n* description\n* jurisdiction\n* purpose\n* copyright\n* copyrightLabel\n* type\n* documentation\n* reference\n* capabilities\n",
+  "reference": [
+    "http://example.com"
+  ],
+  "capabilities": "http://example.org/fhirCapStatementActor1"
+}

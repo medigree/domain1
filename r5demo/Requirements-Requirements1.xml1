@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Requirements xmlns="http://hl7.org/fhir">
+  <id value="Requirements1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>These requirements apply to the actor <a href="ActorDefinition-Actor1.html">Actor 1</a></p><table class="grid"><tr><td><b><a name="r1.1"> </a></b>Req 1.1</td><td><a href="http://build.fhir.org/codesystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Requirements SHALL contain (and should be seen here)</p>
+<ul>
+<li>url (Not shown - in status table?)</li>
+<li>identifier (Not shown?)</li>
+<li>version (Not shown - in status table?)</li>
+<li><strong>name</strong> (Only in section header?)</li>
+<li><strong>title</strong> (Not shown?)</li>
+<li><strong>status</strong> (Not shown - in status table?)</li>
+<li>experimental (Not shown - in status table?)</li>
+<li>date (Not shown - in status table?)</li>
+<li>publisher (Not shown - in status table?)</li>
+<li>contact (Not shown?)</li>
+<li><strong>description</strong> (Not shown?)</li>
+<li>jurisdiction (Not shown - in status table?)</li>
+<li>purpose (Not shown?)</li>
+<li>copyright (Not shown?)</li>
+<li>copyrightLabel (Not shown?)</li>
+<li>actor (in body)</li>
+<li><strong>statement[+]</strong> (as table - header missing?)
+<ul>
+<li><strong>key</strong> (Not shown?)</li>
+<li><strong>label</strong></li>
+<li><strong>conformance</strong></li>
+<li><strong>requirement</strong></li>
+<li>derivedFrom</li>
+</ul>
+</li>
+</ul>
+</div><p>Links:</p><ul><li>Derived From: <code>Requirement1</code></li></ul></td></tr><tr><td><b><a name="r1.2"> </a></b>Req 1.2</td><td><a href="http://build.fhir.org/codesystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>In addition to the above elements, requirements should contain (and are here) - it may be longer than just the short text above. Long text will wrap to the width of the column.</p>
+<ul>
+<li><em>url</em></li>
+<li><em>identifier</em></li>
+<li>version</li>
+<li>name</li>
+<li>title</li>
+<li>status</li>
+<li><em>experimental</em></li>
+<li><em>date</em></li>
+<li><em>publisher</em></li>
+<li><em>contact</em></li>
+<li>description</li>
+<li><em>jurisdiction</em></li>
+<li><em>purpose</em></li>
+<li><em>copyright</em></li>
+<li><em>copyrightLabel</em></li>
+<li><em>actor</em></li>
+<li>statement[+]
+<ul>
+<li>key</li>
+<li>label</li>
+<li>conformance</li>
+<li>requirement</li>
+<li><em>derivedFrom</em></li>
+</ul>
+</li>
+</ul>
+</div><p>Links:</p><ul><li>Derived From: <code>Requirement1</code></li></ul></td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/requirements1"/>
+  <identifier>
+    <value value="R1"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="FunctionalRequirements"/>
+  <title value="Functional Requirements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2022-12-12"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The requirements&#xA;* functional (these)&#xA;* technical (not here)&#xA;* others (where?)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="For demonstrating the use of requirements&#xA;&gt; Rendering requirements in the IG is always good&#xA;#### header 4&#xA;text"/>
+  <copyright value="You may copy this anytime."/>
+  <copyrightLabel value="Myself 2022"/>
+  <actor value="http://example.org/fhir/actor1"/>
+  <statement>
+    <key value="r1.1"/>
+    <label value="Req 1.1"/>
+    <conformance value="SHALL"/>
+    <requirement value="Requirements SHALL contain (and should be seen here)&#xA;* url (Not shown - in status table?)&#xA;* identifier (Not shown?)&#xA;* version (Not shown - in status table?)&#xA;* **name** (Only in section header?)&#xA;* **title** (Not shown?)&#xA;* **status** (Not shown - in status table?)&#xA;* experimental (Not shown - in status table?)&#xA;* date (Not shown - in status table?)&#xA;* publisher (Not shown - in status table?)&#xA;* contact (Not shown?)&#xA;* **description** (Not shown?)&#xA;* jurisdiction (Not shown - in status table?)&#xA;* purpose (Not shown?)&#xA;* copyright (Not shown?)&#xA;* copyrightLabel (Not shown?)&#xA;* actor (in body)&#xA;* **statement[+]** (as table - header missing?)&#xA;  * **key** (Not shown?)&#xA;  * **label**&#xA;  * **conformance**&#xA;  * **requirement**&#xA;  * derivedFrom&#xA;"/>
+    <derivedFrom value="Requirement1"/>
+  </statement>
+  <statement>
+    <key value="r1.2"/>
+    <label value="Req 1.2"/>
+    <conformance value="SHOULD"/>
+    <requirement value="In addition to the above elements, requirements should contain (and are here) - it may be longer than just the short text above. Long text will wrap to the width of the column.&#xA;* *url*&#xA;* *identifier*&#xA;* version&#xA;* name&#xA;* title&#xA;* status&#xA;* *experimental*&#xA;* *date*&#xA;* *publisher*&#xA;* *contact*&#xA;* description&#xA;* *jurisdiction*&#xA;* *purpose*&#xA;* *copyright*&#xA;* *copyrightLabel*&#xA;* *actor*&#xA;* statement[+]&#xA;  * key&#xA;  * label&#xA;  * conformance&#xA;  * requirement&#xA;  * *derivedFrom*"/>
+    <derivedFrom value="Requirement1"/>
+  </statement>
+</Requirements>

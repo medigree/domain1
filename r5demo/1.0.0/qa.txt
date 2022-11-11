@@ -1,0 +1,30 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 0, warn = 7, info = 0
+IG Publisher Version: 1.2.14
+Generated Fri Nov 11 08:45:56 UTC 2022. FHIR version 5.0.0-ballot for r5demo#1.0.0 (canonical = https://medigree.github.io/r5demo)
+ Build Errors : 0 / 4 / 0
+ /tmp/r5demo#1.0.0/fsh-generated/resources/ActorDefinition-Actor1 : 0 / 0 / 1
+ /tmp/r5demo#1.0.0/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
+ /tmp/r5demo#1.0.0/fsh-generated/resources/ImplementationGuide-r5demo : 0 / 0 / 1
+ /tmp/r5demo#1.0.0/fsh-generated/resources/Requirements-Requirements1 : 0 / 0 / 1
+ /tmp/r5demo#1.0.0/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 2 / 1
+ /tmp/r5demo#1.0.0/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 0 / 0 / 1
+ /tmp/r5demo#1.0.0/fsh-generated/resources/ValueSet-FoodAllergyVS : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActorDefinition-Actor1.json ==
+== fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
+== fsh-generated/resources/ImplementationGuide-r5demo.json ==
+== fsh-generated/resources/Requirements-Requirements1.json ==
+== fsh-generated/resources/StructureDefinition-FoodAllergy.json ==
+WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
+WARNING: StructureDefinition/FoodAllergy: StructureDefinition.snapshot.element[16]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
+== fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
+== fsh-generated/resources/ValueSet-FoodAllergyVS.json ==
+WARNING: ValueSet/FoodAllergyVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

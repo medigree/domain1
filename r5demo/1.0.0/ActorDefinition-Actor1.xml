@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActorDefinition xmlns="http://hl7.org/fhir">
+  <id value="Actor1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table class="grid"><tr><td><b>Actor: Actor1</b></td><td>Actor 1</td><td>Type: system</td><td colspan="2"><a href="http://example.com">http://example.com</a></td><td colspan="2"><a href="http://example.org/fhirCapStatementActor1">http://example.org/fhirCapStatementActor1</a></td></tr><tr><td colspan="3"><div><p>This actor has</p>
+<ul>
+<li>url</li>
+<li>identifier.value</li>
+<li>version</li>
+<li>name</li>
+<li>title</li>
+<li>status</li>
+<li>experimental</li>
+<li>date</li>
+<li>publisher</li>
+<li>contact.name</li>
+<li>description</li>
+<li>jurisdiction</li>
+<li>purpose</li>
+<li>copyright</li>
+<li>copyrightLabel</li>
+<li>type</li>
+<li>documentation</li>
+<li>reference</li>
+<li>capabilities</li>
+</ul>
+</div></td></tr><tr><td>References:</td></tr><tr><td>Capabilities:</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/actor1"/>
+  <identifier>
+    <value value="A1"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="Actor1"/>
+  <title value="Actor 1"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2022-09-11"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Actor description text here&#xA;and here&#xA;* option 1&#xA;* option 2"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="For demonstrating the use of actor definitions.  &#xA;This actor participates in the following use cases:&#xA;* use case 2&#xA;* use case 5"/>
+  <copyright value="You may copy this anytime."/>
+  <copyrightLabel value="Myself 2022"/>
+  <type value="system"/>
+  <documentation value="This actor has&#xA;* url&#xA;* identifier.value&#xA;* version&#xA;* name&#xA;* title&#xA;* status&#xA;* experimental&#xA;* date&#xA;* publisher&#xA;* contact.name&#xA;* description&#xA;* jurisdiction&#xA;* purpose&#xA;* copyright&#xA;* copyrightLabel&#xA;* type&#xA;* documentation&#xA;* reference&#xA;* capabilities&#xA;"/>
+  <reference value="http://example.com"/>
+  <capabilities value="http://example.org/fhirCapStatementActor1"/>
+</ActorDefinition>
