@@ -1,60 +1,60 @@
 All checks passed. Do the publication build from /github/workspace/core and publish to /github/workspace/webroot/r5demo
 Prepare Build space in /tmp/r5demo#1.0.0
 Build IG at /github/workspace/core: final copy suitable for publication (in /tmp/r5demo#1.0.0)
-FHIR IG Publisher Version 1.2.14 (Git# abb2004953d6). Built 2022-11-08T20:19:35.668Z (60 hours old)
+FHIR IG Publisher Version 1.2.14 (Git# abb2004953d6). Built 2022-11-08T20:19:35.668Z (3 days old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1736MB available
 dir = /github/workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/r5demo#1.0.0 -resetTx -publish https://medigree.github.io/r5demo/1.0.0 -no-exit
-Start Clock @ Friday, November 11, 2022 at 8:54:22 AM Coordinated Universal Time (2022-11-11T08:54:22Z)
+Start Clock @ Saturday, November 12, 2022 at 10:11:14 AM Coordinated Universal Time (2022-11-12T10:11:14Z)
 
-Build FHIR IG from /tmp/r5demo#1.0.0                                             (00:00.006)
-Build Formal Publication package, intended for https://medigree.github.io/r5demo/1.0.0 (00:00.007)
-API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.017)
-Package Cache: /home/publisher/.fhir/packages                                    (00:00.021)
-Run Sushi on /tmp/r5demo#1.0.0                                                   (00:00.023)
-Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.577)
-Sushi: info  Arguments:                                                          (00:00.581)
-Sushi: info    --out /tmp/r5demo#1.0.0                                           (00:00.582)
-Sushi: info    /tmp/r5demo#1.0.0                                                 (00:00.583)
-Sushi: info  Using configuration file: /tmp/r5demo#1.0.0/sushi-config.yaml       (00:01.145)
-Sushi: info  Importing FSH text...                                               (00:01.159)
-Sushi: info  Preprocessed 4 documents with 2 aliases.                            (00:01.303)
-Sushi: info  Imported 2 definitions and 3 instances.                             (00:01.315)
-Sushi: warn  SUSHI support for pre-release versions of FHIR is experimental. Use at your own risk! (00:01.321)
-Sushi: info  Checking local cache for hl7.fhir.r5.core#5.0.0-ballot...           (00:01.322)
-Sushi: info  Did not find hl7.fhir.r5.core#5.0.0-ballot in local cache.          (00:01.324)
-Sushi: info  Downloading hl7.fhir.r5.core#5.0.0-ballot...                        (00:01.325)
-Sushi: info  Downloading hl7.fhir.r5.core#5.0.0-ballot...                        (00:01.813)
-Sushi: info  Downloaded hl7.fhir.r5.core#5.0.0-ballot                            (00:02.714)
-Sushi: info  Loaded package hl7.fhir.r5.core#5.0.0-ballot                        (00:05.294)
-Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:05.362)
-Sushi: info  Converting FSH to FHIR resources...                                 (00:05.402)
-Sushi: info  Converted 2 FHIR StructureDefinitions.                              (00:05.490)
-Sushi: info  Converted 1 FHIR ValueSets.                                         (00:05.492)
-Sushi: info  Converted 3 FHIR instances.                                         (00:05.578)
-Sushi: info  Exporting FHIR resources as JSON...                                 (00:05.580)
-Sushi: info  Exported 6 FHIR resources as JSON.                                  (00:05.591)
-Sushi: info  Assembling Implementation Guide sources...                          (00:05.593)
-Sushi: info  Generated ImplementationGuide-r5demo.json                           (00:05.599)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:05.601)
-Sushi:                                                                           (00:05.604)
-Sushi: ========================= SUSHI RESULTS ===========================       (00:05.605)
-Sushi: |  -------------------------------------------------------------  |       (00:05.607)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:05.609)
-Sushi: | |-------------------------------------------------------------| |       (00:05.613)
-Sushi: | |       1       |      0       |      1       |       0       | |       (00:05.613)
-Sushi: |  -------------------------------------------------------------  |       (00:05.615)
-Sushi: |  -------------------------------------------------------------  |       (00:05.615)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:05.616)
-Sushi: | |-------------------------------------------------------------| |       (00:05.621)
-Sushi: | |         1          |         0         |         3          | |       (00:05.623)
-Sushi: |  -------------------------------------------------------------  |       (00:05.625)
-Sushi: |                                                                 |       (00:05.625)
-Sushi: ===================================================================       (00:05.626)
-Sushi: | Whale, whale, what happened here?      0 Errors       1 Warning |       (00:05.627)
-Sushi: ===================================================================       (00:05.628)
-Sushi:                                                                           (00:05.628)
-Load Template from fhir.base.template#current                                    (00:06.348)
+Build FHIR IG from /tmp/r5demo#1.0.0                                             (00:00.007)
+Build Formal Publication package, intended for https://medigree.github.io/r5demo/1.0.0 (00:00.008)
+API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.012)
+Package Cache: /home/publisher/.fhir/packages                                    (00:00.025)
+Run Sushi on /tmp/r5demo#1.0.0                                                   (00:00.026)
+Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.622)
+Sushi: info  Arguments:                                                          (00:00.624)
+Sushi: info    --out /tmp/r5demo#1.0.0                                           (00:00.626)
+Sushi: info    /tmp/r5demo#1.0.0                                                 (00:00.628)
+Sushi: info  Using configuration file: /tmp/r5demo#1.0.0/sushi-config.yaml       (00:01.315)
+Sushi: info  Importing FSH text...                                               (00:01.331)
+Sushi: info  Preprocessed 4 documents with 2 aliases.                            (00:01.493)
+Sushi: info  Imported 2 definitions and 3 instances.                             (00:01.510)
+Sushi: warn  SUSHI support for pre-release versions of FHIR is experimental. Use at your own risk! (00:01.516)
+Sushi: info  Checking local cache for hl7.fhir.r5.core#5.0.0-ballot...           (00:01.518)
+Sushi: info  Did not find hl7.fhir.r5.core#5.0.0-ballot in local cache.          (00:01.520)
+Sushi: info  Downloading hl7.fhir.r5.core#5.0.0-ballot...                        (00:01.521)
+Sushi: info  Downloading hl7.fhir.r5.core#5.0.0-ballot...                        (00:02.228)
+Sushi: info  Downloaded hl7.fhir.r5.core#5.0.0-ballot                            (00:03.541)
+Sushi: info  Loaded package hl7.fhir.r5.core#5.0.0-ballot                        (00:06.395)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:06.474)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:06.488)
+Sushi: info  Converted 2 FHIR StructureDefinitions.                              (00:06.599)
+Sushi: info  Converted 1 FHIR ValueSets.                                         (00:06.602)
+Sushi: info  Converted 3 FHIR instances.                                         (00:06.702)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:06.704)
+Sushi: info  Exported 6 FHIR resources as JSON.                                  (00:06.717)
+Sushi: info  Assembling Implementation Guide sources...                          (00:06.721)
+Sushi: info  Generated ImplementationGuide-r5demo.json                           (00:06.727)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:06.728)
+Sushi:                                                                           (00:06.729)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:06.730)
+Sushi: |  -------------------------------------------------------------  |       (00:06.733)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:06.735)
+Sushi: | |-------------------------------------------------------------| |       (00:06.736)
+Sushi: | |       1       |      0       |      1       |       0       | |       (00:06.737)
+Sushi: |  -------------------------------------------------------------  |       (00:06.738)
+Sushi: |  -------------------------------------------------------------  |       (00:06.740)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:06.742)
+Sushi: | |-------------------------------------------------------------| |       (00:06.744)
+Sushi: | |         1          |         0         |         3          | |       (00:06.745)
+Sushi: |  -------------------------------------------------------------  |       (00:06.746)
+Sushi: |                                                                 |       (00:06.747)
+Sushi: ===================================================================       (00:06.749)
+Sushi: | Did you do this on porpoise?           0 Errors       1 Warning |       (00:06.751)
+Sushi: ===================================================================       (00:06.752)
+Sushi:                                                                           (00:06.753)
+Load Template from fhir.base.template#current                                    (00:07.564)
 Installing fhir.base.template#current to the package cache
   Fetching:
 ..
@@ -69,11 +69,11 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /tmp/r5demo#1.0.0                                                (00:11.426)
+Root directory: /tmp/r5demo#1.0.0                                                (00:13.609)
 Core Package hl7.fhir.r5.core#5.0.0-ballot
 Unable to generate snapshot for example-composition from Composition because Profile DocumentStructure (http://hl7.org/fhir/StructureDefinition/example-composition), element http://hl7.org/fhir/StructureDefinition/example-composition#Composition.section:procedure. Error generating snapshot: The profile http://hl7.org/fhir/StructureDefinition/example-section-library has type Composition which is not consistent with the stated type BackboneElement
-Terminology Cache is at /tmp/r5demo#1.0.0/input-cache/txcache. Clearing now      (00:19.665)
-Connect to Terminology Server at http://tx.fhir.org                              (00:19.667)
+Terminology Cache is at /tmp/r5demo#1.0.0/input-cache/txcache. Clearing now      (00:23.144)
+Connect to Terminology Server at http://tx.fhir.org                              (00:23.146)
 Installing hl7.fhir.pubpack#0.1.3 to the package cache
   Fetching:
 ..........
@@ -84,47 +84,47 @@ Installing hl7.fhir.xver-extensions#0.0.11 to the package cache
 
   Installing:  done.
 Load Package hl7.fhir.xver-extensions#0.0.11
-2022-11-11 08:54:43.802 [main] INFO  o.h.f.u.npm.BasePackageCacheManager [BasePackageCacheManager.java:84] Failed to resolve package hl7.terminology.r5#5.0.0 from server: http://packages.fhir.org (Invalid HTTP response 404 from http://packages.fhir.org/hl7.terminology.r5/5.0.0 (Not Found) (content in /tmp/fhir-http-2.log))
+2022-11-12 10:11:41.282 [main] INFO  o.h.f.u.npm.BasePackageCacheManager [BasePackageCacheManager.java:84] Failed to resolve package hl7.terminology.r5#5.0.0 from server: http://packages.fhir.org (Invalid HTTP response 404 from http://packages.fhir.org/hl7.terminology.r5/5.0.0 (Not Found) (content in /tmp/fhir-http-2.log))
 Installing hl7.terminology.r5#5.0.0 to the package cache
   Fetching:
 ....................................................................................
   Installing: .................................................................................... done.
-Version mismatch. This IG is version 5.0.0-ballot, while the IG 'hl7tx' is from version 4.0.1 (will try to run anyway) (00:25.615)
-Ignore Core Dependency on FHIR version 5.0.0, from package 'hl7.terminology.r5#5.0.0' (00:25.616)
+Version mismatch. This IG is version 5.0.0-ballot, while the IG 'hl7tx' is from version 4.0.1 (will try to run anyway) (00:31.067)
+Ignore Core Dependency on FHIR version 5.0.0, from package 'hl7.terminology.r5#5.0.0' (00:31.069)
 Load Package hl7.terminology.r5#5.0.0
 Installing hl7.fhir.uv.tools#current to the package cache
   Fetching:
 .
   Installing: . done.
-Version mismatch. This IG is version 5.0.0-ballot, while the IG 'igtools' is from version 4.0.1 (will try to run anyway) (00:26.583)
-Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.fhir.uv.tools#0.1.0' (00:26.584)
+Version mismatch. This IG is version 5.0.0-ballot, while the IG 'igtools' is from version 4.0.1 (will try to run anyway) (00:32.582)
+Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.fhir.uv.tools#0.1.0' (00:32.584)
 Installing hl7.terminology.r4#4.0.0 to the package cache
   Fetching:
 ....................................................................................
   Installing: .................................................................................... done.
-Version mismatch. This IG is for FHIR version 5.0.0-ballot, while the package 'hl7.fhir.uv.tools#0.1.0' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:30.621)
-Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.terminology.r4#4.0.0' (00:30.726)
+Version mismatch. This IG is for FHIR version 5.0.0-ballot, while the package 'hl7.fhir.uv.tools#0.1.0' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:38.822)
+Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.terminology.r4#4.0.0' (00:38.933)
 Load Package hl7.terminology.r4#4.0.0
 Load Package hl7.fhir.uv.tools#0.1.0
 Load R5 ExtensionsInstalling hl7.fhir.r5.core#current to the package cache
   Fetching:
 .............................................................................................
   Installing: ............................................................................................. done.
- - 2 resources (00:43.227)
-Initialization complete                                                          (00:43.329)
-Fetch https://medigree.github.io/r5demo/package-list.json for version check      (00:43.332)
-Load Content                                                                     (00:43.407)
+ - 2 resources (00:55.117)
+Initialization complete                                                          (00:55.239)
+Fetch https://medigree.github.io/r5demo/package-list.json for version check      (00:55.242)
+Load Content                                                                     (00:55.312)
 loadPrePages from FetchedFile[/tmp/r5demo#1.0.0/input/includes] as /tmp/r5demo#1.0.0/input/includes
 loadPrePages from FetchedFile[/tmp/r5demo#1.0.0/input/pagecontent] as /tmp/r5demo#1.0.0/input/pagecontent
-Processing Conformance Resources                                                 (00:43.756)
-Generating Snapshots                                                             (00:43.888)
-Propagating status                                                               (00:44.114)
-Generating Narratives                                                            (00:44.115)
-Validating Conformance Resources                                                 (00:44.668)
-Validating Resources                                                             (00:47.028)
-Processing Provenance Records                                                    (00:47.042)
-Generating Outputs in /tmp/r5demo#1.0.0/output                                   (00:47.042)
-Run Template                                                                     (00:47.306)
+Processing Conformance Resources                                                 (00:55.759)
+Generating Snapshots                                                             (00:55.915)
+Propagating status                                                               (00:56.144)
+Generating Narratives                                                            (00:56.156)
+Validating Conformance Resources                                                 (00:56.751)
+Validating Resources                                                             (00:59.272)
+Processing Provenance Records                                                    (00:59.288)
+Generating Outputs in /tmp/r5demo#1.0.0/output                                   (00:59.289)
+Run Template                                                                     (00:59.572)
 
 onGenerate.checkVersions:
      [xslt] Processing /tmp/r5demo#1.0.0/template/onGenerate-ig-working.xml to /tmp/r5demo#1.0.0/template/versions.txt
@@ -194,91 +194,91 @@ onGenerate.copyDataFiles:
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                    (00:48.196)
-Generating Summary Outputs                                                       (00:59.546)
-2022-11-11 08:55:23.481 [main] INFO  o.h.f.u.npm.BasePackageCacheManager [BasePackageCacheManager.java:84] Failed to resolve package hl7.fhir.r5.core#5.0.0 from server: http://packages.fhir.org (Invalid HTTP response 404 from http://packages.fhir.org/hl7.fhir.r5.core/5.0.0 (Not Found) (content in /tmp/fhir-http-4.log))
+Template Done                                                                    (01:00.550)
+Generating Summary Outputs                                                       (01:14.082)
+2022-11-12 10:12:31.555 [main] INFO  o.h.f.u.npm.BasePackageCacheManager [BasePackageCacheManager.java:84] Failed to resolve package hl7.fhir.r5.core#5.0.0 from server: http://packages.fhir.org (Invalid HTTP response 404 from http://packages.fhir.org/hl7.fhir.r5.core/5.0.0 (Not Found) (content in /tmp/fhir-http-4.log))
 Installing hl7.fhir.r5.core#5.0.0 to the package cache
   Fetching:
 ...............................................................................................
   Installing: ............................................................................................... done.
-Sending Usage Stats to Server                                                    (01:07.367)
-## Memory (MB): Use = 908, Free = 668, Total = 1577, Max =1736
+Sending Usage Stats to Server                                                    (01:23.861)
+## Memory (MB): Use = 1051, Free = 632, Total = 1684, Max =1736
 Reclaiming memory...
-## Memory (MB): Use = 578, Free = 998, Total = 1577, Max =1736
-Run jekyll: jekyll build --destination "/tmp/r5demo#1.0.0/output" (in folder /tmp/r5demo#1.0.0/temp/pages) (01:08.406)
-Jekyll: Source: /tmp/r5demo#1.0.0/temp/pages                                     (01:08.997)
-Jekyll: Generating...                                                            (01:08.998)
-Jekyll: done in 0.348 seconds.                                                   (01:09.345)
+## Memory (MB): Use = 578, Free = 1105, Total = 1684, Max =1736
+Run jekyll: jekyll build --destination "/tmp/r5demo#1.0.0/output" (in folder /tmp/r5demo#1.0.0/temp/pages) (01:25.176)
+Jekyll: Source: /tmp/r5demo#1.0.0/temp/pages                                     (01:25.865)
+Jekyll: Generating...                                                            (01:25.866)
+Jekyll: done in 0.415 seconds.                                                   (01:26.281)
 Installing r5demo#1.0.0 to the package cache
   Fetching:
 
   Installing:  done.
-Checking Output HTML                                                             (01:09.621)
-found 601 files                                                                  (01:09.625)
+Checking Output HTML                                                             (01:26.514)
+found 601 files                                                                  (01:26.519)
 ........................................
 ........................................
-  ... 601 html files, 0 pages invalid xhtml (0%)                                 (01:11.413)
-  ... 12611 links, 0 broken links (0%)                                           (01:11.414)
-Build final .zip                                                                 (01:11.415)
-Final .zip built                                                                 (01:11.713)
-Built. Times: loading: 00:00.348, generate: 00:28.399, narrative generation: 00:00.550, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.945, validation: 00:02.361 (#7), template: 00:00.888 (#3) (01:12.158)
+  ... 601 html files, 0 pages invalid xhtml (0%)                                 (01:28.712)
+  ... 12611 links, 0 broken links (0%)                                           (01:28.714)
+Build final .zip                                                                 (01:28.714)
+Final .zip built                                                                 (01:29.067)
+Built. Times: loading: 00:00.446, generate: 00:34.183, narrative generation: 00:00.592, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:01.111, validation: 00:02.523 (#7), template: 00:00.977 (#3) (01:29.943)
 Validation output in /tmp/r5demo#1.0.0/output/qa.html
-Errors: 0, Warnings: 7, Info: 0, Broken Links: 0 (01:12.266)
-Finished                                                                         (01:12.268)
-Done                                                                             (01:12.268)
+Errors: 0, Warnings: 7, Info: 0, Broken Links: 0 (01:30.105)
+Finished                                                                         (01:30.109)
+Done                                                                             (01:30.116)
 Prepare Build space in /tmp/r5demo#1.0.0-milestone
 Build IG at /github/workspace/core: final copy suitable for publication (in /tmp/r5demo#1.0.0-milestone) (milestone build)
-FHIR IG Publisher Version 1.2.14 (Git# abb2004953d6). Built 2022-11-08T20:19:35.668Z (60 hours old)
+FHIR IG Publisher Version 1.2.14 (Git# abb2004953d6). Built 2022-11-08T20:19:35.668Z (3 days old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1736MB available
 dir = /github/workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/r5demo#1.0.0-milestone -publish https://medigree.github.io/r5demo/1.0.0 -milestone -no-exit
-Start Clock @ Friday, November 11, 2022 at 8:55:36 AM Coordinated Universal Time (2022-11-11T08:55:36Z)
+Start Clock @ Saturday, November 12, 2022 at 10:12:46 AM Coordinated Universal Time (2022-11-12T10:12:46Z)
 
-Build FHIR IG from /tmp/r5demo#1.0.0-milestone                                   (00:00.002)
-Build Formal Publication package, intended for https://medigree.github.io/r5demo/1.0.0 (00:00.002)
-API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.006)
-Package Cache: /home/publisher/.fhir/packages                                    (00:00.006)
-Run Sushi on /tmp/r5demo#1.0.0-milestone                                         (00:00.008)
-Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.919)
-Sushi: info  Arguments:                                                          (00:00.922)
-Sushi: info    --out /tmp/r5demo#1.0.0-milestone                                 (00:00.923)
-Sushi: info    /tmp/r5demo#1.0.0-milestone                                       (00:00.923)
-Sushi: info  Using configuration file: /tmp/r5demo#1.0.0-milestone/sushi-config.yaml (00:01.626)
-Sushi: info  Importing FSH text...                                               (00:01.642)
-Sushi: info  Preprocessed 4 documents with 2 aliases.                            (00:01.795)
-Sushi: info  Imported 2 definitions and 3 instances.                             (00:01.806)
-Sushi: warn  SUSHI support for pre-release versions of FHIR is experimental. Use at your own risk! (00:01.812)
-Sushi: info  Checking local cache for hl7.fhir.r5.core#5.0.0-ballot...           (00:01.813)
-Sushi: info  Found hl7.fhir.r5.core#5.0.0-ballot in local cache.                 (00:02.808)
-Sushi: info  Loaded package hl7.fhir.r5.core#5.0.0-ballot                        (00:02.809)
-Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:02.893)
-Sushi: info  Converting FSH to FHIR resources...                                 (00:02.907)
-Sushi: info  Converted 2 FHIR StructureDefinitions.                              (00:03.008)
-Sushi: info  Converted 1 FHIR ValueSets.                                         (00:03.011)
-Sushi: info  Converted 3 FHIR instances.                                         (00:03.106)
-Sushi: info  Exporting FHIR resources as JSON...                                 (00:03.111)
-Sushi: info  Exported 6 FHIR resources as JSON.                                  (00:03.120)
-Sushi: info  Assembling Implementation Guide sources...                          (00:03.121)
-Sushi: info  Generated ImplementationGuide-r5demo.json                           (00:03.129)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:03.130)
-Sushi:                                                                           (00:03.131)
-Sushi: ========================= SUSHI RESULTS ===========================       (00:03.132)
-Sushi: |  -------------------------------------------------------------  |       (00:03.133)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:03.134)
-Sushi: | |-------------------------------------------------------------| |       (00:03.135)
-Sushi: | |       1       |      0       |      1       |       0       | |       (00:03.136)
-Sushi: |  -------------------------------------------------------------  |       (00:03.137)
-Sushi: |  -------------------------------------------------------------  |       (00:03.138)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:03.139)
-Sushi: | |-------------------------------------------------------------| |       (00:03.144)
-Sushi: | |         1          |         0         |         3          | |       (00:03.147)
-Sushi: |  -------------------------------------------------------------  |       (00:03.148)
-Sushi: |                                                                 |       (00:03.149)
-Sushi: ===================================================================       (00:03.150)
-Sushi: | Something smells fishy...              0 Errors       1 Warning |       (00:03.151)
-Sushi: ===================================================================       (00:03.151)
-Sushi:                                                                           (00:03.152)
-Load Template from fhir.base.template#current                                    (00:03.172)
+Build FHIR IG from /tmp/r5demo#1.0.0-milestone                                   (00:00.003)
+Build Formal Publication package, intended for https://medigree.github.io/r5demo/1.0.0 (00:00.003)
+API keys loaded from /home/publisher/fhir-api-keys.ini                           (00:00.009)
+Package Cache: /home/publisher/.fhir/packages                                    (00:00.010)
+Run Sushi on /tmp/r5demo#1.0.0-milestone                                         (00:00.011)
+Sushi: info  Running SUSHI v2.7.0 (implements FHIR Shorthand specification v2.0.0) (00:00.646)
+Sushi: info  Arguments:                                                          (00:00.650)
+Sushi: info    --out /tmp/r5demo#1.0.0-milestone                                 (00:00.651)
+Sushi: info    /tmp/r5demo#1.0.0-milestone                                       (00:00.652)
+Sushi: info  Using configuration file: /tmp/r5demo#1.0.0-milestone/sushi-config.yaml (00:01.301)
+Sushi: info  Importing FSH text...                                               (00:01.316)
+Sushi: info  Preprocessed 4 documents with 2 aliases.                            (00:01.485)
+Sushi: info  Imported 2 definitions and 3 instances.                             (00:01.502)
+Sushi: warn  SUSHI support for pre-release versions of FHIR is experimental. Use at your own risk! (00:01.510)
+Sushi: info  Checking local cache for hl7.fhir.r5.core#5.0.0-ballot...           (00:01.517)
+Sushi: info  Found hl7.fhir.r5.core#5.0.0-ballot in local cache.                 (00:02.570)
+Sushi: info  Loaded package hl7.fhir.r5.core#5.0.0-ballot                        (00:02.572)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:02.666)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:02.682)
+Sushi: info  Converted 2 FHIR StructureDefinitions.                              (00:02.813)
+Sushi: info  Converted 1 FHIR ValueSets.                                         (00:02.817)
+Sushi: info  Converted 3 FHIR instances.                                         (00:02.938)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:02.943)
+Sushi: info  Exported 6 FHIR resources as JSON.                                  (00:02.951)
+Sushi: info  Assembling Implementation Guide sources...                          (00:02.956)
+Sushi: info  Generated ImplementationGuide-r5demo.json                           (00:02.966)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:02.968)
+Sushi:                                                                           (00:02.968)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:02.969)
+Sushi: |  -------------------------------------------------------------  |       (00:02.969)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:02.970)
+Sushi: | |-------------------------------------------------------------| |       (00:02.970)
+Sushi: | |       1       |      0       |      1       |       0       | |       (00:02.971)
+Sushi: |  -------------------------------------------------------------  |       (00:02.971)
+Sushi: |  -------------------------------------------------------------  |       (00:02.972)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:02.972)
+Sushi: | |-------------------------------------------------------------| |       (00:02.973)
+Sushi: | |         1          |         0         |         3          | |       (00:02.974)
+Sushi: |  -------------------------------------------------------------  |       (00:02.974)
+Sushi: |                                                                 |       (00:02.975)
+Sushi: ===================================================================       (00:02.975)
+Sushi: | Whale, whale, what happened here?      0 Errors       1 Warning |       (00:02.976)
+Sushi: ===================================================================       (00:02.976)
+Sushi:                                                                           (00:02.977)
+Load Template from fhir.base.template#current                                    (00:03.010)
 
 onLoad.findSpreadsheets:
 
@@ -289,37 +289,37 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /tmp/r5demo#1.0.0-milestone                                      (00:05.049)
+Root directory: /tmp/r5demo#1.0.0-milestone                                      (00:05.743)
 Core Package hl7.fhir.r5.core#5.0.0-ballot
 Unable to generate snapshot for example-composition from Composition because Profile DocumentStructure (http://hl7.org/fhir/StructureDefinition/example-composition), element http://hl7.org/fhir/StructureDefinition/example-composition#Composition.section:procedure. Error generating snapshot: The profile http://hl7.org/fhir/StructureDefinition/example-section-library has type Composition which is not consistent with the stated type BackboneElement
-Terminology Cache is at /tmp/r5demo#1.0.0-milestone/input-cache/txcache. 3 files in cache (00:12.625)
-Connect to Terminology Server at http://tx.fhir.org                              (00:12.627)
+Terminology Cache is at /tmp/r5demo#1.0.0-milestone/input-cache/txcache. 3 files in cache (00:14.322)
+Connect to Terminology Server at http://tx.fhir.org                              (00:14.323)
 Load Package hl7.fhir.pubpack#0.1.3
 Load Package hl7.fhir.xver-extensions#0.0.11
-Version mismatch. This IG is version 5.0.0-ballot, while the IG 'hl7tx' is from version 4.0.1 (will try to run anyway) (00:13.046)
-Ignore Core Dependency on FHIR version 5.0.0, from package 'hl7.terminology.r5#5.0.0' (00:13.047)
+Version mismatch. This IG is version 5.0.0-ballot, while the IG 'hl7tx' is from version 4.0.1 (will try to run anyway) (00:14.943)
+Ignore Core Dependency on FHIR version 5.0.0, from package 'hl7.terminology.r5#5.0.0' (00:14.945)
 Load Package hl7.terminology.r5#5.0.0
-Version mismatch. This IG is version 5.0.0-ballot, while the IG 'igtools' is from version 4.0.1 (will try to run anyway) (00:13.846)
-Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.fhir.uv.tools#current' (00:13.847)
-Version mismatch. This IG is for FHIR version 5.0.0-ballot, while the package 'hl7.fhir.uv.tools#current' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:13.917)
-Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.terminology.r4#4.0.0' (00:14.026)
+Version mismatch. This IG is version 5.0.0-ballot, while the IG 'igtools' is from version 4.0.1 (will try to run anyway) (00:15.828)
+Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.fhir.uv.tools#current' (00:15.830)
+Version mismatch. This IG is for FHIR version 5.0.0-ballot, while the package 'hl7.fhir.uv.tools#current' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:15.902)
+Ignore Core Dependency on FHIR version 4.0.1, from package 'hl7.terminology.r4#4.0.0' (00:16.007)
 Load Package hl7.terminology.r4#4.0.0
 Load Package hl7.fhir.uv.tools#current
-Load R5 Extensions - 2 resources (00:22.081)
-Initialization complete                                                          (00:22.147)
-Fetch https://medigree.github.io/r5demo/package-list.json for version check      (00:22.149)
-Load Content                                                                     (00:22.188)
+Load R5 Extensions - 2 resources (00:24.881)
+Initialization complete                                                          (00:24.948)
+Fetch https://medigree.github.io/r5demo/package-list.json for version check      (00:24.949)
+Load Content                                                                     (00:24.976)
 loadPrePages from FetchedFile[/tmp/r5demo#1.0.0-milestone/input/includes] as /tmp/r5demo#1.0.0-milestone/input/includes
 loadPrePages from FetchedFile[/tmp/r5demo#1.0.0-milestone/input/pagecontent] as /tmp/r5demo#1.0.0-milestone/input/pagecontent
-Processing Conformance Resources                                                 (00:22.363)
-Generating Snapshots                                                             (00:22.427)
-Propagating status                                                               (00:22.576)
-Generating Narratives                                                            (00:22.577)
-Validating Conformance Resources                                                 (00:23.206)
-Validating Resources                                                             (00:25.521)
-Processing Provenance Records                                                    (00:26.031)
-Generating Outputs in /tmp/r5demo#1.0.0-milestone/output                         (00:26.033)
-Run Template                                                                     (00:26.248)
+Processing Conformance Resources                                                 (00:25.118)
+Generating Snapshots                                                             (00:25.170)
+Propagating status                                                               (00:25.326)
+Generating Narratives                                                            (00:25.328)
+Validating Conformance Resources                                                 (00:26.102)
+Validating Resources                                                             (00:28.554)
+Processing Provenance Records                                                    (00:29.108)
+Generating Outputs in /tmp/r5demo#1.0.0-milestone/output                         (00:29.108)
+Run Template                                                                     (00:29.370)
 
 onGenerate.checkVersions:
      [xslt] Processing /tmp/r5demo#1.0.0-milestone/template/onGenerate-ig-working.xml to /tmp/r5demo#1.0.0-milestone/template/versions.txt
@@ -389,32 +389,32 @@ onGenerate.copyDataFiles:
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                    (00:26.750)
-Generating Summary Outputs                                                       (00:35.470)
-Sending Usage Stats to Server                                                    (00:37.094)
-## Memory (MB): Use = 1080, Free = 619, Total = 1700, Max =1736
+Template Done                                                                    (00:30.115)
+Generating Summary Outputs                                                       (00:39.784)
+Sending Usage Stats to Server                                                    (00:41.998)
+## Memory (MB): Use = 709, Free = 1004, Total = 1714, Max =1736
 Reclaiming memory...
-## Memory (MB): Use = 579, Free = 1120, Total = 1700, Max =1736
-Run jekyll: jekyll build --destination "/tmp/r5demo#1.0.0-milestone/output" (in folder /tmp/r5demo#1.0.0-milestone/temp/pages) (00:38.104)
-Jekyll: Source: /tmp/r5demo#1.0.0-milestone/temp/pages                           (00:38.596)
-Jekyll: Generating...                                                            (00:38.597)
-Jekyll: done in 0.359 seconds.                                                   (00:38.956)
+## Memory (MB): Use = 579, Free = 1134, Total = 1714, Max =1736
+Run jekyll: jekyll build --destination "/tmp/r5demo#1.0.0-milestone/output" (in folder /tmp/r5demo#1.0.0-milestone/temp/pages) (00:43.146)
+Jekyll: Source: /tmp/r5demo#1.0.0-milestone/temp/pages                           (00:43.738)
+Jekyll: Generating...                                                            (00:43.739)
+Jekyll: done in 0.396 seconds.                                                   (00:44.134)
 Installing r5demo#1.0.0 to the package cache
   Fetching:
 
-  Installing: Checking Output HTML                                                             (00:39.058)
-found 601 files                                                                  (00:39.062)
+  Installing: Checking Output HTML                                                             (00:44.245)
+found 601 files                                                                  (00:44.250)
 ........................................
 ........................................
-  ... 601 html files, 0 pages invalid xhtml (0%)                                 (00:40.497)
-  ... 12611 links, 0 broken links (0%)                                           (00:40.498)
-Build final .zip                                                                 (00:40.499)
-Final .zip built                                                                 (00:40.793)
-Built. Times: loading: 00:00.174, generate: 00:18.735, narrative generation: 00:00.628, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.859, validation: 00:02.820 (#7), template: 00:00.500 (#3) (00:41.101)
+  ... 601 html files, 0 pages invalid xhtml (0%)                                 (00:45.760)
+  ... 12611 links, 0 broken links (0%)                                           (00:45.761)
+Build final .zip                                                                 (00:45.762)
+Final .zip built                                                                 (00:46.072)
+Built. Times: loading: 00:00.141, generate: 00:21.485, narrative generation: 00:00.773, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.995, validation: 00:02.995 (#7), template: 00:00.743 (#3) (00:46.605)
 Validation output in /tmp/r5demo#1.0.0-milestone/output/qa.html
-Errors: 0, Warnings: 7, Info: 0, Broken Links: 0 (00:41.166)
-Finished                                                                         (00:41.169)
-Done                                                                             (00:41.170)
+Errors: 0, Warnings: 7, Info: 0, Broken Links: 0 (00:46.704)
+Finished                                                                         (00:46.706)
+Done                                                                             (00:46.707)
 Keep a copy of the build directory at /github/workspace/webroot/ig-build-zips/r5demo#1.0.0.zip
 
 ok. All checks passed. Publish v1.0.0 to /github/workspace/webroot/r5demo/1.0.0

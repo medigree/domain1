@@ -3,7 +3,7 @@
 
 err = 0, warn = 7, info = 0
 IG Publisher Version: 1.2.14
-Generated Fri Nov 11 08:55:34 UTC 2022. FHIR version 5.0.0-ballot for r5demo#1.0.0 (canonical = https://medigree.github.io/r5demo)
+Generated Sat Nov 12 10:12:45 UTC 2022. FHIR version 5.0.0-ballot for r5demo#1.0.0 (canonical = https://medigree.github.io/r5demo)
  Build Errors : 0 / 4 / 0
  /tmp/r5demo#1.0.0/fsh-generated/resources/ActorDefinition-Actor1 : 0 / 0 / 1
  /tmp/r5demo#1.0.0/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
