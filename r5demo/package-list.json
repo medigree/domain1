@@ -20,7 +20,7 @@
       "sequence": "Releases",
       "fhirversion": "5.0.0-ballot",
       "desc": "First stable release",
-      "descmd": "@release1.0.0.md",
+      "descmd": "@release100.md",
       "current": true
     }
   ]

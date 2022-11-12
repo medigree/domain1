@@ -5,9 +5,9 @@
     <description>New publications by HL7Belgium></description>
     <link>https://medigree.github.io/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Sat, 12 Nov 2022 10:13:36 +0000 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 12 Nov 2022 10:33:31 +0000 GMT</lastBuildDate>
     <atom:link href="https://medigree.github.io/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Nov 2022 10:13:36 +0000</pubDate>
+    <pubDate>Sat, 12 Nov 2022 10:33:31 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
