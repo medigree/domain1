@@ -5,14 +5,14 @@
     <description>New Packages published by HL7Belgium></description>
     <link>https://medigree.github.io/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Sun, 13 Nov 2022 06:37:29 +0000 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 13 Nov 2022 06:46:32 +0000 GMT</lastBuildDate>
     <atom:link href="https://medigree.github.io/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Nov 2022 06:37:29 +0000</pubDate>
+    <pubDate>Sun, 13 Nov 2022 06:46:32 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
       <title>r5demo#1.0.0</title>
-      <description>Example IG for R5 content. (built Sun, Nov 13, 2022 06:35+0000+00:00)</description>
+      <description>Example IG for R5 content. (built Sun, Nov 13, 2022 06:44+0000+00:00)</description>
       <link>https://medigree.github.io/r5demo/1.0.0/package.tgz</link>
       <guid isPermaLink="true">https://medigree.github.io/r5demo/1.0.0/package.tgz</guid>
       <dc:creator>HL7Belgium</dc:creator>
