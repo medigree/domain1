@@ -1,0 +1,12 @@
+{
+  "website" : {
+    "style" : "fhir.layout",
+    "url" : "http://medigree.net/fhir",
+    "server" : "apache",
+    "org" : "Medigree",
+    "layout": {
+      "id":"medigree.fhir.[code]",
+      "canonical":"http://medigree.net/fhir/[code]"
+    }
+  }
+}
