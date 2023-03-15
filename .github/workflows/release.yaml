@@ -1,70 +1,52 @@
 name: CI
-
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events for any main branch
   push:
-    branches-ignore:    
+    branches-ignore:
       - 'gh-pages'
   pull_request:
-
   workflow_dispatch:
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: hl7fhir/ig-publisher-base:latest
     steps:
-
       - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-#          # Get the latest publisher - don't run the batch script but run the line directly
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
+        run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
 
-      - name: Check out IG
-        uses: actions/checkout@master
+      - name: Checkout medigree/fhir-testing to ./core
+        uses: actions/checkout@v2
         with:
           repository: medigree/fhir-testing
-          path: './core'
+          path: core
 
-      - name: Check out history
-        uses: actions/checkout@master
+      - name: Checkout HL7/fhir-ig-history-template to ./history-template
+        uses: actions/checkout@v2
         with:
           repository: HL7/fhir-ig-history-template
-          path: './history-template'
+          path: history-template
 
-      - name: Check out current publication folder
-        uses: actions/checkout@master
+      - name: Checkout medigree/current-publication to ./webroot
+        uses: actions/checkout@v2
         with:
           repository: medigree/current-publication
-          path: './webroot'
+          path: webroot
 
-      - name: Check out IG registry
-        uses: actions/checkout@master
+      - name: Checkout FHIR/ig-registry to ./ig-registry
+        uses: actions/checkout@v2
         with:
           repository: FHIR/ig-registry
-          path: './ig-registry'
+          path: ig-registry
 
-      - name: First, build the IG normally
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: java -jar ./publisher.jar publisher -ig core
+      - name: Run publisher command
+        run: java -jar ./publisher.jar publisher -ig core
 
+      - name: Run publisher command with options
+        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
-      - name: List files
-        run: |
-          pwd
-          ls ./webroot
-
-      - name: Then, run the -go-publish for preparing the publication
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
-
-          
-      - name: Deploy
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./webroot
-
