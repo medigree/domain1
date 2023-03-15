@@ -24,7 +24,7 @@ jobs:
       - name: Check out IG
         uses: actions/checkout@master
         with:
-          repository: costateixeira/r5demo
+          repository: medigree/fhir-testing
           path: './core'
 
       - name: Check out history
