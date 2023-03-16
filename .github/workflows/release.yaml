@@ -42,7 +42,7 @@ jobs:
       - name: Run publisher command
         run: java -jar ./publisher.jar publisher -ig core
 
-      - name: Run publisher command with options
+      - name: Run publisher command for publishing release
         run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
       - name: Deploy to gh-pages
