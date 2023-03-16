@@ -3,7 +3,7 @@
 
 err = 6, warn = 9, info = 1
 IG Publisher Version: 1.2.49
-Generated Thu Mar 16 13:36:23 UTC 2023. FHIR version 4.0.1 for medigree.fhir.fhir-testing#1.0.0 (canonical = http://medigree.net/fhir/fhir-testing)
+Generated Thu Mar 16 17:14:53 UTC 2023. FHIR version 4.0.1 for medigree.fhir.fhir-testing#1.0.0 (canonical = http://medigree.net/fhir/fhir-testing)
  Build Errors : 0 / 7 / 0
  /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.fhir-testing : 3 / 0 / 1
  /__w/domain1/domain1/core/fsh-generated/resources/StructureDefinition-Requirement : 0 / 1 / 1
