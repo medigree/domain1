@@ -25,7 +25,7 @@ jobs:
       - name: Checkout source repo to ./source
         uses: actions/checkout@v2
         with:
-          repository: /IHE/RAD.IRA
+          repository: IHE/RAD.IRA
           path: source
 
       - name: Check sushi version
