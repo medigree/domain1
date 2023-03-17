@@ -1,4 +1,4 @@
-FHIR IG Publisher Version 1.2.49 (Git# 565ef821e74a). Built 2023-03-16T12:46:11.225Z (4 hours old)
+FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (12 hours old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on amd64 (64bit). 1736MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -go-publish -source core -web /__w/domain1/domain1/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates /__w/domain1/domain1/webroot/templates
@@ -7,29 +7,29 @@ Publication Run: publish core to /__w/domain1/domain1/webroot
 Run Number: 1
 Web Layout using the script medigree.fhir.[code] & http://medigree.net/fhir/[code]
 Relative directory for IG is '/fhir-testing'
-All checks passed. Do the publication build from /__w/domain1/domain1/core and publish to /tmp/web-root/run-20230316/fhir-testing
+All checks passed. Do the publication build from /__w/domain1/domain1/core and publish to /tmp/web-root/run-20230317/fhir-testing
 Prepare Build space in /tmp/medigree.fhir.fhir-testing#1.0.0
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.fhir-testing#1.0.0)
-FHIR IG Publisher Version 1.2.49 (Git# 565ef821e74a). Built 2023-03-16T12:46:11.225Z (4 hours old)
+FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (12 hours old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1736MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.fhir-testing#1.0.0 -resetTx -publish http://medigree.net/fhir/fhir-testing/1.0.0 -no-exit
-Start Clock @ Thursday, March 16, 2023 at 5:14:56 PM Coordinated Universal Time (2023-03-16T17:14:56Z)
+Start Clock @ Friday, March 17, 2023 at 8:39:13 AM Coordinated Universal Time (2023-03-17T08:39:13Z)
 
-Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0                         (00:00.008)
-Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.010)
-API keys loaded from /root/fhir-api-keys.ini                                     (00:00.013)
-Package Cache: /root/.fhir/packages                                              (00:00.017)
-Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0                               (00:00.020)
-Sushi: error: unknown option '--require-latest'                                  (00:00.422)
-Sushi couldn't be run. Complete output from running Sushi :                      (00:00.428)
-Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.429)
-Exception: Process exited with an error: 1 (Exit value: 1)                       (00:00.430)
-Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)       (00:00.431)
-                                                                                 (00:00.432)
-Use -? to get command line help                                                  (00:00.433)
-                                                                                 (00:00.433)
-Stack Dump (for debugging):                                                      (00:00.434)
+Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0                         (00:00.004)
+Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.005)
+API keys loaded from /root/fhir-api-keys.ini                                     (00:00.011)
+Package Cache: /root/.fhir/packages                                              (00:00.015)
+Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0                               (00:00.017)
+Sushi: error: unknown option '--require-latest'                                  (00:00.430)
+Sushi couldn't be run. Complete output from running Sushi :                      (00:00.436)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.437)
+Exception: Process exited with an error: 1 (Exit value: 1)                       (00:00.439)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)       (00:00.439)
+                                                                                 (00:00.440)
+Use -? to get command line help                                                  (00:00.441)
+                                                                                 (00:00.441)
+Stack Dump (for debugging):                                                      (00:00.442)
 org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
 	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
 	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
@@ -45,26 +45,26 @@ org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit 
 	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10749)
 Prepare Build space in /tmp/medigree.fhir.fhir-testing#1.0.0-milestone
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.fhir-testing#1.0.0-milestone) (milestone build)
-FHIR IG Publisher Version 1.2.49 (Git# 565ef821e74a). Built 2023-03-16T12:46:11.225Z (4 hours old)
+FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (12 hours old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1736MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.fhir-testing#1.0.0-milestone -publish http://medigree.net/fhir/fhir-testing/1.0.0 -milestone -no-exit
-Start Clock @ Thursday, March 16, 2023 at 5:14:58 PM Coordinated Universal Time (2023-03-16T17:14:58Z)
+Start Clock @ Friday, March 17, 2023 at 8:39:15 AM Coordinated Universal Time (2023-03-17T08:39:15Z)
 
-Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0-milestone               (00:00.001)
-Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.002)
-API keys loaded from /root/fhir-api-keys.ini                                     (00:00.005)
-Package Cache: /root/.fhir/packages                                              (00:00.005)
-Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0-milestone                     (00:00.007)
-Sushi: error: unknown option '--require-latest'                                  (00:00.394)
-Sushi couldn't be run. Complete output from running Sushi :                      (00:00.400)
-Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.400)
-Exception: Process exited with an error: 1 (Exit value: 1)                       (00:00.402)
-Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)       (00:00.403)
-                                                                                 (00:00.403)
-Use -? to get command line help                                                  (00:00.404)
-                                                                                 (00:00.405)
-Stack Dump (for debugging):                                                      (00:00.406)
+Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0-milestone               (00:00.003)
+Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.004)
+API keys loaded from /root/fhir-api-keys.ini                                     (00:00.009)
+Package Cache: /root/.fhir/packages                                              (00:00.009)
+Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0-milestone                     (00:00.011)
+Sushi: error: unknown option '--require-latest'                                  (00:00.397)
+Sushi couldn't be run. Complete output from running Sushi :                      (00:00.402)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.403)
+Exception: Process exited with an error: 1 (Exit value: 1)                       (00:00.404)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)       (00:00.405)
+                                                                                 (00:00.410)
+Use -? to get command line help                                                  (00:00.411)
+                                                                                 (00:00.412)
+Stack Dump (for debugging):                                                      (00:00.413)
 org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
 	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
 	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
@@ -78,25 +78,25 @@ org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit 
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:311)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:112)
 	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10749)
-Keep a copy of the build directory at /tmp/web-root/run-20230316/ig-build-zips/medigree.fhir.fhir-testing#1.0.0.zip
+Keep a copy of the build directory at /tmp/web-root/run-20230317/ig-build-zips/medigree.fhir.fhir-testing#1.0.0.zip
 
-ok. All checks passed. Publish v1.0.0 to /tmp/web-root/run-20230316/fhir-testing/1.0.0
-Copy the IG to /tmp/web-root/run-20230316/fhir-testing/1.0.0
-Update /tmp/web-root/run-20230316/fhir-testing/package-list.json
+ok. All checks passed. Publish v1.0.0 to /tmp/web-root/run-20230317/fhir-testing/1.0.0
+Copy the IG to /tmp/web-root/run-20230317/fhir-testing/1.0.0
+Update /tmp/web-root/run-20230317/fhir-testing/package-list.json
 Publish Box Statement: This page is part of the Testing (v1.0.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a href="http://medigree.net/fhir/fhir-testing/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
   .. 19 files checked, 19 updated
   .. 9 clones checked, 18 updated
   .. 3 redirections (3 created/updated)
-This is a milestone release - publish v1.0.0 to /tmp/web-root/run-20230316/fhir-testing
+This is a milestone release - publish v1.0.0 to /tmp/web-root/run-20230317/fhir-testing
 Publish Box Statement: This page is part of the Testing (v1.0.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://medigree.net/fhir/fhir-testing/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
   .. 19 files checked, 19 updated
   .. 9 clones checked, 18 updated
   .. 3 redirections (3 created/updated)
 Check for Files to delete
   ... 0 files
-Copy to new IG to /tmp/web-root/run-20230316/fhir-testing
-Update history page at /tmp/web-root/run-20230316/fhir-testing from /__w/domain1/domain1/./history-template and /__w/domain1/domain1/webroot/templates
-Build is complete. Copy from /tmp/web-root/run-20230316
+Copy to new IG to /tmp/web-root/run-20230317/fhir-testing
+Update history page at /tmp/web-root/run-20230317/fhir-testing from /__w/domain1/domain1/./history-template and /__w/domain1/domain1/webroot/templates
+Build is complete. Copy from /tmp/web-root/run-20230317
 Go!
 medigree.fhir.fhir-testing (http://medigree.net/fhir/fhir-testing): Testing @ https//build.fhir.org/ig/medigree/fhir-testing
   release: Releases 1.0.0/4.0.1 @ http://medigree.net/fhir/fhir-testing/1.0.0
