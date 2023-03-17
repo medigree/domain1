@@ -18,8 +18,8 @@ jobs:
       - name: Update sushi
         run: npm install fsh-sushi
         
-      - name: get package json
-        run: more package.json
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       - name: Check sushi version
         run: sushi -v
