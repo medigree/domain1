@@ -1,0 +1,1484 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US">
+  <head>
+    <meta xmlns="" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title xmlns="">IHE ITI TF Vol2</title>
+    <link xmlns="" rel="stylesheet" href="../../../css/styles.css" />
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async> </script> 
+</head>
+  <body xmlns="">
+    <header>
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          <div class="title-bar-title">IHE ITI Technical Framework</div>
+        </div>
+        <div class="top-bar" id="responsive-menu">
+          <div class="top-bar-left">
+            <img src="../../../IHE_INTERNATIONAL.png" class="IHE logo hide-for-small-only" alt="IHE logo" />
+            <ul id="tf-small-menu" class="menu vertical show-for-small-only">
+              <li><a class="ihe-purple" href="https://ihe.net" target="_blank">About IHE</a></li>
+              <li class="menu-text">Sections
+                <ul id="tf-small-menu-list" class="nested vertical menu">
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right hide-for-small-only">
+            <ul class="menu">
+              <li class="menu-text tf-version">IHE IT Infrastructure (ITI) Technical Framework, Volume <span id="volumeNo"></span><br />Revision 19.0, June 17, 2022 – Final Text</li>
+            </ul>
+              <ul class="menu align-right">
+                    <li><input id="ihe-search-field" type="search" placeholder="Search"></li>
+                    <li><button id="ihe-search-button" type="button" class="button search">Search</button></li>
+                </ul>
+            </div>
+        </div>
+         </header>
+    <div class="navigation">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+        </ul>
+      </nav>
+    </div>
+    <div class="scroll-top-wrapper">
+      <span class="scroll-top-inner">
+        <i class="size-icon-lg fi-arrow-up"></i>
+      </span>
+    </div>
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x align-center">
+        <div class="cell medium-11">
+          <div class="callout disclaimer warning text-center">              
+          The Final Text ITI Technical Framework is published here in HTML format and is no longer published as PDF. Trial Implementation supplements are available from the <a href=https://profiles.ihe.net/ITI/TF/Volume1/index.html>Volume 1 Table of Contents</a>.
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="grid-x grid-margin-x align-center">
+          <div class="hide-for-small-only cell medium-2 large-2" data-sticky-container>
+            <div id="section-menu" class="sticky" data-sticky data-anchor="main-top">
+            </div>
+          </div>
+          <div id="main-top" class="cell medium-10 large-10">
+      <h2 id="3.51">3.51 Multi-Patient Stored Query [ITI-51]</h2>
+      <p>This section corresponds to transaction [ITI-51] of the IHE Technical Framework. Transaction [ITI-51] is used by the Document Consumer and Document Registry Actors.</p>
+      <h3 id="3.51.1">3.51.1 Scope</h3>
+      <p>The Multi-Patient Stored Query supports a variety of queries for multiple patients. It is based on the Registry Stored Query [ITI-18] transaction. The main difference is the set of queries, which is specified in this transaction.</p>
+      <h3 id="3.51.2">3.51.2 Use Case Roles</h3>
+      <p>
+        <span style="font-weight:bold">Actor:</span>
+        <span>Document Consumer</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">Role:</span>
+        <span>Issues a Multi-Patient Stored Query to retrieve metadata or object references associated with multiple patients based on query parameters</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">Actor:</span>
+        <span>Document Registry</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">Role:</span>
+        <span>Responds to a Multi-Patient Stored Query by providing the metadata or object references of registry objects which satisfy the query parameters</span>
+      </p>
+      <h3 id="3.51.3">3.51.3 Referenced Standard</h3>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>ebRIM</td>
+          <td>
+            <p>OASIS/ebXML Registry Information Model v3.0</p>
+            <p>This model defines the types of metadata and content that can be stored in an ebXML Registry, a basis for and subset of Document Sharing metadata.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>ebRS</td>
+          <td>
+            <p>OASIS/ebXML Registry Services Specifications v3.0</p>
+            <p>This defines the services and protocols for an ebXML Registry, used as the basis for the XDS Document Registry</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              See
+              <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+              for other referenced standards for SOAP encoding.
+            </p>
+            <p>
+              See
+              <a href="../Volume2/ITI-18.html#3.18">ITI TF-2: 3.18</a>
+              for the Registry Stored Query [ITI-18] transaction.
+            </p>
+            <p>
+              See
+              <a href="../Volume3/ch-4.2.html#4.2">ITI TF-3: 4.2</a>
+              for other referenced standards for metadata element encoding.
+            </p>
+          </td>
+        </tr>
+      </table>
+      <h3 id="3.51.4">3.51.4 Messages</h3>
+      <div id="f3.51.4-1">
+        <img src="media/Figure_3.51.4-1.png" alt="" />
+        <p class="figureTitle">Figure 3.51.4-1: Interaction Diagram</p>
+      </div>
+      <h4 id="3.51.4.1">3.51.4.1 Multi-Patient Stored Query Request</h4>
+      <p>This is a query request from the Document Consumer to the Document Registry. The query request contains:</p>
+      <ul>
+        <li class="bullet-list1">A reference to a pre-defined query stored on the Document Registry Actor</li>
+        <li class="bullet-list1">Parameters to the query</li>
+      </ul>
+      <h5 id="3.51.4.1.1">3.51.4.1.1 Trigger Events</h5>
+      <p>The message is initiated when a Document Consumer wants to query for metadata based on criteria spanning multiple patients (multiple Patient IDs).</p>
+      <h5 id="3.51.4.1.2">3.51.4.1.2 Message Semantics</h5>
+      <p>The message semantics are identical to those documented for the Registry Stored Query [ITI-18] transaction except where noted below. The following sections document the differences.</p>
+      <p>Document Consumer and Document Registry Actors that support the Asynchronous Web Services Exchange Option shall support WS-Addressing based Asynchronous Web Services requirements as defined in ITI TF-2: V.3.</p>
+      <h6 id="3.51.4.1.2.1">3.51.4.1.2.1 Query Definitions</h6>
+      <p>This transaction defines the following Stored Queries that may query for multiple Patient Ids.</p>
+      <p class="heading7" id="3.51.4.1.2.1.1">3.51.4.1.2.1.1 FindDocumentsForMultiplePatients</p>
+      <p>
+        This Multi-Patient Query is semantically identical to the FindDocuments Stored Query (see
+        <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.7.1">ITI TF-2: 3.18.4.1.2.3.7.1</a>
+        ) except:
+      </p>
+      <ul>
+        <li class="bullet-list1">$XDSDocumentEntryPatientId is optional (may have zero values).</li>
+        <li class="bullet-list1">$XDSDocumentEntryPatientId may contain multiple values.</li>
+        <li class="bullet-list1">At least one of $XDSDocumentEntryPatientId, $XDSDocumentEntryClassCode, $XDSDocumentEntryEventCodeList, or $XDSDocumentEntryHealthcareFacilityTypeCode shall be specified in the provided set of parameters.</li>
+      </ul>
+      <p>
+        <span style="font-weight:bold">Returns:</span>
+        <span>XDSDocumentEntry or ObjectRef objects matching the query parameters</span>
+      </p>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <td class="tableHeader">Parameter Name</td>
+            <td class="tableHeader">Attribute</td>
+            <td class="tableHeader">Opt</td>
+            <td class="tableHeader">Mult</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryPatientId</span>
+                <span style="font-size:6pt;vertical-align:super">2</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.patientId</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryClassCode</span>
+                <span style="font-size:6pt;vertical-align:super">1 2</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.classCode</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryTypeCode</span>
+                <span style="font-size:6pt;vertical-align:super">1</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.typeCode</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryPracticeSettingCode</span>
+                <span style="font-size:6pt;vertical-align:super">1</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.practiceSettingCode</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryCreationTimeFrom</td>
+            <td>Lower value of XDSDocumentEntry.creationTime</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryCreationTimeTo</td>
+            <td>Upper value of XDSDocumentEntry.creationTime</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryServiceStartTimeFrom</td>
+            <td>Lower value of XDSDocumentEntry.serviceStartTime</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryServiceStartTimeTo</td>
+            <td>Upper value of XDSDocumentEntry.serviceStartTime</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryServiceStopTimeFrom</td>
+            <td>Lower value of XDSDocumentEntry.serviceStopTime</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryServiceStopTimeTo</td>
+            <td>Upper value of XDSDocumentEntry.serviceStopTime</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryHealthcareFacilityTypeCode</span>
+                <span style="font-size:6pt;vertical-align:super">1 2</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.healthcareFacilityTypeCode</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryEventCodeList</span>
+                <span style="font-size:6pt;vertical-align:super">1 2</span>
+              </p>
+            </td>
+            <td>
+              <p>
+                <span>XDSDocumentEntry.eventCodeList</span>
+                <span style="font-size:6pt;vertical-align:super">3</span>
+              </p>
+            </td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryConfidentialityCode</span>
+                <span style="font-size:6pt;vertical-align:super">1</span>
+              </p>
+            </td>
+            <td>
+              <p>
+                <span>XDSDocumentEntry.confidentialityCode</span>
+                <span style="font-size:6pt;vertical-align:super">3</span>
+              </p>
+            </td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryAuthorPerson</span>
+                <span style="font-size:6pt;vertical-align:super">4</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.author</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryFormatCode</span>
+                <span style="font-size:6pt;vertical-align:super">1</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.formatCode</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>$XDSDocumentEntryStatus</td>
+            <td>XDSDocumentEntry.status</td>
+            <td>R</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSDocumentEntryType</span>
+                <span style="font-size:6pt;vertical-align:super">5</span>
+              </p>
+            </td>
+            <td>XDSDocumentEntry.objectType</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">1</span>
+        <span>
+          Shall be coded according to specification in
+          <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.4">ITI TF-2: 3.18.4.1.2.3.4</a>
+          Coding of Code/Code-Scheme.
+        </span>
+      </p>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">2</span>
+        <span>At least one of $XDSDocumentEntryPatientId, $XDSDocumentEntryClassCode, $XDSDocumentEntryEventCodeList, or $XDSDocumentEntryHealthcareFacilityTypeCode shall be specified.</span>
+      </p>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">3</span>
+        <span>
+          Supports AND/OR semantics as specified in
+          <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.5">ITI TF-2: 3.18.4.1.2.3.5</a>
+          .
+        </span>
+      </p>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">4</span>
+        <span>The value for this parameter is a pattern compatible with the SQL keyword LIKE which allows the use of the following wildcard characters: % to match any (or no) characters and _ to match a single character. The match shall be applied to the text contained in the Value elements of the authorPerson Slot on the author Classification (value strings of the authorPerson sub-attribute)</span>
+      </p>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">5</span>
+        <span>
+          See
+          <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.6.2">ITI TF-2: 3.18.4.1.2.3.6.2</a>
+        </span>
+      </p>
+      <p class="heading7" id="3.51.4.1.2.1.2">3.51.4.1.2.1.2 FindFoldersForMultiplePatients</p>
+      <p>
+        This Multi-Patient Query is semantically identical to the FindFolders Stored Query (see
+        <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.7.3">ITI TF-2: 3.18.4.1.2.3.7.3</a>
+        ) except:
+      </p>
+      <ul>
+        <li class="bullet-list1">$XDSFolderPatientId is optional (may have zero values).</li>
+        <li class="bullet-list1">$XDSFolderPatientId may contain multiple values.</li>
+        <li class="bullet-list1">At least one of $XDSFolderPatientId or $XDSFolderCodeList shall be specified in the provided set of parameters.</li>
+      </ul>
+      <p>
+        <span style="font-weight:bold">Returns:</span>
+        <span>XDSFolder or ObjectRef objects matching the query parameters</span>
+      </p>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <td class="tableHeader">Parameter Name</td>
+            <td class="tableHeader">Attribute</td>
+            <td class="tableHeader">Opt</td>
+            <td class="tableHeader">Mult</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSFolderPatientId</span>
+                <span style="font-size:6pt;vertical-align:super">2</span>
+              </p>
+            </td>
+            <td>XDSFolder.patientId</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>$XDSFolderLastUpdateTimeFrom</td>
+            <td>XDSFolder.lastUpdateTime lower value</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>$XDSFolderLastUpdateTimeTo</td>
+            <td>XDSFolder.lastUpdateTime upper bound</td>
+            <td>O</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <span>$XDSFolderCodeList</span>
+                <span style="font-size:6pt;vertical-align:super">1,2,3</span>
+                <span />
+              </p>
+            </td>
+            <td>XDSFolder.codeList</td>
+            <td>O</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>$XDSFolderStatus</td>
+            <td>XDSFolder.status</td>
+            <td>R</td>
+            <td>M</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">1</span>
+        <span>
+          Shall be coded according to specification in
+          <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.4">ITI TF-2: 3.18.4.1.2.3.4</a>
+          Coding of Code/Code-Scheme.
+        </span>
+      </p>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">2</span>
+        <span>At least one of $XDSFolderPatientId or $XDSFolderCodeList shall be specified.</span>
+      </p>
+      <p>
+        <span style="font-size:8pt;vertical-align:super">3</span>
+        <span>
+          Supports AND/OR semantics as specified in
+          <a href="../Volume2/ITI-18.html#3.18.4.1.2.3.5">ITI TF-2: 3.18.4.1.2.3.5</a>
+          .
+        </span>
+      </p>
+      <h6 id="3.51.4.1.2.2">3.51.4.1.2.2 Multi-Patient Stored Query IDs</h6>
+      <p>The following Query Ids shall be used to represent these queries.</p>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <td class="tableHeader">Query Name</td>
+            <td class="tableHeader">Query ID</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FindDocumentsForMultiplePatients</td>
+            <td>urn:uuid:3d1bdb10-39a2-11de-89c2-2f44d94eaa9f</td>
+          </tr>
+          <tr>
+            <td>FindFoldersForMultiplePatients</td>
+            <td>urn:uuid:50d3f5ac-39a2-11de-a1ca-b366239e58df</td>
+          </tr>
+        </tbody>
+      </table>
+      <h6 id="3.51.4.1.2.3">3.51.4.1.2.3 Web Services Transport</h6>
+      <p>The requirements for Web Services transport for Synchronous and WS-Addressing based Asynchronous are described in this section.</p>
+      <p>For the support of both Synchronous and WS-Addressing based Asynchronous web service exchange cases the requirements are the following.</p>
+      <p>The query request and response shall be transmitted using Web Services, according to the requirements specified in ITI TF-2: Appendix V.3. The specific values for the WSDL describing the Multi-Patient Stored Query Service are described in this section.</p>
+      <p>The Document Registry shall accept a Multi-Patient Stored Query Request formatted as a SIMPLE SOAP message and respond with a Multi-Patient Stored Query Response formatted as a SIMPLE SOAP message. The Document Consumer shall generate the Multi-Patient Stored Query Request formatted as a SIMPLE SOAP message and accept a Multi-Patient Stored Query Response formatted as a SIMPLE SOAP message.</p>
+      <p>
+        <span style="font-weight:bold">IHE-WSP201) The attribute /wsdl:definitions/@name shall be “DocumentRegistry”.</span>
+      </p>
+      <p>The following WSDL naming conventions shall apply:</p>
+      <p style="font-size:10pt">
+        <span style="width:36pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:36pt"> </span>
+        <span>wsdl:definitions/@name="DocumentRegistry</span>
+        <span style="font-weight:bold">":</span>
+      </p>
+      <p style="font-size:10pt">query message    -&gt; "MultiPatientStoredQuery_Message"</p>
+      <p style="font-size:10pt">
+        <span style="width:36pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:36pt"> </span>
+        <span>query response   -&gt; "MultiPatientStoredQueryResponse_Message"</span>
+      </p>
+      <p style="font-size:10pt">
+        <span style="width:36pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:36pt"> </span>
+        <span>portType         -&gt; "DocumentRegistry_PortType"</span>
+      </p>
+      <p style="font-size:10pt">
+        <span style="width:36pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:36pt"> </span>
+        <span>operation        -&gt; "DocumentRegistry_MultiPatientStoredQuery"</span>
+      </p>
+      <p style="font-size:10pt">
+        <span style="width:36pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:36pt"> </span>
+        <span>SOAP 1.2 binding -&gt; "DocumentRegistry_Binding_Soap12"</span>
+      </p>
+      <p style="font-size:10pt">
+        <span style="width:36pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:36pt"> </span>
+        <span>SOAP 1.2 port    -&gt; "DocumentRegistry_Port_Soap12"</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">IHE-WSP202) The targetNamespace of the WSDL shall be “urn:ihe:iti:xds-b:2007”</span>
+      </p>
+      <p>These are the requirements for the Multi-Patient Stored Query transaction presented in the order in which they would appear in the WSDL definition:</p>
+      <ul>
+        <li class="bullet-list1">The following types shall be imported (xsd:import) in the /definitions/types section:</li>
+      </ul>
+      <ul>
+        <li class="bullet-list2">namespace=" urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0", schemaLocation="query.xsd"</li>
+      </ul>
+      <ul>
+        <li class="bullet-list1">The /definitions/message/part/@element attribute of the Multi-Patient Stored Query Request message shall be defined as “query:AdhocQueryRequest”</li>
+        <li class="bullet-list1">The /definitions/message/part/@element attribute of the Multi-Patient Stored Query Response message shall be defined as “query:AdhocQueryResponse”</li>
+        <li class="bullet-list1">The /definitions/portType/operation/input/@wsaw:Action attribute for the Multi-Patient Stored Query Request message shall be defined as “urn:ihe:iti:2009:MultiPatientStoredQuery”</li>
+        <li class="bullet-list1">The /definitions/portType/operation/output/@wsaw:Action attribute for the Multi-Patient Stored Query Response message shall be defined as “urn:ihe:iti:2009:MultiPatientStoredQueryResponse”</li>
+        <li class="bullet-list1">The /definitions/binding/operation/soap12:operation/@soapActionRequired attribute shall be defined as “false”</li>
+      </ul>
+      <p>The following WSDL fragment shows an example of Multi-Patient Stored Query transaction definition:</p>
+      <p style="font-size:8pt">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+      <p style="font-size:8pt">
+        <span style="background-color:#ffffff">&lt;definitions ...&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">...</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;types&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;xsd:schema elementFormDefault="qualified" targetNamespace="urn:ihe:iti:xds-b:2007"&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="background-color:#ffffff">&lt;xsd:import</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:34.55pt"> </span>
+        <span style="background-color:#ffffff">namespace="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:34.55pt"> </span>
+        <span style="background-color:#ffffff">schemaLocation="schema\query.xsd"/&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="background-color:#ffffff">...</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;/xsd:schema&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;/types&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;message name="RegistryStoredQuery_Message"&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;documentation&gt;Multi-Patient Stored Query&lt;/documentation&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;part name="body" element="query:AdhocQueryRequest"/&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;/message&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;message name="RegistryStoredQueryResponse_Message"&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;documentation&gt;Multi-Patient Stored Query Response&lt;/documentation&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;part name="body" element="query:AdhocQueryResponse"/&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;/message&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">...</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;portType name="MPQRegistry_PortType"&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;operation name="MultiPatientStoredQuery"&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="background-color:#ffffff">&lt;input message="ihe:RegistryStoredQuery_Message"</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:34.55pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:43.2pt"> </span>
+        <span style="background-color:#ffffff">wsaw:Action="urn:ihe:iti:2009:MultiPatientStoredQuery"/&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="background-color:#ffffff">&lt;output message="ihe:RegistryStoredQueryResponse_Message"</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="width:8.6pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:25.9pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:34.55pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:43.2pt"> </span>
+        <span style="background-color:#ffffff">wsaw:Action="urn:ihe:iti:2009:MultiPatientStoredQueryResponse"/&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">&lt;/operation&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:17.3pt"> </span>
+        <span style="background-color:#ffffff">...</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">&lt;/portType&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="width:8.65pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:8.65pt"> </span>
+        <span style="background-color:#ffffff">...</span>
+      </p>
+      <p style="font-size:8pt">
+        <span style="background-color:#ffffff">&lt;/definitions&gt;</span>
+      </p>
+      <p>
+        A full WSDL for the Document Consumer and Document Registry Actors is found in
+        <a href="../Volume2/ch-W.html#Appendix W">ITI TF-2: Appendix W</a>
+        .
+      </p>
+      <h6 id="3.51.4.1.2.4">3.51.4.1.2.4 Sample SOAP Messages</h6>
+      <p>The samples in the following two sections show a typical SOAP request and its relative SOAP response. The sample messages also show the WS-Addressing headers &lt;a:Action/&gt;, &lt;a:MessageID/&gt;, &lt;a:ReplyTo/&gt;…; these WS-Addressing headers are populated according to ITI TF-2: Appendix V.3. The body of the SOAP message is omitted for brevity; in a real scenario the empty element will be populated with the appropriate metadata.</p>
+      <p>
+        Samples presented in this section are also available online:  see
+        <a href="../Volume2/ch-W.html#Appendix W">ITI TF-2: Appendix W</a>
+        .
+      </p>
+      <p class="heading7" id="3.51.4.1.2.4.1">3.51.4.1.2.4.1 Sample Multi-Patient Stored Query SOAP Request (WS-Addressing based)</p>
+      <p style="font-size:8pt">
+        <span style="background-color:#ffffff">&lt;s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing"&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;s:Header&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;a:Action s:mustUnderstand="1"&gt;urn:ihe:iti:2009:MultiPatientStoredQuery&lt;/a:Action&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;a:MessageID&gt;urn:uuid:def119ad-dc13-49c1-a3c7-e3742531f9b3&lt;/a:MessageID&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;a:ReplyTo s:mustUnderstand="1"&gt;&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;a:Address&gt;http://www.w3.org/2005/08/addressing/anonymous&lt;/a:Address&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;/a:ReplyTo&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;a:To&gt;http://localhost/service/IHEMPQRegistry.svc&lt;/a:To&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;/s:Header&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;s:Body&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;query:AdhocQueryRequest</span>
+        <br />
+        <span style="background-color:#ffffff">            xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"</span>
+        <br />
+        <span style="background-color:#ffffff">            xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"</span>
+        <br />
+        <span style="background-color:#ffffff">            xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;query:ResponseOption returnComposedObjects="true" returnType="LeafClass"/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">           </span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;!-- FindDocumentsForMultiplePatients --&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;rim:AdhocQuery id="urn:uuid:3d1bdb10-39a2-11de-89c2-2f44d94eaa9f"&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:Slot name="$XDSDocumentEntryStatus"&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                    &lt;rim:ValueList&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                        &lt;rim:Value&gt;('urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Approved')&lt;/rim:Value&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                    &lt;/rim:ValueList&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;/rim:Slot&gt;</span>
+        <br />
+        <br />
+        <span style="background-color:#ffffff">               </span>
+        <br />
+        <span style="background-color:#ffffff">               </span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;!-- Note the lack of a specification of the $XDSDocumentEntryPatientId parameter --&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">               </span>
+        <br />
+        <span style="background-color:#ffffff">               </span>
+        <br />
+        <span style="background-color:#ffffff">               </span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;/rim:AdhocQuery&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;/query:AdhocQueryRequest&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;/s:Body&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">&lt;/s:Envelope&gt;</span>
+      </p>
+      <p class="heading7" id="3.51.4.1.2.4.2">3.51.4.1.2.4.2 Sample Multi-Patient Stored Query SOAP Response (WS-Addressing based)</p>
+      <p style="font-size:8pt">
+        <span style="background-color:#ffffff">&lt;s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing"&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;s:Header&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;a:Action s:mustUnderstand="1"&gt;urn:ihe:iti:2009:MultiPatientStoredQueryResponse&lt;/a:Action&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;a:RelatesTo&gt;urn:uuid:def119ad-dc13-49c1-a3c7-e3742531f9b3&lt;/a:RelatesTo&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;/s:Header&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;s:Body&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;query:AdhocQueryResponse</span>
+        <br />
+        <span style="background-color:#ffffff">            xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"</span>
+        <br />
+        <span style="background-color:#ffffff">            status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success"&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;rim:RegistryObjectList xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <br />
+        <span style="background-color:#ffffff">                &lt;!-- Internal details of ExtrinsicObjects are not shown --&gt;</span>
+      </p>
+      <p style="font-size:8pt">
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:ExtrinsicObject/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:ExtrinsicObject/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:ExtrinsicObject/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:ExtrinsicObject/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:ExtrinsicObject/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">                &lt;rim:ExtrinsicObject/&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">            &lt;/rim:RegistryObjectList&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">        &lt;/query:AdhocQueryResponse&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">    &lt;/s:Body&gt;</span>
+        <br />
+        <span style="background-color:#ffffff">&lt;/s:Envelope&gt;</span>
+      </p>
+      <h5 id="3.51.4.1.3">3.51.4.1.3 Expected Actions</h5>
+      <p>A Document Registry that supports the PatientId Only Option shall be able to process messages that include one or more $XDSDocumentEntryPatientId values and do not include $XDSDocumentEntryClassCode, $XDSDocumentEntryEventCodeList, or $XDSDocumentEntryHealthcareFacilityTypeCode values (for the FindDocumentsForMultiplePatients query) or $XDSFolderCodeList values (for the FindFoldersForMultiplePatients query).</p>
+      <p>A Document Registry that does NOT support the PatientId Only Option may return an XDSStoredQueryParamNumber error in this case.</p>
+      <p>
+        See Registry Stored Query [ITI-18] for additional Expected Actions –
+        <a href="../Volume2/ITI-18.html#3.18.4.1.3">ITI TF-2: 3.18.4.1.3</a>
+        .
+      </p>
+      <h3 id="3.51.5">3.51.5 Security Considerations</h3>
+      <p>All of the Security Considerations found in [ITI-18] apply with the following further profiling.</p>
+      <p>It is expected that the ATNA authentication would be used to restrict access to the Multi-Patient Query [ITI-51] transaction. It is expected that few systems would be allowed to request the LeafClass return result.</p>
+      <h4 id="3.51.5.1">3.51.5.1 Security Audit Considerations</h4>
+      <p>The actors involved shall record one audit event for each patient identity that has been included in the query according to the following. It is important for security auditing that the audit message contain only one patient identity to better handle these messages in the Audit Record Repository. If the query includes no patient identities, both actors shall record a single audit event with no Patient participant.</p>
+      <h5 id="3.51.5.1.1">3.51.5.1.1 Document Consumer audit message:</h5>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td />
+          <td>Field Name</td>
+          <td>Opt</td>
+          <td>Value Constraints</td>
+        </tr>
+        <tr style="height:14.35pt">
+          <td rowspan="5">
+            <p>Event</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">EventIdentification</span>
+            </p>
+          </td>
+          <td>EventID</td>
+          <td>M</td>
+          <td>EV(110112, DCM, “Query”)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventActionCode</td>
+          <td>M</td>
+          <td>“E” (Execute)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventDateTime</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventOutcomeIndicator</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-51”,“IHE Transactions”,“Multi-Patient Stored Query”)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Source (Document Consumer) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Human Requestor (0..n)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Destination (Document Registry) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Audit Source (Document Consumer) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Patient (0..n)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Query Parameters (1)</td>
+        </tr>
+      </table>
+      <p>Where:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>C</td>
+          <td>
+            <p>
+              <span> </span>
+              <span style="font-size:8pt">If WS-Addressing based Asynchronous Web Services Exchange is being used, the content of the &lt;wsa:ReplyTo/&gt; element. Otherwise, not specialized.</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>The process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110153, DCM, “Source”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Human Requestor (if known)</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>Identity of the human that initiated the transaction.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>U</td>
+          <td>Access Control role(s) the user holds that allows this transaction.</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Destination</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>SOAP endpoint URI.</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110152, DCM, “Destination”)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr style="height:17.5pt">
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="3">
+            <p>Audit Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">AuditSourceIdentification</span>
+            </p>
+          </td>
+          <td>AuditSourceID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditEnterpriseSiteID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditSourceTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Patient (if known)</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“1” (Person)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“1” (Patient)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The patient ID in HL7 CX format.</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Query Parameters</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“2” (system object)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“24” (query)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-51”, “IHE Transactions”, “Multi-Patient Stored Query”)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>Stored Query ID (UUID)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectQuery</td>
+          <td>M</td>
+          <td>the AdhocQueryRequest, base64 encoded.3</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>M</td>
+          <td>
+            <p>The ParticipantObjectDetail element shall occur at least once.</p>
+            <p>The first element shall contain:</p>
+            <p>Type: “QueryEncoding” (literal string)</p>
+            <p>Value: the character encoding, such as “UTF-8”, used to encode the ParticipantObjectQuery before base64 encoding</p>
+            <p>If the homeCommunityId is known, the second element shall contain:</p>
+            <p>Type: “urn:ihe:iti:xca:2010:homeCommunityId” (literal string)</p>
+            <p>Value: value of the homeCommunityId</p>
+          </td>
+        </tr>
+      </table>
+      <h5 id="3.51.5.1.2">3.51.5.1.2 Document Registry audit message:</h5>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td />
+          <td class="tableHeader">Field Name</td>
+          <td class="tableHeader">Opt</td>
+          <td class="tableHeader">Value Constraints</td>
+        </tr>
+        <tr style="height:14.35pt">
+          <td rowspan="5">
+            <p>Event</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">EventIdentification</span>
+            </p>
+          </td>
+          <td>EventID</td>
+          <td>M</td>
+          <td>EV(110112, DCM, “Query”)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventActionCode</td>
+          <td>M</td>
+          <td>“E” (Execute)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventDateTime</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>EventOutcomeIndicator</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-51”, “IHE Transactions”, “Multi-Patient Stored Query”)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Source (Document Consumer) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Destination (Document Registry) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Audit Source (Document Registry) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Patient (0..n)</td>
+        </tr>
+        <tr style="height:7.15pt">
+          <td colspan="4">Query Parameters (1)</td>
+        </tr>
+      </table>
+      <p>Where:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>C</td>
+          <td>If WS-Addressing based Asynchronous Web Services Exchange is being used, the content of the &lt;wsa:ReplyTo/&gt; element. Otherwise, not specialized.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>The process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110153, DCM, “Source”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Destination</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>SOAP endpoint URI.</td>
+        </tr>
+        <tr style="height:23pt">
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>The process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110152, DCM, “Destination”)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="3">
+            <p>Audit Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">AuditSourceIdentification</span>
+            </p>
+          </td>
+          <td>AuditSourceID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditEnterpriseSiteID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditSourceTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Patient</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“1” (Person)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“1” (Patient)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>
+            <p>
+              <span>P</span>
+              <span style="font-style:italic">articipantObjectDataLifeCycle</span>
+            </p>
+          </td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The patient ID in HL7 CX format.</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Query Parameters</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“2” (system object)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“24” (query)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-51”, “IHE Transactions”, “Multi-Patient Stored Query”)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>Stored Query ID (UUID)</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr style="height:13.75pt">
+          <td>ParticipantObjectQuery</td>
+          <td>M</td>
+          <td>the AdhocQueryRequest, base64 encoded.</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>M</td>
+          <td>
+            <p>The ParticipantObjectDetail element shall occur at least once.</p>
+            <p>The first element shall contain:</p>
+            <p>Type: “QueryEncoding” (literal string)</p>
+            <p>Value: the character encoding, such as “UTF-8”, used to encode the ParticipantObjectQuery before base64 encoding</p>
+            <p>If the homeCommunityId is known, the second element shall contain:</p>
+            <p>Type: “urn:ihe:iti:xca:2010:homeCommunityId” (literal string)</p>
+            <p>Value: value of the homeCommunityId</p>
+          </td>
+        </tr>
+      </table>
+          </div>
+        </div>
+      </main>
+    </div>
+   <footer class="ihe-footer">
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x align-middle">
+        <div class="cell medium-9 small-order-2 medium-order-1 text-center medium-text-left">
+          © 2000 &mdash; <span id="current-year"></span> IHE International | TEL 1-630-481-1004 | 820&nbsp;Jorie&nbsp;Boulevard,
+          Oak&nbsp;Brook, IL&nbsp;60523
+        </div>
+        <div class="cell medium-3 small-order-1 medium-order-2 text-center medium-text-right ihe-footer-icons">
+          <a href="mailto:secretary@ihe.net"><i class="fi fi-mail"></i></a>
+          <a href="https://www.linkedin.com/company/iheintl"><i class="fi fi-social-linkedin"></i></a>
+          <a href="https://twitter.com/IHEIntl"><i class="fi fi-social-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/user/IHEIntl"><i class="fi fi-social-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="../../../js/vendor/jquery.min.js"></script>
+    <script src="../../../js/vendor/motion-ui.min.js"></script>
+    <script src="../../../js/vendor/what-input.js"></script>
+    <script src="../../../js/vendor/foundation.min.js"></script>
+    <script src="../../../js/app.js"></script>
+  	<script>
+	 window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-HLBNC861DJ');
+	</script>
+</body>
+</html>

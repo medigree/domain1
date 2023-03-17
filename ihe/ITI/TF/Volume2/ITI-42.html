@@ -1,0 +1,1094 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US">
+  <head>
+    <meta xmlns="" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title xmlns="">IHE ITI TF Vol2</title>
+    <link xmlns="" rel="stylesheet" href="../../../css/styles.css" />
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async> </script> 
+</head>
+  <body xmlns="">
+    <header>
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          <div class="title-bar-title">IHE ITI Technical Framework</div>
+        </div>
+        <div class="top-bar" id="responsive-menu">
+          <div class="top-bar-left">
+            <img src="../../../IHE_INTERNATIONAL.png" class="IHE logo hide-for-small-only" alt="IHE logo" />
+            <ul id="tf-small-menu" class="menu vertical show-for-small-only">
+              <li><a class="ihe-purple" href="https://ihe.net" target="_blank">About IHE</a></li>
+              <li class="menu-text">Sections
+                <ul id="tf-small-menu-list" class="nested vertical menu">
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right hide-for-small-only">
+            <ul class="menu">
+              <li class="menu-text tf-version">IHE IT Infrastructure (ITI) Technical Framework, Volume <span id="volumeNo"></span><br />Revision 19.0, June 17, 2022 – Final Text</li>
+            </ul>
+              <ul class="menu align-right">
+                    <li><input id="ihe-search-field" type="search" placeholder="Search"></li>
+                    <li><button id="ihe-search-button" type="button" class="button search">Search</button></li>
+                </ul>
+            </div>
+        </div>
+         </header>
+    <div class="navigation">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+        </ul>
+      </nav>
+    </div>
+    <div class="scroll-top-wrapper">
+      <span class="scroll-top-inner">
+        <i class="size-icon-lg fi-arrow-up"></i>
+      </span>
+    </div>
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x align-center">
+        <div class="cell medium-11">
+          <div class="callout disclaimer warning text-center">              
+          The Final Text ITI Technical Framework is published here in HTML format and is no longer published as PDF. Trial Implementation supplements are available from the <a href=https://profiles.ihe.net/ITI/TF/Volume1/index.html>Volume 1 Table of Contents</a>.
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="grid-x grid-margin-x align-center">
+          <div class="hide-for-small-only cell medium-2 large-2" data-sticky-container>
+            <div id="section-menu" class="sticky" data-sticky data-anchor="main-top">
+            </div>
+          </div>
+          <div id="main-top" class="cell medium-10 large-10">
+      <h2 id="3.42">3.42 Register Document Set-b [ITI-42]</h2>
+      <p>This section corresponds to transaction [ITI-42] of the IHE IT Infrastructure Technical Framework. Register Document Set-b is used to register a set of document-associated metadata.</p>
+      <h3 id="3.42.1">3.42.1 Scope</h3>
+      <p>The Register Document Set-b transaction passes a Document Submission Request (see <a href="../Volume3/ch-4.2.html#4.2.1.5">ITI TF-3: 4.2.1.5</a>) from a Content Sender to a Content Receiver.</p>
+      <h3 id="3.42.2">3.42.2 Actor Roles</h3>
+      <p>The roles in this transaction are defined in the following table and may be played by the actors shown here:</p>
+      <p id="t3.42.2-1" class="tableTitle">Table 3.42.2-1: Actor Roles</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td><b>Role:</b></td>
+          <td>
+            <p>
+              <span style="font-weight:bold">Content Sender</span>
+              <span>: A system that submits a document metadata to a Content Receiver.</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Actor(s):</b></td>
+          <td>
+            <p>
+              <span>The following actors may play the role of Content Sender:</span>
+              <br />
+              <span>Document Repository, Integrated Document Source/Repository</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Role:</b></td>
+          <td>
+            <p>
+              <span style="font-weight:bold">Content Receiver</span>
+              <span>: A system that receives document metadata.</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Actor(s):</b></td>
+          <td>
+            <p>
+              <span>The following actors may play the role of Content Receiver:</span>
+              <br />
+              <span>Document Registry</span>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p>Transaction text specifies behavior for each Role. The behavior of specific actors may also be specified when it goes beyond that of the general Role.</p>
+      <h3 id="3.42.3">3.42.3 Referenced Standards</h3>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>ebRIM</td>
+          <td>
+            <p>OASIS/ebXML Registry Information Model v3.0</p>
+            <p>This model defines the types of metadata and content that can be stored in an ebXML Registry, a basis for and subset of Document Sharing metadata.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>ebRS</td>
+          <td>
+            <p>OASIS/ebXML Registry Services Specifications v3.0</p>
+            <p>This defines the services and protocols for an ebXML Registry, used as the basis for the XDS Document Registry</p>
+          </td>
+        </tr>
+        <tr>
+          <td>HL7V2</td>
+          <td>HL7 Version 2.5</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              See
+              <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+              for other referenced standards for SOAP encoding.
+            </p>
+            <p>
+              See
+              <a href="../Volume3/ch-4.2.html#4.2">ITI TF-3: 4.2</a>
+              for other referenced standards for metadata element encoding.
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <a name="_Toc437857631"> </a>
+      </p>
+      <h3 id="3.42.4">3.42.4 Messages</h3>
+      <div id="f3.42.4-1">
+        <img src="media/Figure_3.42.4-1.png" alt="" >
+        <p class="figureTitle">Figure 3.42.4-1: Interaction Diagram</p>
+      </div>
+      <h4 id="3.42.4.1">3.42.4.1 Register Document Set-b Request</h4>
+      <p>The Register Document Set-b Request message is used to register patient-specific healthcare documents through the use of metadata. Metadata enables the receiver to process the content of the message programmatically, without needing to understand the format or contents of the documents. For more details about metadata in the context of Document Sharing, see ITI TF-3:4.</p>
+      <p>The Content Sender sends metadata for a set of documents to the Content Receiver.</p>
+      <h5 id="3.42.4.1.1">3.42.4.1.1 Trigger Events</h5>
+      <p>The Register Document Set-b Request message is triggered when a Content Sender wants to register metadata for a set of documents it holds. These documents may have been stored in the Document Repository by a Document Source (using the Provide and Register Document Set-b transaction [ITI-41]) or generated internally by an Integrated Document Source/Repository.</p>
+      <h5 id="3.42.4.1.2">3.42.4.1.2 Message Semantics</h5>
+      <p>
+        The Register Document Set-b Request message shall use SOAP 1.2 and Simple SOAP. Implementors of this transaction shall comply with all requirements described in:
+        <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+        : Web Services for IHE Transactions.
+      </p>
+      <p>
+        The Register Document Set-b Request message shall contain a Submission Request, as defined in
+        <a href="../Volume3/ch-4.1.html#4.1.4">ITI TF-3: 4.1.4</a>
+        .
+      </p>
+      <p>If the associationType is RPLC, XFRM_RPLC, or IsSnapshotOf, the targetObject of the Relationship Association in the Submission Request shall be a DocumentEntry already in the Document Registry.</p>
+      <p>All DocumentEntry objects in this Submission Request shall be Stable DocumentEntry objects and, therefore, will not be On-Demand DocumentEntry objects. Associations included in the Submission Request may reference On-Demand DocumentEntry objects that have been registered previously.</p>
+      <p>
+        See
+        <a href="../Volume3/ch-4.2.html#4.2.1.4">ITI TF-3: 4.2.1.4</a>
+        for a description of the ebRS/ebRIM representation of a Submission Request. The metadata requirements for this Submission Request are defined in
+        <a href="../Volume3/ch-4.3.html#4.3.1">ITI TF-3: 4.3.1</a>
+        .
+      </p>
+      <p>
+        A full example of document metadata submission can be found online:  see
+        <a href="../Volume2/ch-W.html#Appendix W">ITI TF-2: Appendix W</a>
+        .
+      </p>
+      <p>
+        XML namespace prefixes used in text and in examples below are for informative purposes only and are documented in
+        <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+        , Table V.2.4-1.
+      </p>
+      <p>The requirements for the request message are:</p>
+      <ul>
+        <li class="bullet-list1">the &lt;wsa:Action&gt; SOAP element shall contain the value urn:ihe:iti:2007:RegisterDocumentSet-b</li>
+        <li class="bullet-list1">
+          the &lt;soap12:Body&gt; shall contain one &lt;lcm:SubmitObjectsRequest&gt; element representing the Submission Request (see
+          <a href="../Volume3/ch-4.2.html#4.2.1.4">ITI TF-3: 4.2.1.4</a>
+          for details of expressing a Submission Request).
+        </li>
+      </ul>
+      <p>
+        A full XML Schema Document for the XDS types is available online:  see
+        <a href="../Volume2/ch-W.html#Appendix W">ITI TF-2: Appendix W</a>
+        .
+      </p>
+      <p>Below is an example of the SOAP Body for a Register Document Set-b Request message</p>
+      <div style="border:0.75pt solid #000000; clear:both">
+        <p style="font-size:9pt">
+          <span>        &lt;soap12:Body&gt;</span>
+        </p>
+        <p style="font-size:9pt">
+          <span>            &lt;lcm:SubmitObjectsRequest&gt;</span>
+        </p>
+        <p style="font-size:9pt">
+          <span>
+                            &lt;!-- Submission Request contents – See
+            <a href="../Volume3/ch-4.2.html#4.2.1.4">ITI TF-3: 4.2.1.4</a>
+            --&gt;
+          </span>
+        </p>
+        <p style="font-size:9pt">
+          <span>                &lt;rim:RegistryObjectList&gt;</span>
+        </p>
+        <p style="font-size:9pt">
+          <span>                 &lt;!-- Registry Metadata goes here --&gt;</span>
+        </p>
+        <p style="font-size:9pt">
+          <span>                &lt;/rim:RegistryObjectList&gt;</span>
+        </p>
+        <p style="font-size:9pt">
+          <span>            &lt;/lcm:SubmitObjectsRequest&gt;</span>
+        </p>
+        <p style="font-size:9pt">
+          <span>        &lt;/soap12:Body&gt;</span>
+        </p>
+      </div>
+      <p>If the Content Sender supports the Asynchronous Web Services Exchange Option, it shall be able to generate a WS-Addressing based Asynchronous Web Services request as defined in ITI TF-2: Appendix V.3.</p>
+      <h6 id="3.42.4.1.2.1">3.42.4.1.2.1 Integrated Document Source / Repository Message Semantics</h6>
+      <p>The Integrated Document Source / Repository may choose to support options which are listed in ITI TF-1: Table 10.2-1b and described in the sections that follow it.</p>
+      <p>
+        If the Integrated Document Source / Repository supports the Document Replacement Option, it shall be able to generate replace semantics as defined in
+        <a href="../Volume3/ch-4.2.html#4.2.2.2.3">ITI TF-3: 4.2.2.2.3</a>
+        .
+      </p>
+      <p>
+        If the Integrated Document Source / Repository supports the Document Addendum Option, it shall be able to generate append semantics as defined in
+        <a href="../Volume3/ch-4.2.html#4.2.2.2.1">ITI TF-3: 4.2.2.2.1</a>
+        .
+      </p>
+      <p>
+        If the Integrated Document Source / Repository supports the Document Transformation Option, it shall be able to generate transformation semantics as defined in
+        <a href="../Volume3/ch-4.2.html#4.2.2.2.2">ITI TF-3: 4.2.2.2.2</a>
+        .
+      </p>
+      <p>
+        If the Integrated Document Source / Repository supports the Folder Management Option it, shall be able to generate folder semantics as defined in
+        <a href="../Volume3/ch-4.2.html#4.2.1.3">ITI TF-3: 4.2.1.3</a>
+        and
+        <a href="../Volume3/ch-4.2.html#4.2.2.1.5">ITI TF-3: 4.2.2.1.5</a>
+        .
+      </p>
+      <p>
+        If the Integrated Document Source / Repository supports the Basic Patient Privacy Enforcement Option, it shall comply with the requirements as described in
+        <a href="../Volume1/ch-10.html#10.2.9">ITI TF-1: 10.2.9</a>
+        .
+      </p>
+      <p>If the Integrated Document Source/Repository supports the Delayed Document Assembly Option, shall be able to register a Stable Document Entry with the following attribute values</p>
+      <ul>
+        <li class="bullet-list1">size = <code>0</code> (zero)</li>
+        <li class="bullet-list1">hash = <code>da39a3ee5e6b4b0d3255bfef95601890afd80709</code> (SHA1 hash of a zero length file).</li>
+      </ul>
+      <p>When the Integrated Document Source/Repository registers the document, it shall internally mark the document contents that will be assembled when a subsequent Retrieve Document Set [ITI-43] transaction is received containing the uniqueID of the registered Stable Document Entry.</p>
+      <h5 id="3.42.4.1.3">3.42.4.1.3 Expected Actions</h5>
+      <p>Upon receipt of a Register Document Set-b Request message, the Document Registry shall:</p>
+      <ul>
+        <li class="bullet-list1">Perform metadata validations</li>
+        <li class="bullet-list1">Store all IHE-defined metadata attributes received so that it is available to return in responses to future queries.</li>
+        <li class="bullet-list1">Return a response message giving the status of the operation.</li>
+      </ul>
+      <p>If the Document Registry rejects the metadata, it shall:</p>
+      <ul>
+        <li class="bullet-list1">Return an error including at least one error message in the response. For a complete list of applicable codes, refer to ITI TF-3: Table 4.2.4.1-2.</li>
+        <li class="bullet-list1">Roll back any changes made.</li>
+      </ul>
+      <h6 id="3.42.4.1.3.1">3.42.4.1.3.1 Atomicity of Submissions</h6>
+      <p>XDS Submission requests shall be atomic operations. If any part of the Submission Request processing fails, the entire transaction shall fail and no changes result.</p>
+      <p>No result of a Submission Request shall be made available until the atomic operation has successfully completed.</p>
+      <h6 id="3.42.4.1.3.2">3.42.4.1.3.2 Extra Metadata</h6>
+      <p>The Document Registry may save extra metadata attributes.</p>
+      <ul>
+        <li class="bullet-list1">If the Document Registry saves the extra metadata attributes, it shall include that metadata in later query responses. </li>
+        <li class="bullet-list1">
+          If there are extra metadata attributes in the Submission Request and the Document Registry does not save them, the Document Registry shall include the XDSExtraMetadataNotSaved warning in its response, as described in
+          <a href="../Volume3/ch-4.2.html#4.2.3.1.6">ITI TF-3: 4.2.3.1.6</a>
+        </li>
+        <li class="bullet-list1">Document Registry Actors that do not support the Reference ID Option may treat referenceIdList as a non-IHE-defined metadata attribute.</li>
+      </ul>
+      <p>
+        The Document Registry shall verify that extra metadata attributes conform to the requirements in
+        <a href="../Volume3/ch-4.2.html#4.2.3.1.6">ITI TF-3: 4.2.3.1.6</a>
+        .
+      </p>
+      <h6 id="3.42.4.1.3.3">3.42.4.1.3.3 Enforcement of Attributes</h6>
+      <p>
+        The Document Registry shall validate the Submission Request objects and attributes as specified in
+        <a href="../Volume3/ch-4.2.html#4.2">ITI TF-3: 4.2</a>
+        and 4.3.1. In addition, the following constraints apply.
+      </p>
+      <p class="heading7" id="3.42.4.1.3.3.1">3.42.4.1.3.3.1 DocumentEntry.uniqueId</p>
+      <p>The Document Registry shall reject the message and return an error if the uniqueId attribute matches the uniqueId attribute of a DocumentEntry within the Document Registry and the size attributes or hash attributes of the two DocumentEntry objects differ.</p>
+      <p>If the uniqueId, size, and hash attributes of a received DocumentEntry match those of a DocumentEntry already within the Document Registry, processing of the submission shall continue without an error. Thus, multiple registered DocumentEntry objects can have the same uniqueId attribute value (as long as all the size and hash attributes are the same).</p>
+      <p class="note">Note: The Document Entries may reference the same instance of the document or may reference different (identical) copies of the document (for example, stored on different Document Repositories).</p>
+      <p class="heading7" id="3.42.4.1.3.3.2">3.42.4.1.3.3.2 patientId Attributes</p>
+      <p>Values of DocumentEntry.patientId, Folder.patientId, and SubmissionSet.patientId shall be verified against the patient identifiers received in the Patient Identity Feed [ITI-8] indicating that they are registered with the Patient ID Domain of the Affinity Domain. This validation requirement does not apply to DocumentEntry.sourcePatentId.</p>
+      <p>All objects in the Submission Request (DocumentEntry, Folder and SubmissionSet) shall have the same patientId.</p>
+      <p>The value of the patientId attribute of a DocumentEntry object shall match the value of the patientId attribute of any Folder that it is a member of. This implies that all DocumentEntry objects in a Folder have the same patientId.</p>
+      <p>When the Submission Request includes a Document Relationship Association, both DocumentEntry objects referenced by the Association shall have the same patientId.</p>
+      <p class="heading7" id="3.42.4.1.3.3.3">3.42.4.1.3.3.3 Coded Attributes</p>
+      <p>
+        The XDS Affinity Domain may allow only a finite set of values for a given coded attribute conforming to
+        <a href="../Volume3/ch-4.2.html#4.2.3.1.2">ITI TF-3: 4.2.3.1.2</a>
+        or may not restrict the values at all. If the XDS Affinity Domain allows only a finite set, the Document Registry shall constrain the value to those allowed by the XDS Affinity Domain.
+      </p>
+      <p>The Document Registry shall not constrain the displayName.</p>
+      <p class="note">Note: In this section, "value" refers to the combination of a codeSystem and code.</p>
+      <p class="heading7" id="3.42.4.1.3.3.4">3.42.4.1.3.3.4 DocumentEntry.mimeType</p>
+      <p>The value of the DocumentEntry.mimeType shall be constrained to those allowed by the XDS Affinity Domain.</p>
+      <p class="heading7" id="3.42.4.1.3.3.5">3.42.4.1.3.3.5 DocumentEntry.availabilityStatus</p>
+      <p>The Document Registry shall set the availabilityStatus of all newly added DocumentEntry objects to Approved.</p>
+      <p class="heading7" id="3.42.4.1.3.3.6">3.42.4.1.3.3.6 DocumentEntry.serviceStartTime and DocumentEntry.serviceStopTime</p>
+      <p>If the serviceStartTime and serviceStopTime attributes are both populated for a Document Entry in the Submission Request, the Document Registry shall verify that the serviceStartTime is before or equal to the serviceStopTime.</p>
+      <p class="heading7" id="3.42.4.1.3.3.7">3.42.4.1.3.3.7 SubmissionSet.uniqueId</p>
+      <p>The Document Registry shall verify that the SubmissionSet.uniqueId is not used as the uniqueId for any existing object in the registry (DocumentEntry, SubmissionSet, or Folder).</p>
+      <h6 id="3.42.4.1.3.4">3.42.4.1.3.4 Folder Membership</h6>
+      <p>When the Submission Request includes an FD-DE HasMember Association, which identifies a Document Entry as a member of a Folder, the Document Registry shall verify that both the Document Entry and Folder have a status of Approved.</p>
+      <h6 id="3.42.4.1.3.5">3.42.4.1.3.5 Document Relationships</h6>
+      <p>When the Submission Request includes an Association between two DocumentEntry objects, the Document Registry shall verify that:</p>
+      <ul>
+        <li class="bullet-list1">
+          Both DocumentEntry objects have the same patient identifier (XDSDocumentEntry.patientId attribute); otherwise it shall return the error
+          <code>XDSPatientIdDoesNotMatch</code>. This comparison shall take into consideration patient identity merges. Such as described in
+            <a href="../Volume1/ch-5.html">PIX</a> - <a href="ITI-8.html">Patient Identity Feed [ITI-8]</a> 
+			(see <a href="ITI-8.html#3.8.4.2.4">ITI TF-2: 3.8.4.2.4</a>)
+			or <a href="../Volume1/ch-23.html">PIXv3</a> - <a href="ITI-44.html">Patient Identity Feed HL7 V3 [ITI-44]</a> 
+			(see <a href="ITI-44.html#3.44.4.2.4">ITI TF-2:3.44.4.2.4</a>).
+        </li>
+        <li class="bullet-list1">
+          The sourceObject references a DocumentEntry in the submission; otherwise it shall return the error
+          <code>UnresolvedReferenceException</code>.
+        </li>
+      </ul>
+      <p>The Document Registry shall verify the targetObject according the following:</p>
+      <ul>
+        <li class="bullet-list1">If the associationType is RPLC, XFRM_RPLC, or IsSnapshotOf, that the targetObject references a DocumentEntry in the Document Registry.</li>
+        <li class="bullet-list1">For all other associationTypes, that the targetObject references a DocumentEntry in the Document Registry or in the submission.</li>
+      </ul>
+      <p>If this verification on targetObject fails, the Document Registry shall return the error <code>UnresolvedReferenceException</code>.</p>
+      <p>When the targetObject references a DocumentEntry in the Document Registry, the Document Registry shall verify that:</p>
+      <ul>
+        <li class="bullet-list1">
+          The targetObject DocumentEntry has an availabilityStatus of Approved; 
+		  otherwise, it shall return the error <code>XDSRegistryDeprecatedDocumentError</code>. 
+		  This ensures that only the most recent version of a document can be replaced, etc.
+        </li>
+      </ul>
+      <p>When the Association type is "RPLC" or "XFRM_RPLC", the Document Registry shall also:</p>
+      <ul>
+        <li class="bullet-list1">Change the status of the DocumentEntry that is being replaced to Deprecated.</li>
+        <li class="bullet-list1">Change the status of all DocumentEntry objects that are transformations (XFRM) or addenda (APND) of the DocumentEntry being replaced to Deprecated.</li>
+        <li class="bullet-list1">If the DocumentEntry being replaced is a member of one or more approved Folders, the Document Registry shall also:
+
+      <p>1) Verify the replacement DocumentEntry and approved Folders have the same patient identifier (XDSDocumentEntry.patientId and XDSFolder.patientId attributes); otherwise it shall return the error XDSPatientIdDoesNotMatch. This comparison shall take into consideration patient identity merges. Such as described in
+            <a href="../Volume1/ch-5.html">PIX</a> - <a href="ITI-8.html">Patient Identity Feed [ITI-8]</a> 
+			(see <a href="ITI-8.html#3.8.4.2.4">ITI TF-2: 3.8.4.2.4</a>)
+			or <a href="../Volume1/ch-23.html">PIXv3</a> - <a href="ITI-44.html">Patient Identity Feed HL7 V3 [ITI-44]</a> 
+			(see <a href="ITI-44.html#3.44.4.2.4">ITI TF-2:3.44.4.2.4</a>).
+      </p>
+      <p>2) Create a new FD-DE HasMember Association connecting the replacement DocumentEntry to each approved Folder that held the original DocumentEntry as a member.
+      </p>
+      <p>3) For each FD-DE HasMember Association created, create a new SS-HM HasMember Association connecting the new FD-DE HasMember Association to the replacement DocumentEntry's Submission Set.
+        <br />
+      </p>
+      </li>
+      </ul>
+      <p class="note">Note: For "RPLC" and "XFRM_RPLC" relationships, earlier versions of the Technical Framework referenced the error <code>XDSReplaceFailed</code> when verification fails. That error has been deprecated.</p>
+      <p>When the Association type is "IsSnapshotOf", the Document Registry shall also:</p>
+      <ul>
+        <li class="bullet-list1">Verify sourceObject references a Stable DocumentEntry</li>
+        <li class="bullet-list1">Verify targetObject references an On-Demand DocumentEntry</li>
+      </ul>
+      <p>As per Section 3.42.4.1.4.1, no changes to the status of any object shall occur if the Submission Request is not accepted and committed.</p>
+      <h6 id="3.42.4.1.3.6">3.42.4.1.3.6 Updates to Folder.lastUpdateTime</h6>
+      <p>If the submission results in any DocumentEntry being placed into any Folder, the Document Registry shall set the lastUpdateTime attribute of those Folders to the current time. This includes Folders included in the Submission Request as well as Folders already existing in the Document Registry that are referenced by the Submission Request.</p>
+      <p>As per Section 3.42.4.1.4.1, no changes to the lastUpdateTime of any Folder shall occur if the Submission Request is not accepted and committed.</p>
+      <h6 id="3.42.4.1.3.7">3.42.4.1.3.7 UUIDs and Symbolic Ids</h6>
+      <p>
+        Objects in the Submission Request have several UUID fields conforming to
+        <a href="../Volume3/ch-4.2.html#4.2.3.1.5">ITI TF-3: 4.2.3.1.5</a>
+        .
+      </p>
+      <p>If a field is formatted as a symbolic Id in the Submission Request, the Document Registry shall replace it with newly generated, properly formatted UUIDs upon acceptance of the submission. If the same symbolic Id appears more than once in the Submission Request, it shall be replaced with the same generated UUID.</p>
+      <p>If a field is formatted as a valid UUID in the Submission Request, the Document Registry shall not change the value. </p>
+      <p>Once a UUID-format Id value is assigned to a Registry Object, that value is permanent and shall not be changed.</p>
+      <h4 id="3.42.4.2">3.42.4.2 Register Document Set-b Response</h4>
+      <h5 id="3.42.4.2.1">3.42.4.2.1 Trigger Events</h5>
+      <p>The Content Receiver finishes processing a Register Document Set-b Request Message and shall respond with Register Document Set-b Response</p>
+      <h5 id="3.42.4.2.2">3.42.4.2.2 Message Semantics</h5>
+      <p>
+        The Register Document Set-b Response message shall use SOAP 1.2 and Simple SOAP. Implementors of this transaction shall comply with all requirements described in:
+        <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+        : Web Services for IHE Transactions.
+      </p>
+      <p>
+        The Register Document Set-b Response message shall carry the status of the requested operation. The response message may carry warning messages. If the requested operation fails, the response message shall carry at least one error message. The conditions of failure and possible warning and error messages are given in the ebRS standard and detailed in
+        <a href="../Volume3/ch-4.2.html#4.2.4">ITI TF-3: 4.2.4</a>
+        Error Reporting. This transaction does not support a partial success response.
+      </p>
+      <p>
+        XML namespace prefixes used in text and in examples below are for informational purposes only and are documented in
+        <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+        , Table V.2.4-1.
+      </p>
+      <p>The requirements for the response message are:</p>
+      <ul>
+        <li class="bullet-list1">the &lt;wsa:Action&gt; soap header shall contain the value urn:ihe:iti:2007:RegisterDocumentSet-bResponse</li>
+        <li class="bullet-list1">the &lt;soap12:Body&gt; soap element shall contain one &lt;rs:RegistryResponse&gt; element</li>
+      </ul>
+      <p>
+        See
+        <a href="../Volume3/ch-4.2.html#4.2.4">ITI TF-3: 4.2.4</a>
+        for examples of response messages.
+      </p>
+      <p>If the Document Registry supports the Asynchronous Web Services Exchange Option and it receives a WS-Addressing based Asynchronous Web Services request, it shall respond as defined in ITI TF-2: Appendix V.3.</p>
+      <h5 id="3.42.4.2.3">3.42.4.2.3 Expected Actions</h5>
+      <p>The Content Sender now knows that the transaction succeeded/failed and can continue. The metadata added to the Document Registry as a result of this transaction is now available for discovery.</p>
+      <h6 id="3.42.4.2.3.1">3.42.4.2.3.1 Document Repository Expected Actions</h6>
+      <p>If the Register Document Set-b [ITI-42] response includes any errors or warnings, the Document Repository shall include all such errors and warnings in the Provide and Register Document Set-b [ITI-41] response.</p>
+      <h3 id="3.42.5">3.42.5 Security Considerations</h3>
+      <p>
+        Relevant XDS Affinity Domain Security background is discussed in the XDS Security Considerations Section (see
+        <a href="../Volume1/ch-10.html#10.7">ITI TF-1: 10.7</a>
+        ).
+      </p>
+      <h4 id="3.42.5.1">3.42.5.1 Audit Record Considerations</h4>
+      <p>The Register Document Set-b transaction is either a PHI-Import event or a PHI-Export event, depending on actor, as defined in ITI TF-2: Table 3.20.4.1.1.1-1, with the following exceptions.</p>
+      <h5 id="3.42.5.1.1">3.42.5.1.1 Document Repository or Integrated Document Source/Repository audit message:</h5>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <div />
+          </td>
+          <td>Field Name</td>
+          <td>Opt</td>
+          <td>Value Constraints</td>
+        </tr>
+        <tr>
+          <td rowspan="5">
+            <p>Event</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">EventIdentification</span>
+            </p>
+          </td>
+          <td>EventID</td>
+          <td>M</td>
+          <td>EV(110106, DCM, “Export”)</td>
+        </tr>
+        <tr>
+          <td>EventActionCode</td>
+          <td>M</td>
+          <td>“R” (Read)</td>
+        </tr>
+        <tr>
+          <td>EventDateTime</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventOutcomeIndicator</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-42”, “IHE Transactions”, “Register Document Set-b”)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Source (Document Repository or Integrated Document Source/Repository) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Human Requestor (0..n)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Destination (Document Registry) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Audit Source (Document Repository or Integrated Document Source/Repository) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Patient (0..1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">SubmissionSet (1)</td>
+        </tr>
+      </table>
+      <p class="note">Where:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>If Asynchronous Web Services Exchange is being used, the content of the &lt;wsa:ReplyTo/&gt; element. Otherwise, not specialized.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>the process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110153, DCM, “Source”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Human Requestor (if known)</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>Identity of the human that initiated the transaction.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>U</td>
+          <td>Access Control role(s) the user holds that allows this transaction.</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Destination</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>SOAP endpoint URI.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>M</td>
+          <td>“false”</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110152, DCM, “Destination”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="3">
+            <p>Audit Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">AuditSourceIdentification</span>
+            </p>
+          </td>
+          <td>AuditSourceID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditEnterpriseSiteID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditSourceTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Patient (if known)</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“1” (person)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“1” (patient)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>the patient ID in HL7 CX format.</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Submission Set</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“2” (System)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“20” (job)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>EV(“urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd”, “IHE XDS Metadata”, “submission set classificationNode”)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The submissionSet unique ID</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <h5 id="3.42.5.1.2">3.42.5.1.2 Document Registry audit message:</h5>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <div />
+          </td>
+          <td>Field Name</td>
+          <td>Opt</td>
+          <td>Value Constraints</td>
+        </tr>
+        <tr>
+          <td rowspan="5">
+            <p>Event</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">EventIdentification</span>
+            </p>
+          </td>
+          <td>EventID</td>
+          <td>M</td>
+          <td>EV(110107, DCM, “Import”)</td>
+        </tr>
+        <tr>
+          <td>EventActionCode</td>
+          <td>M</td>
+          <td>“C” (Create)</td>
+        </tr>
+        <tr>
+          <td>EventDateTime</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventOutcomeIndicator</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-42”, “IHE Transactions”, “Register Document Set-b”)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Source (Document Repository or Integrated Document Source/Repository) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Destination (Document Registry ) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Audit Source (Document Registry) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Patient (0..1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">SubmissionSet (1)</td>
+        </tr>
+      </table>
+      <p>Where:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>If Asynchronous Web Services Exchange is being used, the content of the &lt;wsa:ReplyTo/&gt; element. Otherwise, not specialized.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110153, DCM, “Source”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Destination</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>SOAP endpoint URI</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>the process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>M</td>
+          <td>“false”</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110152, DCM, “Destination”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address.</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="3">
+            <p>Audit Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">AuditSourceIdentification</span>
+            </p>
+          </td>
+          <td>AuditSourceID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditEnterpriseSiteID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditSourceTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Patient (if known)</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“1” (person)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“1” (patient)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>the patient ID in HL7 CX format.</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Submission Set</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“2” (System)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“20” (job)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>EV(“urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd”, “IHE XDS Metadata”, “submission set classificationNode”)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The submissionSet unique ID</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+          </div>
+        </div>
+      </main>
+    </div>
+   <footer class="ihe-footer">
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x align-middle">
+        <div class="cell medium-9 small-order-2 medium-order-1 text-center medium-text-left">
+          © 2000 &mdash; <span id="current-year"></span> IHE International | TEL 1-630-481-1004 | 820&nbsp;Jorie&nbsp;Boulevard,
+          Oak&nbsp;Brook, IL&nbsp;60523
+        </div>
+        <div class="cell medium-3 small-order-1 medium-order-2 text-center medium-text-right ihe-footer-icons">
+          <a href="mailto:secretary@ihe.net"><i class="fi fi-mail"></i></a>
+          <a href="https://www.linkedin.com/company/iheintl"><i class="fi fi-social-linkedin"></i></a>
+          <a href="https://twitter.com/IHEIntl"><i class="fi fi-social-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/user/IHEIntl"><i class="fi fi-social-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="../../../js/vendor/jquery.min.js"></script>
+    <script src="../../../js/vendor/motion-ui.min.js"></script>
+    <script src="../../../js/vendor/what-input.js"></script>
+    <script src="../../../js/vendor/foundation.min.js"></script>
+    <script src="../../../js/app.js"></script>
+  	<script>
+	 window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-HLBNC861DJ');
+	</script>
+</body>
+</html>

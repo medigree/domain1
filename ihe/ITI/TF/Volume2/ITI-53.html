@@ -1,0 +1,1187 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US">
+  <head>
+    <meta xmlns="" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title xmlns="">IHE ITI TF Vol2</title>
+    <link xmlns="" rel="stylesheet" href="../../../css/styles.css" />
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async> </script> 
+</head>
+  <body xmlns="">
+    <header>
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          <div class="title-bar-title">IHE ITI Technical Framework</div>
+        </div>
+        <div class="top-bar" id="responsive-menu">
+          <div class="top-bar-left">
+            <img src="../../../IHE_INTERNATIONAL.png" class="IHE logo hide-for-small-only" alt="IHE logo" />
+            <ul id="tf-small-menu" class="menu vertical show-for-small-only">
+              <li><a class="ihe-purple" href="https://ihe.net" target="_blank">About IHE</a></li>
+              <li class="menu-text">Sections
+                <ul id="tf-small-menu-list" class="nested vertical menu">
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right hide-for-small-only">
+            <ul class="menu">
+              <li class="menu-text tf-version">IHE IT Infrastructure (ITI) Technical Framework, Volume <span id="volumeNo"></span><br />Revision 19.0, June 17, 2022 – Final Text</li>
+            </ul>
+              <ul class="menu align-right">
+                    <li><input id="ihe-search-field" type="search" placeholder="Search"></li>
+                    <li><button id="ihe-search-button" type="button" class="button search">Search</button></li>
+                </ul>
+            </div>
+        </div>
+         </header>
+    <div class="navigation">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+        </ul>
+      </nav>
+    </div>
+    <div class="scroll-top-wrapper">
+      <span class="scroll-top-inner">
+        <i class="size-icon-lg fi-arrow-up"></i>
+      </span>
+    </div>
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x align-center">
+        <div class="cell medium-11">
+          <div class="callout disclaimer warning text-center">              
+          The Final Text ITI Technical Framework is published here in HTML format and is no longer published as PDF. Trial Implementation supplements are available from the <a href=https://profiles.ihe.net/ITI/TF/Volume1/index.html>Volume 1 Table of Contents</a>.
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="grid-x grid-margin-x align-center">
+          <div class="hide-for-small-only cell medium-2 large-2" data-sticky-container>
+            <div id="section-menu" class="sticky" data-sticky data-anchor="main-top">
+            </div>
+          </div>
+          <div id="main-top" class="cell medium-10 large-10">
+      <h2 id="3.53">3.53 Document Metadata Notify [ITI-53]</h2>
+      <p>This section corresponds to transaction [ITI-53] of the IHE IT Infrastructure Technical Framework. Transaction [ITI-53] is used by the Document Metadata Notification Recipient and the Document Metadata Notification Broker Actors.</p>
+      <h3 id="3.53.1">3.53.1 Scope</h3>
+      <p>This transaction delivers a notification from the Document Metadata Notification Broker to the Document Metadata Notification Recipient about an event which matches an existing subscription.</p>
+      <h3 id="3.53.2">3.53.2 Use Case Roles</h3>
+      <p>
+        <span style="font-weight:bold">Actor:</span>
+        <span>Document Metadata Notification Broker</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">Role:</span>
+        <span>Sends notifications to subscribed Document Metadata Notification Recipients based on received Publish transactions</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">Actor:</span>
+        <span>Document Metadata Notification Recipient</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">Role:</span>
+        <span>Receives and processes notifications about events matching a set of filter expressions.</span>
+      </p>
+      <h3 id="3.53.3">3.53.3 Referenced Standards</h3>
+      <ul>
+        <li class="bullet-list1">
+          <a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsn">OASIS Web Services Notification Family of Standards</a>
+          <span />
+        </li>
+        <li class="bullet-list1">
+          <a href="http://docs.oasis-open.org/wsn/wsn-ws_base_notification-1.3-spec-os.pdf">WS-BaseNotification 1.3 OASIS Standard</a>
+          <span />
+        </li>
+        <li class="bullet-list1">
+          <a href="http://docs.oasis-open.org/wsn/wsn-ws_brokered_notification-1.3-spec-os.pdf">WS-BrokeredNotification 1.3 OASIS Standard</a>
+          <span />
+        </li>
+        <li class="bullet-list1">
+          <a href="http://docs.oasis-open.org/wsn/wsn-ws_topics-1.3-spec-os.pdf">WS-Topics 1.3 OASIS Standard</a>
+          <span />
+        </li>
+        <li class="bullet-list1">
+          <a href="../Volume2/ITI-43.html#3.43.4.2.2">ITI TF-2: 3.43.4.2.2</a>
+        </li>
+        <li class="bullet-list1">
+          <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+        </li>
+      </ul>
+      <h3 id="3.53.4">3.53.4 Messages</h3>
+      <div id="f3.53.4-1">
+        <img src="media/Figure_3.53.4-1.png" alt="DNotify_ID" />
+        <p class="figureTitle">Figure 3.53.4-1: Document Metadata Notify Sequence</p>
+      </div>
+      <h4 id="3.53.4.1">3.53.4.1 Notify Message</h4>
+      <h5 id="3.53.4.1.1">3.53.4.1.1 Trigger</h5>
+      <p>When an event occurs where the topics of the event match the filter requirements of one or more existing subscriptions, the Document Metadata Notification Broker will trigger a Notification message to the corresponding Document Metadata Notification Recipient. The description of matching subscriptions to events can be found in Section 3.52.5.2.</p>
+      <h5 id="3.53.4.1.2">3.53.4.1.2 Message Semantics</h5>
+      <p>
+        The Notify message shall comply with the requirements in the WS-BaseNotification standard. Note that the value of the WS-Addressing Action element is prescribed in the standard, and differs from the requirements of
+        <a href="../Volume2/ch-V.html#Appendix V">ITI TF-2: Appendix V</a>
+        .
+      </p>
+      <p>
+        <span>The Notify message convey in the</span>
+        <span style="font-style:italic">wsnt:Notify/wsnt:NotificationMessage/wsnt:Message</span>
+        <span>the event that matched with a subscription. Depending on the event which triggered the notification, there may be one or more Document Entry Objects, Folder Objects, or SubmissionSet Objects</span>
+        <span style="font-weight:bold" />
+        <span>whose metadata matches the filter conditions of any particular subscription. This transaction defines the following structures for conveying a Notify message:</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">A Full Notification</span>
+        <span>, which shall be sent if the subscription request included the topic ihe:FullDocumentEntry (see Section 3.52.5.1). In this case, the notification shall consist of parts of the payload of a Register Document Set-b Transaction as defined in Section 3.42.4.1. The</span>
+        <span style="font-style:italic">&lt;lcm:SubmitObjectsRequest&gt;</span>
+        <span>element is the only child of the</span>
+        <span style="font-weight:bold" />
+        <span style="font-style:italic">wsnt:Notify/wsnt:NotificationMessage/wsnt:Message</span>
+        <span>element in this message. The</span>
+        <span style="font-style:italic">&lt;rim:RegistryObjectList&gt;</span>
+        <span>element shall be the only child of the</span>
+        <span style="font-style:italic">&lt;lcm:SubmitObjectsRequest&gt;</span>
+        <span>element. Only</span>
+        <span style="font-style:italic">&lt;rim:ExtrinsicObject&gt;</span>
+        <span>elements representing Document Entries shall be sent within the</span>
+        <span style="font-style:italic">&lt;rim:RegistryObjectList&gt;</span>
+        <span>element.</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">A Minimal Notification</span>
+        <span>, which shall be sent if the subscription request included the topic ihe:MinimalDocumentEntry. In this case, the notification shall consist of parts of the payload of a Register Document Set-b transaction as defined in Section 3.42.4.1. The</span>
+        <span style="font-style:italic">&lt;lcm:SubmitObjectsRequest&gt;</span>
+        <span>element is the only child of the</span>
+        <span style="font-style:italic">wsnt:Notify/wsnt:NotificationMessage/wsnt:Message</span>
+        <span>element in this message. The</span>
+        <span style="font-style:italic">&lt;rim:RegistryObjectList&gt;</span>
+        <span>element shall be the only child of the</span>
+        <span style="font-style:italic">&lt;lcm:SubmitObjectsRequest&gt;</span>
+        <span>element. Only</span>
+        <span style="font-style:italic">&lt;rim:ObjectRef&gt;</span>
+        <span>elements representing Document Entries shall be sent within the</span>
+        <span style="font-style:italic">&lt;rim:RegistryObjectList&gt;</span>
+        <span>element.</span>
+      </p>
+      <p>
+        <span style="font-weight:bold">A submissionSet Notification</span>
+        <span>, which shall be sent if the subscription request included the topic ihe:SubmissionSetMetadata. In this case the response consists of parts of the payload of a Register Document Set-b Transaction as defined in Section 3.42.4.1. The</span>
+        <span style="font-style:italic">&lt;lcm:SubmitObjectsRequest&gt;</span>
+        <span>element is the only child of the</span>
+        <span style="font-style:italic">wsnt:Notify/wsnt:NotificationMessage/wsnt:Message</span>
+        <span>element in this message. The</span>
+        <span style="font-style:italic">&lt;rim:RegistryObjectList&gt;</span>
+        <span>element shall be the only child of the</span>
+        <span style="font-style:italic">&lt;lcm:SubmitObjectsRequest&gt;</span>
+        <span>element. Only one</span>
+        <span style="font-style:italic">&lt;rim:RegistryPackage&gt;</span>
+        <span>element representing the submissionSet object shall be sent within the</span>
+        <span style="font-style:italic">&lt;rim:RegistryObjectList&gt;</span>
+        <span>element and shall be characterized by classification scheme: classificationScheme="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd" (that represents an object of submissionSet type).</span>
+      </p>
+      <p>
+        <span>There shall be a single</span>
+        <span style="font-style:italic">wsnt:Notify/wsnt:NotificationMessage/wsnt:Message</span>
+        <span>element in this transaction. If multiple objects need to be represented in a single notification, the WS-BaseNotification standard allows this to be done.</span>
+      </p>
+      <h5 id="3.53.4.1.3">3.53.4.1.3 Expected Actions</h5>
+      <p>The Document Metadata Notification Recipient shall accept the Notify message. The Notify message shall be processed according to the configuration and business logic of the actor. Possibilities include conveying the notification information to other systems and/or users.</p>
+      <p>The Document Metadata Notification Broker may send the filter conditions of the subscription, and/or the address (either a logical identifier or a service address url) of the Notification Broker that produces the notification. Both of these alternatives increase certain security risks, their use should be determined by local policy for security and confidentiality.</p>
+      <h5 id="3.53.4.1.4">3.53.4.1.4 Examples</h5>
+      <h6 id="3.53.4.1.4.1">3.53.4.1.4.1 Full Notification Example (ihe:FullDocumentEntry)</h6>
+      <div style="border:0.75pt solid #000000; clear:both">
+        <p style="font-size:8pt">
+          <span>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>&lt;s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:a="http://www.w3.org/2005/08/addressing"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2005/08/addressing http://www.w3.org/2005/08/addressing/ws-addr.xsd http://docs.oasis-open.org/wsn/b-2 http://docs.oasis-open.org/wsn/b-2.xsd  urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0 ../schema/ebRS/rim.xsd" urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0 ../schema/ebRS/lcm.xsd"&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;s:Header&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;a:Action&gt;http://docs.oasis-open.org/wsn/bw-2/NotificationConsumer/Notify&lt;/a:Action&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;a:MessageID&gt;382dcdca-8e87-9fdf-8446-48fd83bca93b&lt;/a:MessageID&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;a:To&gt;https://NotificationRecipientServer/xdsBnotification&lt;/a:To&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;/s:Header&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;s:Body&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;wsnt:Notify&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>            &lt;wsnt:NotificationMessage&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:SubscriptionReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                    &lt;a:Address&gt;https://NotificationBrokerServer/Subscription/382dcdc7-8e84-9fdc-8443-48fd83bca938&lt;/a:Address&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;/wsnt:SubscriptionReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:Topic Dialect="http://docs.oasis-open.org/wsn/t-1/TopicExpression/Simple"&gt;ihe:FullDocumentEntry&lt;/wsnt:Topic&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:ProducerReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                    &lt;a:Address&gt;https://ProducerReference&lt;/a:Address&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;/wsnt:ProducerReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:Message&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                    &lt;lcm:SubmitObjectsRequest&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                        &lt;rim:RegistryObjectList&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                            &lt;rim:ExtrinsicObject id="Document01" mimeType="text/xml" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>...</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                &lt;rim:Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4" classifiedObject="Document01" nodeRepresentation="44950"&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                    &lt;rim:Name&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                        &lt;rim:LocalizedString value="Appendectomy"/&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                    &lt;/rim:Name&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                    &lt;rim:Slot name="codingScheme"&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                        &lt;rim:ValueList&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                            &lt;rim:Value&gt;CPT codes&lt;/rim:Value&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                        &lt;/rim:ValueList&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                    &lt;/rim:Slot&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                &lt;/rim:Classification&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>...</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                &lt;rim:ExternalIdentifier id="ei01" registryObject="Document01" identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427" value="'st3498702^^^&amp;amp;1.3.6.1.4.1.21367.2005.3.7&amp;amp;ISO'"&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span style="width:45.8pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:45.8pt"> </span>
+          <span>                           &lt;rim:Name&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                        &lt;rim:LocalizedString value="XDSDocumentEntry.patientId"/&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                    &lt;/rim:Name&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                                &lt;/rim:ExternalIdentifier&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>...</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                            &lt;rim:ExtrinsicObject&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                        &lt;/rim:RegistryObjectList&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                    &lt;/lcm:SubmitObjectsRequest&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;/wsnt:Message&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>            &lt;/wsnt:NotificationMessage&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;/wsnt:Notify&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;/s:Body&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>&lt;/s:Envelope&gt;</span>
+        </p>
+      </div>
+      <h6 id="3.53.4.1.4.2">3.53.4.1.4.2 Minimal Notification Example (ihe:MinimalDocumentEntry)</h6>
+      <div style="border:0.75pt solid #000000; clear:both">
+        <p style="font-size:8pt">
+          <span>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>&lt;s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:a="http://www.w3.org/2005/08/addressing"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:xds="urn:ihe:iti:xds-b:2007"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2005/08/addressing http://www.w3.org/2005/08/addressing/ws-addr.xsd http://docs.oasis-open.org/wsn/b-2 http://docs.oasis-open.org/wsn/b-2.xsd urn:ihe:iti:xds-b:2007 ../../schema/IHE/XDS.b_DocumentRepository.xsd urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0 ../../schema/ebRS/rim.xsd"&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;s:Header&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;a:Action&gt;http://docs.oasis-open.org/wsn/bw-2/NotificationConsumer/Notify&lt;/a:Action&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;a:MessageID&gt;382dcdca-8e87-9fdf-8446-48fd83bca93b&lt;/a:MessageID&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;a:To&gt;https://NotificationRecipientServer/xdsBnotification&lt;/a:To&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;/s:Header&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;s:Body&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;wsnt:Notify&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>            &lt;wsnt:NotificationMessage&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:SubscriptionReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                    &lt;a:Address&gt;https://NotificationBrokerServer/Subscription/382dcdc7-8e84-9fdc-8443-48fd83bca938&lt;/a:Address&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;/wsnt:SubscriptionReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:Topic Dialect="http://docs.oasis-open.org/wsn/t-1/TopicExpression/Simple"&gt;ihe:MinimalDocumentEntry&lt;/wsnt:Topic&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:ProducerReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                    &lt;a:Address&gt;https://ProducerReference&lt;/a:Address&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;/wsnt:ProducerReference&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;wsnt:Message&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                  &lt;lcm:SubmitObjectsRequest&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                      &lt;rim:RegistryObjectList&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span style="width:45.8pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:45.8pt"> </span>
+          <span style="width:45.8pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:91.6pt"> </span>
+          <span>       &lt;rim:ObjectRef id="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d" /&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span style="width:45.8pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:45.8pt"> </span>
+          <span style="width:45.8pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:91.6pt"> </span>
+          <span>   &lt;/rim:RegistryObjectList&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span style="width:45.8pt;display:inline-block;-aw-tabstop-align:left;-aw-tabstop-pos:45.8pt"> </span>
+          <span>         &lt;/lcm:SubmitObjectsRequest&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>                &lt;/wsnt:Message&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>            &lt;/wsnt:NotificationMessage&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>        &lt;/wsnt:Notify&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>    &lt;/s:Body&gt;</span>
+        </p>
+        <p style="font-size:8pt">
+          <span>&lt;/s:Envelope&gt;</span>
+        </p>
+      </div>
+      <h6 id="3.53.4.1.4.3">3.53.4.1.4.3 SubmissionSet Notification Example (ihe:SubmissionSetMetadata)</h6>
+      <p style="font-size:8pt">
+        <span>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+        <br />
+        <span>&lt;s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"</span>
+        <br />
+        <span>    xmlns:a="http://www.w3.org/2005/08/addressing"</span>
+        <br />
+        <span>    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</span>
+        <br />
+        <span>    xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"</span>
+        <br />
+        <span>    xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"</span>
+        <br />
+        <span>    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"</span>
+        <br />
+        <span>    xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2003/05/soap-envelope http://www.w3.org/2005/08/addressing http://www.w3.org/2005/08/addressing/ws-addr.xsd http://docs.oasis-open.org/wsn/b-2 http://docs.oasis-open.org/wsn/b-2.xsd  urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0 ../schema/ebRS/rim.xsd" urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0 ../schema/ebRS/lcm.xsd"&gt;</span>
+        <br />
+        <span>    &lt;s:Header&gt;</span>
+        <br />
+        <span>        &lt;a:Action&gt;http://docs.oasis-open.org/wsn/bw-2/NotificationConsumer/Notify&lt;/a:Action&gt;</span>
+        <br />
+        <span>        &lt;a:MessageID&gt;382dcdca-8e87-9fdf-8446-48fd83bca93b&lt;/a:MessageID&gt;</span>
+        <br />
+        <span>        &lt;a:To&gt;https://NotificationRecipientServer/xdsBnotification&lt;/a:To&gt;</span>
+        <br />
+        <span>    &lt;/s:Header&gt;</span>
+        <br />
+        <span>    &lt;s:Body&gt;</span>
+        <br />
+        <span>        &lt;wsnt:Notify&gt;</span>
+        <br />
+        <span>            &lt;wsnt:NotificationMessage&gt;</span>
+        <br />
+        <span>                &lt;wsnt:SubscriptionReference&gt;</span>
+        <br />
+        <span>                    &lt;a:Address&gt;https://NotificationBrokerServer/Subscription/382dcdc7-8e84-9fdc-8443-48fd83bca938&lt;/a:Address&gt;</span>
+        <br />
+        <span>                &lt;/wsnt:SubscriptionReference&gt;</span>
+        <br />
+        <span>                &lt;wsnt:Topic Dialect="http://docs.oasis-open.org/wsn/t-1/TopicExpression/Simple"</span>
+        <br />
+        <span>                    &gt;ihe:SubmissionSetMetadata&lt;/wsnt:Topic&gt;</span>
+        <br />
+        <span>                &lt;wsnt:ProducerReference&gt;</span>
+        <br />
+        <span>                    &lt;a:Address&gt;https://ProducerReference&lt;/a:Address&gt;</span>
+        <br />
+        <span>                &lt;/wsnt:ProducerReference&gt;</span>
+        <br />
+        <span>                &lt;wsnt:Message&gt;</span>
+        <br />
+        <span>                    &lt;lcm:SubmitObjectsRequest</span>
+        <br />
+        <span>                        xsi:schemaLocation="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0 ../../schema/ebRS/lcm.xsd"</span>
+        <br />
+        <span>                        xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"</span>
+        <br />
+        <span>                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</span>
+        <br />
+        <span>                        xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"</span>
+        <br />
+        <span>                        xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"&gt;</span>
+        <br />
+        <span>                        &lt;rim:RegistryObjectList&gt;</span>
+        <br />
+        <span>                            &lt;rim:RegistryPackage id="SubmissionSet01"&gt;</span>
+        <br />
+        <span>                               </span>
+        <br />
+        <span>                                &lt;!-- here all the SubmissionSet metadata --&gt;</span>
+        <br />
+        <span>                                   </span>
+        <br />
+        <span>                            &lt;/rim:RegistryPackage&gt;</span>
+        <br />
+        <span>                            &lt;rim:Classification id="cl10" classifiedObject="SubmissionSet01"</span>
+        <br />
+        <span>                                classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"/&gt;</span>
+        <br />
+        <span>                        &lt;/rim:RegistryObjectList&gt;</span>
+        <br />
+        <span>                    &lt;/lcm:SubmitObjectsRequest&gt;</span>
+        <br />
+        <span>                &lt;/wsnt:Message&gt;</span>
+        <br />
+        <span>            &lt;/wsnt:NotificationMessage&gt;</span>
+        <br />
+        <span>        &lt;/wsnt:Notify&gt;</span>
+        <br />
+        <span>    &lt;/s:Body&gt;</span>
+        <br />
+        <span>&lt;/s:Envelope&gt;</span>
+      </p>
+      <h3 id="3.53.5">3.53.5 Security Considerations</h3>
+      <p>
+        <span>The risk assessment for the Document Metadata Notify transaction is described in the risk assessment spreadsheet for the Document Metadata Subscription Profile, which is available from IHE at</span>
+        <a href="http://wiki.ihe.net/images/4/46/DSUB_risk_assesment.xls">http://wiki.ihe.net/images/4/46/DSUB_risk_assesment.xls</a>
+        <span>. The derived mitigations are as follows:</span>
+      </p>
+      <p>Document Metadata Notification Broker and Document Metadata Notification Recipients shall be grouped with a Secure Node or Secure Application in the Audit Trail and Node Authentication (ATNA) Profile.</p>
+      <p>The use of encrypted TLS is recommended when the transmission is not otherwise secured (e.g., transmission over a secure network)</p>
+      <p>
+        Additionally, it is recommended that the Document Metadata Notify transaction be associated with a SAML assertion outlining authorizations to the notification content so that the Document Metadata Notification Recipient will be able to enforce these authorizations (for example, see the Cross-Enterprise User Assertion (XUA) Profile
+        <a href="../Volume1/ch-13.html#13">ITI TF-1:13</a>
+        ). This recommendation is highly dependent on an XDS Affinity Domain managing roles for its users correctly as most of the authorizations will be based on roles.
+      </p>
+      <h4 id="3.53.5.1">3.53.5.1 Audit Record Considerations</h4>
+      <p>The Document Metadata Notify transaction is an Export event, as defined in ITI TF-2: Table 3.20.4.1.1.1-1. The actors involved in the transaction shall create audit data in conformance with DICOM Part 15 “Data Export”/”Data Import”, with the following exceptions.</p>
+      <h5 id="3.53.5.1.1">3.53.5.1.1 Document Metadata Notification Recipient audit message:</h5>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <div />
+          </td>
+          <td>Field Name</td>
+          <td>Opt</td>
+          <td>Value Constraints</td>
+        </tr>
+        <tr>
+          <td rowspan="5">
+            <p>Event</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">EventIdentification</span>
+            </p>
+          </td>
+          <td>EventID</td>
+          <td>M</td>
+          <td>EV(110107, DCM, “Import”)</td>
+        </tr>
+        <tr>
+          <td>EventActionCode</td>
+          <td>M</td>
+          <td>“C” (Create)</td>
+        </tr>
+        <tr>
+          <td>EventDateTime</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventOutcomeIndicator</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-53”, “IHE Transactions”, “Document Metadata Notify”)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Source (Document Metadata Notification Broker) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Destination (Document Metadata Notification Recipient) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Human Requestor (0..n)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Audit Source (Document Metadata Notification Recipient) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Patient (0..1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">DocumentEntry/SubmissionSet (1..n)</td>
+        </tr>
+      </table>
+      <p>Where:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>When WS-Addressing is used: &lt;From/&gt;</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110153, DCM, “Source”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Destination</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>the process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110152, DCM, “Destination”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Human Requestor (if known)</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>Identity of the human that initiated the transaction.</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>U</td>
+          <td>Access Control role(s) the user holds that allows this transaction.</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="3">
+            <p>Audit Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">AuditSourceIdentification</span>
+            </p>
+          </td>
+          <td>AuditSourceID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditEnterpriseSiteID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditSourceTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>Patient</p>
+            <p>(if-known)</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“1” (Person)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“1” (Patient)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The patient ID in HL7 CX format.</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>DocumentEntry</p>
+            <p>SubmissionSet</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“2” (system object)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“3” (report)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>
+            <p>The Document Metadata Notification Recipient shall include one of the following values, depending on the specific object in the message:</p>
+            <p>EV("urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1”, “IHE XDS Metadata”, “document entry object type”)</p>
+            <p>EV(“urn:uuid:34268e47-fdf5-41a6-ba33-82133c465248”, “IHE XDS Metadata”, “on-demand document entry object type”)</p>
+            <p>EV(“urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd”, “IHE XDS Metadata”, ”submission set classification node”)</p>
+            <p>If the specific object type cannot be determined the Document Metadata Notification Recipient shall use: EV(“urn:ihe:iti:2017:ObjectRef”, “IHE XDS Metadata”, “registry object reference”)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The value of the object's EntryUUID attribute.</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>C</td>
+          <td>
+            <p>This element is required, if known:</p>
+            <p>Type: “urn:ihe:iti:xca:2010:homeCommunityId” (literal string)</p>
+            <p>Value: value of the homeCommunityId</p>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <a name="_Toc363803068"> </a>
+      </p>
+      <h5 id="3.53.5.1.2">3.53.5.1.2 Document Metadata Notification Broker audit message:</h5>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <div />
+          </td>
+          <td>Field Name</td>
+          <td>Opt</td>
+          <td>Value Constraints</td>
+        </tr>
+        <tr>
+          <td rowspan="5">
+            <p>Event</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">EventIdentification</span>
+            </p>
+          </td>
+          <td>EventID</td>
+          <td>M</td>
+          <td>EV(110106, DCM, “Export”)</td>
+        </tr>
+        <tr>
+          <td>EventActionCode</td>
+          <td>M</td>
+          <td>“R” (Read)</td>
+        </tr>
+        <tr>
+          <td>EventDateTime</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventOutcomeIndicator</td>
+          <td>M</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>EventTypeCode</td>
+          <td>M</td>
+          <td>EV(“ITI-53”, “IHE Transactions”, “Document Metadata Notify”)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Source (Document Metadata Notification Broker) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Destination (Document Metadata Notification Recipient) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">Audit Source (Document Metadata Notification Broker) (1)</td>
+        </tr>
+        <tr>
+          <td colspan="4">DocumentEntry/SubmissionSet (1..n)</td>
+        </tr>
+      </table>
+      <p>Where:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>M</td>
+          <td>When WS-Addressing is used: &lt;From/&gt;</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>M</td>
+          <td>the process ID as used within the local operating system in the local system logs.</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110153, DCM, “Source”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="7">
+            <p>Destination</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ActiveParticipant</span>
+            </p>
+          </td>
+          <td>UserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AlternativeUserID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>UserIsRequestor</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>RoleIDCode</td>
+          <td>M</td>
+          <td>EV(110152, DCM, “Destination”)</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointTypeCode</td>
+          <td>M</td>
+          <td>“1” for machine (DNS) name, “2” for IP address</td>
+        </tr>
+        <tr>
+          <td>NetworkAccessPointID</td>
+          <td>M</td>
+          <td>The machine name or IP address</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="3">
+            <p>Audit Source</p>
+            <p>
+              <span style="font-weight:bold">AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">AuditSourceIdentification</span>
+            </p>
+          </td>
+          <td>AuditSourceID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditEnterpriseSiteID</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>AuditSourceTypeCode</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9">
+            <p>DocumentEntry SubmissionSet</p>
+            <p>
+              <span style="font-weight:bold">(AuditMessage/</span>
+              <br />
+              <span style="font-weight:bold">ParticipantObjectIdentification)</span>
+            </p>
+          </td>
+          <td>ParticipantObjectTypeCode</td>
+          <td>M</td>
+          <td>“2” (system object)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectTypeCodeRole</td>
+          <td>M</td>
+          <td>“3” (report)</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDataLifeCycle</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectIDTypeCode</td>
+          <td>M</td>
+          <td>
+            <p>The Document Metadata Notification Broker shall include one of the following values, depending on the specific object in the message:</p>
+            <p>EV("urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1”, “IHE XDS Metadata”, “document entry object type”)</p>
+            <p>EV(“urn:uuid:34268e47-fdf5-41a6-ba33-82133c465248”, “IHE XDS Metadata”, “on-demand document entry object type”)</p>
+            <p>EV(urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd”, “IHE XDS Metadata”, ”submission set classification node”)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectSensitivity</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectID</td>
+          <td>M</td>
+          <td>The value of the object's EntryUUID attribute.</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectName</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectQuery</td>
+          <td>U</td>
+          <td>not specialized</td>
+        </tr>
+        <tr>
+          <td>ParticipantObjectDetail</td>
+          <td>C</td>
+          <td>
+            <p>This element is required, if known:</p>
+            <p>Type: “urn:ihe:iti:xca:2010:homeCommunityId” (literal string)</p>
+            <p>Value: value of the homeCommunityId</p>
+          </td>
+        </tr>
+      </table>
+          </div>
+        </div>
+      </main>
+    </div>
+   <footer class="ihe-footer">
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x align-middle">
+        <div class="cell medium-9 small-order-2 medium-order-1 text-center medium-text-left">
+          © 2000 &mdash; <span id="current-year"></span> IHE International | TEL 1-630-481-1004 | 820&nbsp;Jorie&nbsp;Boulevard,
+          Oak&nbsp;Brook, IL&nbsp;60523
+        </div>
+        <div class="cell medium-3 small-order-1 medium-order-2 text-center medium-text-right ihe-footer-icons">
+          <a href="mailto:secretary@ihe.net"><i class="fi fi-mail"></i></a>
+          <a href="https://www.linkedin.com/company/iheintl"><i class="fi fi-social-linkedin"></i></a>
+          <a href="https://twitter.com/IHEIntl"><i class="fi fi-social-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/user/IHEIntl"><i class="fi fi-social-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="../../../js/vendor/jquery.min.js"></script>
+    <script src="../../../js/vendor/motion-ui.min.js"></script>
+    <script src="../../../js/vendor/what-input.js"></script>
+    <script src="../../../js/vendor/foundation.min.js"></script>
+    <script src="../../../js/app.js"></script>
+  	<script>
+	 window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-HLBNC861DJ');
+	</script>
+</body>
+</html>

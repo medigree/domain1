@@ -1,0 +1,6 @@
+{
+  "version": "4.0.1",
+  "fhirVersion": "[4.0.1]",
+  "date": "20210604160337",
+  "name": "ihe.mhd.fhir"
+}
