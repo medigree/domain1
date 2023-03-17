@@ -1,4 +1,4 @@
-FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (12 hours old)
+FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (14 hours old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on amd64 (64bit). 1736MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -go-publish -source core -web /__w/domain1/domain1/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates /__w/domain1/domain1/webroot/templates
@@ -10,74 +10,415 @@ Relative directory for IG is '/fhir-testing'
 All checks passed. Do the publication build from /__w/domain1/domain1/core and publish to /tmp/web-root/run-20230317/fhir-testing
 Prepare Build space in /tmp/medigree.fhir.fhir-testing#1.0.0
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.fhir-testing#1.0.0)
-FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (12 hours old)
+FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (14 hours old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1736MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.fhir-testing#1.0.0 -resetTx -publish http://medigree.net/fhir/fhir-testing/1.0.0 -no-exit
-Start Clock @ Friday, March 17, 2023 at 9:01:37 AM Coordinated Universal Time (2023-03-17T09:01:37Z)
+Start Clock @ Friday, March 17, 2023 at 11:12:16 AM Coordinated Universal Time (2023-03-17T11:12:16Z)
 
-Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0                         (00:00.010)
-Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.014)
-API keys loaded from /root/fhir-api-keys.ini                                     (00:00.017)
-Package Cache: /root/.fhir/packages                                              (00:00.022)
-Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0                               (00:00.030)
-Sushi: error: unknown option '--require-latest'                                  (00:00.438)
-Sushi couldn't be run. Complete output from running Sushi :                      (00:00.445)
-Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.446)
-Exception: Process exited with an error: 1 (Exit value: 1)                       (00:00.448)
-Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)       (00:00.450)
-                                                                                 (00:00.451)
-Use -? to get command line help                                                  (00:00.451)
-                                                                                 (00:00.452)
-Stack Dump (for debugging):                                                      (00:00.453)
-org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
-	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
-	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
-	at org.hl7.fhir.igtools.publisher.Publisher.runFsh(Publisher.java:2372)
-	at org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:2240)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:900)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10990)
-	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:748)
-	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:394)
-	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:311)
-	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:112)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10749)
+Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0                         (00:00.009)
+Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.012)
+API keys loaded from /root/fhir-api-keys.ini                                     (00:00.015)
+Package Cache: /root/.fhir/packages                                              (00:00.019)
+Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0                               (00:00.064)
+Sushi: info  Running SUSHI v2.9.0 (implements FHIR Shorthand specification v2.0.0) (00:10.175)
+Sushi: info  Arguments:                                                          (00:10.177)
+Sushi: info    --require-latest                                                  (00:10.179)
+Sushi: info    --out /tmp/medigree.fhir.fhir-testing#1.0.0                       (00:10.180)
+Sushi: info    /tmp/medigree.fhir.fhir-testing#1.0.0                             (00:10.181)
+Sushi: info  Using configuration file: /tmp/medigree.fhir.fhir-testing#1.0.0/sushi-config.yaml (00:10.631)
+Sushi: info  Importing FSH text...                                               (00:10.642)
+Sushi: info  Preprocessed 6 documents with 0 aliases.                            (00:10.718)
+Sushi: info  Imported 1 definitions and 2 instances.                             (00:10.724)
+Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:10.727)
+Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:10.735)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:11.150)
+Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:11.655)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:12.168)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:12.169)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:12.171)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:12.592)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:12.593)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:12.649)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:12.661)
+Sushi: info  Converted 1 FHIR StructureDefinitions.                              (00:12.692)
+Sushi: info  Converted 2 FHIR instances.                                         (00:12.830)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:12.832)
+Sushi: info  Exported 2 FHIR resources as JSON.                                  (00:12.840)
+Sushi: info  Assembling Implementation Guide sources...                          (00:12.841)
+Sushi: info  Generated ImplementationGuide-medigree.fhir.fhir-testing.json       (00:12.845)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:12.846)
+Sushi:                                                                           (00:12.847)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:12.848)
+Sushi: |  -------------------------------------------------------------  |       (00:12.849)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:12.850)
+Sushi: | |-------------------------------------------------------------| |       (00:12.868)
+Sushi: | |       1       |      0       |      0       |       0       | |       (00:12.870)
+Sushi: |  -------------------------------------------------------------  |       (00:12.871)
+Sushi: |  -------------------------------------------------------------  |       (00:12.872)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:12.873)
+Sushi: | |-------------------------------------------------------------| |       (00:12.874)
+Sushi: | |         0          |         0         |         2          | |       (00:12.876)
+Sushi: |  -------------------------------------------------------------  |       (00:12.877)
+Sushi: |                                                                 |       (00:12.877)
+Sushi: ===================================================================       (00:12.878)
+Sushi: | Tank you very much!                    0 Errors      0 Warnings |       (00:12.879)
+Sushi: ===================================================================       (00:12.880)
+Sushi:                                                                           (00:12.883)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:14.653)
+Load Template from #local-template                                               (00:15.318)
+ Load Template from openhie.fhir.template#current                                (00:15.322)
+  Load Template from fhir.base.template#current                                  (00:16.116)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onLoad-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /tmp/medigree.fhir.fhir-testing#1.0.0                            (00:18.737)
+Core Package hl7.fhir.r4.core#4.0.1
+.Can't find BackboneElement profile http://hl7.org/fhir/StructureDefinition/document-section-library but trying to go on
+Can't find BackboneElement profile http://hl7.org/fhir/StructureDefinition/document-section-library but trying to go on
+Can't find BackboneElement profile http://hl7.org/fhir/StructureDefinition/document-section-library but trying to go on
+:Terminology Cache is at /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/txcache. Clearing now (00:22.890)
+Connect to Terminology Server at http://tx.fhir.org                              (00:22.892)
+Load Package hl7.fhir.pubpack#0.1.4
+Load Package hl7.fhir.xver-extensions#0.0.12
+Load Package hl7.terminology.r4#5.0.0
+Load Package hl7.fhir.uv.tools#current
+Load R5 Extensions - 146 resources (00:31.521)
+Initialization complete                                                          (00:31.606)
+Fetch http://medigree.net/fhir/fhir-testing/package-list.json for version check  (00:31.609)
+Load Content                                                                     (00:31.954)
+loadPrePages from FetchedFile[/tmp/medigree.fhir.fhir-testing#1.0.0/input/includes] as /tmp/medigree.fhir.fhir-testing#1.0.0/input/includes
+loadPrePages from FetchedFile[/tmp/medigree.fhir.fhir-testing#1.0.0/input/pagecontent] as /tmp/medigree.fhir.fhir-testing#1.0.0/input/pagecontent
+Processing Conformance Resources                                                 (00:32.169)
+Generating Snapshots                                                             (00:32.320)
+Propagating status                                                               (00:32.657)
+Generating Narratives                                                            (00:32.660)
+Validating Conformance Resources                                                 (00:33.186)
+Validating Resources                                                             (00:34.809)
+Processing Provenance Records                                                    (00:34.811)
+Generating Outputs in /tmp/medigree.fhir.fhir-testing#1.0.0/output               (00:34.812)
+Run Template                                                                     (00:35.081)
+
+onGenerate.checkVersions:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/template/versions.txt
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 19 files to /tmp/medigree.fhir.fhir-testing#1.0.0/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-working.1.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-updated.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0/template/onGenerate-ig-updated.xml to /tmp/medigree.fhir.fhir-testing#1.0.0/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                    (00:35.897)
+Generating Summary Outputs                                                       (00:38.836)
+Warning @ Unable to read the git branch: error: unknown option `show-current'usage: git branch [<options>] [-r | -a] [--merged | --no-merged]   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]   or: git branch [<options>] [-r] (-d | -D) <branch-name>...   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>   or: git branch [<options>] [-r | -a] [--points-at]   or: git branch [<options>] [-r | -a] [--format]Generic options    -v, --verbose         show hash and subject, give twice for upstream branch    -q, --quiet           suppress informational messages    -t, --track           set up tracking mode (see git-pull(1))    -u, --set-upstream-to <upstream>                          change the upstream info    --unset-upstream      Unset the upstream info    --color[=<when>]      use colored output    -r, --remotes         act on remote-tracking branches    --contains <commit>   print only branches that contain the commit    --no-contains <commit>                          print only branches that don't contain the commit    --abbrev[=<n>]        use <n> digits to display SHA-1sSpecific git-branch actions:    -a, --all             list both remote-tracking and local branches    -d, --delete          delete fully merged branch    -D                    delete branch (even if not merged)    -m, --move            move/rename a branch and its reflog    -M                    move/rename a branch, even if target exists    -c, --copy            copy a branch and its reflog    -C                    copy a branch, even if target exists    -l, --list            list branch names    --create-reflog       create the branch's reflog    --edit-description    edit the description for the branch    -f, --force           force creation, move/rename, deletion    --merged <commit>     print only branches that are merged    --no-merged <commit>  print only branches that are not merged    --column[=<style>]    list branches in columns    --sort <key>          field name to sort on    --points-at <object>  print only branches of the object    -i, --ignore-case     sorting and filtering are case insensitive    --format <format>     format to use for the output
+Sending Usage Stats to Server                                                    (00:40.808)
+## Memory (MB): Use = 719, Free = 681, Total = 1401, Max =1736
+Reclaiming memory...
+## Memory (MB): Use = 210, Free = 499, Total = 710, Max =1736
+Run jekyll: jekyll build --destination "/tmp/medigree.fhir.fhir-testing#1.0.0/output" (in folder /tmp/medigree.fhir.fhir-testing#1.0.0/temp/pages) (00:41.155)
+Jekyll: Source: /tmp/medigree.fhir.fhir-testing#1.0.0/temp/pages                 (00:41.557)
+Jekyll: Generating...                                                            (00:41.559)
+Jekyll: done in 0.351 seconds.                                                   (00:41.908)
+Installing medigree.fhir.fhir-testing#1.0.0 to the package cache
+  Fetching:
+
+  Installing:  done.
+Checking Output HTML                                                             (00:42.885)
+found 563 files                                                                  (00:42.889)
+........................................
+........................................
+  ... 563 html files, 0 pages invalid xhtml (0%)                                 (00:45.050)
+  ... 11719 links, 0 broken links (0%)                                           (00:45.051)
+Build final .zip                                                                 (00:45.052)
+Final .zip built                                                                 (00:45.407)
+Built. Times: loading: 00:00.213, generate: 00:13.899, narrative generation: 00:00.525, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.765, validation: 00:01.611 (#3), template: 00:00.814 (#3) (00:46.072)
+Validation output in /tmp/medigree.fhir.fhir-testing#1.0.0/output/qa.html
+Errors: 6, Warnings: 9, Info: 1, Broken Links: 0 (00:46.193)
+Finished                                                                         (00:46.195)
+Done                                                                             (00:46.196)
 Prepare Build space in /tmp/medigree.fhir.fhir-testing#1.0.0-milestone
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.fhir-testing#1.0.0-milestone) (milestone build)
-FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (12 hours old)
+FHIR IG Publisher Version 1.2.51 (Git# a8de0c347299). Built 2023-03-16T20:23:25.447Z (14 hours old)
 Detected Java version: 11.0.12 from /usr/local/openjdk-11 on Linux/amd64 (64bit). 1736MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.fhir-testing#1.0.0-milestone -publish http://medigree.net/fhir/fhir-testing/1.0.0 -milestone -no-exit
-Start Clock @ Friday, March 17, 2023 at 9:01:39 AM Coordinated Universal Time (2023-03-17T09:01:39Z)
+Start Clock @ Friday, March 17, 2023 at 11:13:04 AM Coordinated Universal Time (2023-03-17T11:13:04Z)
 
-Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0-milestone               (00:00.004)
-Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.004)
-API keys loaded from /root/fhir-api-keys.ini                                     (00:00.010)
-Package Cache: /root/.fhir/packages                                              (00:00.011)
-Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0-milestone                     (00:00.012)
-Sushi: error: unknown option '--require-latest'                                  (00:00.392)
-Sushi couldn't be run. Complete output from running Sushi :                      (00:00.396)
-Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.398)
-Exception: Process exited with an error: 1 (Exit value: 1)                       (00:00.400)
-Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)       (00:00.400)
-                                                                                 (00:00.401)
-Use -? to get command line help                                                  (00:00.402)
-                                                                                 (00:00.403)
-Stack Dump (for debugging):                                                      (00:00.403)
-org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
-	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
-	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
-	at org.hl7.fhir.igtools.publisher.Publisher.runFsh(Publisher.java:2372)
-	at org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:2240)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:900)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10990)
-	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:748)
-	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:399)
-	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:311)
-	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:112)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10749)
+Build FHIR IG from /tmp/medigree.fhir.fhir-testing#1.0.0-milestone               (00:00.002)
+Build Formal Publication package, intended for http://medigree.net/fhir/fhir-testing/1.0.0 (00:00.002)
+API keys loaded from /root/fhir-api-keys.ini                                     (00:00.004)
+Package Cache: /root/.fhir/packages                                              (00:00.005)
+Run Sushi on /tmp/medigree.fhir.fhir-testing#1.0.0-milestone                     (00:00.007)
+Sushi: info  Running SUSHI v2.9.0 (implements FHIR Shorthand specification v2.0.0) (00:09.403)
+Sushi: info  Arguments:                                                          (00:09.408)
+Sushi: info    --require-latest                                                  (00:09.409)
+Sushi: info    --out /tmp/medigree.fhir.fhir-testing#1.0.0-milestone             (00:09.410)
+Sushi: info    /tmp/medigree.fhir.fhir-testing#1.0.0-milestone                   (00:09.410)
+Sushi: info  Using configuration file: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/sushi-config.yaml (00:09.953)
+Sushi: info  Importing FSH text...                                               (00:09.964)
+Sushi: info  Preprocessed 6 documents with 0 aliases.                            (00:10.032)
+Sushi: info  Imported 1 definitions and 2 instances.                             (00:10.038)
+Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:10.039)
+Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:10.054)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:10.455)
+Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:10.936)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:11.410)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:11.411)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:11.412)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:11.820)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:11.822)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. (00:11.881)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:11.892)
+Sushi: info  Converted 1 FHIR StructureDefinitions.                              (00:11.928)
+Sushi: info  Converted 2 FHIR instances.                                         (00:12.087)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:12.088)
+Sushi: info  Exported 2 FHIR resources as JSON.                                  (00:12.098)
+Sushi: info  Assembling Implementation Guide sources...                          (00:12.099)
+Sushi: info  Generated ImplementationGuide-medigree.fhir.fhir-testing.json       (00:12.104)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:12.105)
+Sushi:                                                                           (00:12.106)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:12.106)
+Sushi: |  -------------------------------------------------------------  |       (00:12.107)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:12.108)
+Sushi: | |-------------------------------------------------------------| |       (00:12.108)
+Sushi: | |       1       |      0       |      0       |       0       | |       (00:12.109)
+Sushi: |  -------------------------------------------------------------  |       (00:12.110)
+Sushi: |  -------------------------------------------------------------  |       (00:12.111)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:12.111)
+Sushi: | |-------------------------------------------------------------| |       (00:12.112)
+Sushi: | |         0          |         0         |         2          | |       (00:12.113)
+Sushi: |  -------------------------------------------------------------  |       (00:12.113)
+Sushi: |                                                                 |       (00:12.120)
+Sushi: ===================================================================       (00:12.121)
+Sushi: | O-fish-ally error free!                0 Errors      0 Warnings |       (00:12.124)
+Sushi: ===================================================================       (00:12.125)
+Sushi:                                                                           (00:12.125)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:13.299)
+Load Template from #local-template                                               (00:13.321)
+ Load Template from openhie.fhir.template#current                                (00:13.323)
+  Load Template from fhir.base.template#current                                  (00:13.708)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onLoad-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone                  (00:15.380)
+Core Package hl7.fhir.r4.core#4.0.1
+.Can't find BackboneElement profile http://hl7.org/fhir/StructureDefinition/document-section-library but trying to go on
+Can't find BackboneElement profile http://hl7.org/fhir/StructureDefinition/document-section-library but trying to go on
+Can't find BackboneElement profile http://hl7.org/fhir/StructureDefinition/document-section-library but trying to go on
+:Terminology Cache is at /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/txcache. 3 files in cache (00:18.669)
+Connect to Terminology Server at http://tx.fhir.org                              (00:18.670)
+Load Package hl7.fhir.pubpack#0.1.4
+Load Package hl7.fhir.xver-extensions#0.0.12
+Load Package hl7.terminology.r4#5.0.0
+Load Package hl7.fhir.uv.tools#current
+Load R5 Extensions - 146 resources (00:27.564)
+Initialization complete                                                          (00:27.621)
+Fetch http://medigree.net/fhir/fhir-testing/package-list.json for version check  (00:27.623)
+Load Content                                                                     (00:27.956)
+loadPrePages from FetchedFile[/tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input/includes] as /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input/includes
+loadPrePages from FetchedFile[/tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input/pagecontent] as /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input/pagecontent
+Processing Conformance Resources                                                 (00:28.163)
+Generating Snapshots                                                             (00:28.327)
+Propagating status                                                               (00:28.765)
+Generating Narratives                                                            (00:28.772)
+Validating Conformance Resources                                                 (00:29.183)
+Validating Resources                                                             (00:31.042)
+Processing Provenance Records                                                    (00:31.044)
+Generating Outputs in /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/output     (00:31.045)
+Run Template                                                                     (00:31.412)
+
+onGenerate.checkVersions:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/versions.txt
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 19 files to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-working.1.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-updated.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/onGenerate-ig-updated.xml to /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                    (00:32.175)
+Generating Summary Outputs                                                       (00:33.699)
+Warning @ Unable to read the git branch: error: unknown option `show-current'usage: git branch [<options>] [-r | -a] [--merged | --no-merged]   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]   or: git branch [<options>] [-r] (-d | -D) <branch-name>...   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>   or: git branch [<options>] [-r | -a] [--points-at]   or: git branch [<options>] [-r | -a] [--format]Generic options    -v, --verbose         show hash and subject, give twice for upstream branch    -q, --quiet           suppress informational messages    -t, --track           set up tracking mode (see git-pull(1))    -u, --set-upstream-to <upstream>                          change the upstream info    --unset-upstream      Unset the upstream info    --color[=<when>]      use colored output    -r, --remotes         act on remote-tracking branches    --contains <commit>   print only branches that contain the commit    --no-contains <commit>                          print only branches that don't contain the commit    --abbrev[=<n>]        use <n> digits to display SHA-1sSpecific git-branch actions:    -a, --all             list both remote-tracking and local branches    -d, --delete          delete fully merged branch    -D                    delete branch (even if not merged)    -m, --move            move/rename a branch and its reflog    -M                    move/rename a branch, even if target exists    -c, --copy            copy a branch and its reflog    -C                    copy a branch, even if target exists    -l, --list            list branch names    --create-reflog       create the branch's reflog    --edit-description    edit the description for the branch    -f, --force           force creation, move/rename, deletion    --merged <commit>     print only branches that are merged    --no-merged <commit>  print only branches that are not merged    --column[=<style>]    list branches in columns    --sort <key>          field name to sort on    --points-at <object>  print only branches of the object    -i, --ignore-case     sorting and filtering are case insensitive    --format <format>     format to use for the output
+Sending Usage Stats to Server                                                    (00:35.731)
+## Memory (MB): Use = 655, Free = 624, Total = 1280, Max =1736
+Reclaiming memory...
+## Memory (MB): Use = 396, Free = 883, Total = 1280, Max =1736
+Run jekyll: jekyll build --destination "/tmp/medigree.fhir.fhir-testing#1.0.0-milestone/output" (in folder /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/temp/pages) (00:36.367)
+Jekyll: Source: /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/temp/pages       (00:36.783)
+Jekyll: Generating...                                                            (00:36.785)
+Jekyll: done in 0.384 seconds.                                                   (00:37.167)
+Installing medigree.fhir.fhir-testing#1.0.0 to the package cache
+  Fetching:
+
+  Installing: Checking Output HTML                                                             (00:37.330)
+found 563 files                                                                  (00:37.343)
+........................................
+........................................
+  ... 563 html files, 0 pages invalid xhtml (0%)                                 (00:38.371)
+  ... 11719 links, 0 broken links (0%)                                           (00:38.371)
+Build final .zip                                                                 (00:38.372)
+Final .zip built                                                                 (00:38.718)
+Built. Times: loading: 00:00.206, generate: 00:11.006, narrative generation: 00:00.409, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.806, validation: 00:01.848 (#3), template: 00:00.761 (#3) (00:39.171)
+Validation output in /tmp/medigree.fhir.fhir-testing#1.0.0-milestone/output/qa.html
+Errors: 6, Warnings: 9, Info: 1, Broken Links: 0 (00:39.253)
+Finished                                                                         (00:39.255)
+Done                                                                             (00:39.255)
 Keep a copy of the build directory at /tmp/web-root/run-20230317/ig-build-zips/medigree.fhir.fhir-testing#1.0.0.zip
 
 ok. All checks passed. Publish v1.0.0 to /tmp/web-root/run-20230317/fhir-testing/1.0.0
