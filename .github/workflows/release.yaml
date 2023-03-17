@@ -18,11 +18,17 @@ jobs:
       - name: Update sushi
         run: npm install fsh-sushi
 
+      - name: Check sushi version
+        run: sushi -v
+
       - name: Checkout medigree/fhir-testing to ./core
         uses: actions/checkout@v2
         with:
           repository: medigree/fhir-testing
           path: core
+
+      - name: Check sushi version
+        run: sushi -v
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
         uses: actions/checkout@v2
