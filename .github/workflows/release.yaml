@@ -15,30 +15,18 @@ jobs:
       - name: Update the image to the latest publisher
         run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
 
-      - name: Clear npm cache
-        run: npm cache clean --force
-
-      - name: Update sushi
-        run: npm install fsh-sushi
-        
-      - name: Check sushi version
-        run: sushi -v
-        
-      - name: Remove fsh-sushi and dependencies
-        run: npm rm fsh-sushi --force
-        
       - name: Install latest version of fsh-sushi
-        run: npm install fsh-sushi@latest
+        run: npm install -g fsh-sushi@latest
         
       - name: Check sushi version
         run: sushi -v
         
 
-      - name: Checkout medigree/fhir-testing to ./core
+      - name: Checkout source repo to ./source
         uses: actions/checkout@v2
         with:
-          repository: medigree/fhir-testing
-          path: core
+          repository: /IHE/RAD.IRA
+          path: source
 
       - name: Check sushi version
         run: sushi -v
@@ -49,10 +37,10 @@ jobs:
           repository: HL7/fhir-ig-history-template
           path: history-template
 
-      - name: Checkout medigree/current-publication to ./webroot
+      - name: Checkout publications repo to ./webroot
         uses: actions/checkout@v2
         with:
-          repository: medigree/current-publication
+          repository: IHE/publications
           path: webroot
 
       - name: Checkout FHIR/ig-registry to ./ig-registry
@@ -65,7 +53,7 @@ jobs:
         run: java -jar ./publisher.jar publisher -ig core
 
       - name: Run publisher command for publishing release
-        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
+        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -source source -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
