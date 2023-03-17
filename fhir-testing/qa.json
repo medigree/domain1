@@ -3,7 +3,7 @@
   "name" : "FHIRtestingIG",
   "package-id" : "medigree.fhir.fhir-testing",
   "ig-ver" : "1.0.0",
-  "date" : "Fri, 17 Mar, 2023 08:53:22 +0000",
+  "date" : "Fri, 17 Mar, 2023 08:58:25 +0000",
   "errs" : 6,
   "warnings" : 9,
   "hints" : 1,
