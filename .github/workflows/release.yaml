@@ -15,6 +15,9 @@ jobs:
       - name: Update the image to the latest publisher
         run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
 
+      - name: Update sushi
+        run: npm install fsh-sushi
+
       - name: Checkout medigree/fhir-testing to ./core
         uses: actions/checkout@v2
         with:
