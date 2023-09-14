@@ -1,8 +1,0 @@
-{
-  "version": "4.2.0-ballot",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221021180419",
-  "name": "ihe.iti.mhd"
-}
