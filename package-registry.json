@@ -1,0 +1,23 @@
+{
+  "packages" : [
+    {
+      "path" : "fhir-testing/package-list.json",
+      "package-id" : "medigree.fhir.fhir-testing",
+      "title" : "Testing",
+      "canonical" : "http://medigree.net/fhir/fhir-testing",
+      "category" : "something",
+      "ci-build" : "https//build.fhir.org/ig/medigree/fhir-testing",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "1.0.0",
+        "date" : "2023-09-14",
+        "path" : "http://medigree.net/fhir/fhir-testing/1.0.0"
+      },
+      "milestone" : {
+        "version" : "1.0.0",
+        "date" : "2023-09-14",
+        "path" : "http://medigree.net/fhir/fhir-testing/1.0.0"
+      }
+    }
+  ]
+}

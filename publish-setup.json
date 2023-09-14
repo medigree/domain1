@@ -4,9 +4,11 @@
     "url" : "http://medigree.net/fhir",
     "server" : "apache",
     "org" : "Medigree",
-    "layout": {
-      "id":"medigree.fhir.[code]",
-      "canonical":"http://medigree.net/fhir/[code]"
-    }
-  }
+    "index-template":"index.template"
+    },
+    "layout-rules" : [{
+      "npm" : "medigree.fhir.*",
+      "canonical" : "http://medigree.net/fhir/{3}",
+      "destination" : "/{3}"
+    }]
 }

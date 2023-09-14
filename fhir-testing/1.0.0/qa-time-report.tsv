@@ -1,0 +1,4 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-medigree.fhir.fhir-testing.json	2145	-	0	0	0	0	0	0	3	466	0	0	0	0	0	0	0	0	0	0	104	191	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-Requirement.json	1468	44	0	0	0	0	0	1175	1	1140	0	0	0	0	0	0	0	1	0	0	288	3228	0	0	0	10	1	1
+fsh-generated/resources/TestScript-TS1.json	1945	20	0	0	0	0	0	0	0	175	0	0	0	0	0	0	0	0	0	0	18	29	0	0	0	1	0	0
