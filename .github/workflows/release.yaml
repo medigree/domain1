@@ -61,11 +61,19 @@ jobs:
           repository: FHIR/ig-registry
           path: ig-registry
 
+
+      - name: Create folder
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          entrypoint: /bin/sh
+          args: -c "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
+
+
       - name: Run publisher command
-        run: java -jar ./publisher.jar publisher -ig core
+        run: java -jar ./publisher.jar publisher -ig core -package-cache-folder ./fhir-package-cache
 
       - name: Run publisher command for publishing release
-        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
+        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish  -package-cache-folder ./fhir-package-cache -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
