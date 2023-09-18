@@ -37,7 +37,7 @@ jobs:
       - name: Checkout medigree/fhir-testing to ./core
         uses: actions/checkout@v2
         with:
-          repository: medigree/fhir-testing
+          repository: medigree/core
           path: core
 
       - name: Check sushi version
