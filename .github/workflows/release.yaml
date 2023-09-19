@@ -28,6 +28,9 @@ jobs:
       - name: Check sushi version
         run: ./sushi-install/node_modules/.bin/sushi -v
 
+      - name: Search for SUSHI in the container
+        run: find / -name sushi 2>/dev/null
+
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
         with:
