@@ -20,8 +20,10 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
 
-      - name: Install specific version of fsh-sushi inside the container
-        run: npm install -g fsh-sushi@3.3.3
+      - name: Install specific version of fsh-sushi inside the container and update PATH
+        run: |
+          npm install -g fsh-sushi@3.3.3
+          echo "$(npm bin -g)" >> $GITHUB_PATH
 
       - name: Check sushi version inside the container
         run: sushi -v
