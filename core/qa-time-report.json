@@ -1,0 +1,169 @@
+{
+  "date" : "Tue, 19 Sep, 2023 16:35:29 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json",
+      "size" : 2121,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 49,
+          "length" : 483
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 51,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 51,
+          "length" : 492
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 1086
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 165
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 170
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 70,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 74,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-Requirement.json",
+      "size" : 1460,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 49,
+          "length" : 41
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 49,
+          "length" : 75
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 50,
+          "length" : 1123
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 51,
+          "length" : 1086
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 1363
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 285
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 3197
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 70,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 74,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TS1.json",
+      "size" : 1945,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 49,
+          "length" : 18
+        },
+        {
+          "activity" : "scan",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 32
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 266
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 109
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 61,
+          "length" : 23
+        }
+      ]
+    }
+  ]
+}

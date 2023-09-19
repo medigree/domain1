@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "medigree.fhir.core",
+    "type" : "ImplementationGuide",
+    "url" : "http://medigree.net/fhir/core",
+    "version" : "1.0.0",
+    "name" : "FHIRtestingIG"
+  },
+  {
+    "id" : "Requirement",
+    "type" : "StructureDefinition",
+    "url" : "http://medigree.net/fhir/core/StructureDefinition/Requirement",
+    "version" : "1.0.0",
+    "name" : "Requirement"
+  },
+  {
+    "id" : "TS1",
+    "type" : "TestScript",
+    "url" : "medigree.net/fhir/testing/testscript-1",
+    "version" : "1.0.0",
+    "name" : "A test script"
+  }
+]
