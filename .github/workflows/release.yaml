@@ -25,8 +25,14 @@ jobs:
           npm install -g fsh-sushi@3.3.3
           echo "$(npm bin -g)" >> $GITHUB_PATH
 
+      - name: Replace container's SUSHI with the installed version
+        run: cp $(npm bin -g)/sushi /home/publisher/.node/bin/sushi
+
       - name: Check sushi version inside the container
         run: sushi -v
+
+      - name: Check updated sushi version in container
+        run: /home/publisher/.node/bin/sushi -v
 
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
