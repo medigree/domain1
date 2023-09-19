@@ -15,23 +15,23 @@ jobs:
       - name: Update the image to the latest publisher
         run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
 
-      - name: Clear npm cache
-        run: npm cache clean --force
+#      - name: Clear npm cache
+#        run: npm cache clean --force
 
-      - name: Update sushi
-        run: npm install fsh-sushi
+#      - name: Update sushi
+#        run: npm install fsh-sushi
         
-      - name: Check sushi version
-        run: sushi -v
+#      - name: Check sushi version
+#        run: sushi -v
         
-      - name: Remove fsh-sushi and dependencies
-        run: npm rm fsh-sushi --force
+#      - name: Remove fsh-sushi and dependencies
+#        run: npm rm fsh-sushi --force
         
-      - name: Install latest version of fsh-sushi
-        run: npm install fsh-sushi@latest
+#      - name: Install latest version of fsh-sushi
+#        run: npm install fsh-sushi@latest
         
-      - name: Check sushi version
-        run: sushi -v
+#      - name: Check sushi version
+#        run: sushi -v
         
 
       - name: Checkout medigree/fhir-testing to ./core
@@ -40,8 +40,8 @@ jobs:
           repository: medigree/core
           path: core
 
-      - name: Check sushi version
-        run: sushi -v
+#      - name: Check sushi version
+#        run: sushi -v
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
         uses: actions/checkout@v2
