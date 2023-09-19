@@ -1,16 +1,18 @@
 name: CI
+
 on:
   push:
     branches-ignore:
       - 'gh-pages'
   pull_request:
   workflow_dispatch:
- 
+
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
       image: hl7fhir/ig-publisher-base:latest
+
     steps:
       - name: Update the image to the latest publisher
         run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
@@ -18,30 +20,19 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
 
-      - name: Update sushi
-        run: npm install -g fsh-sushi@3.3.3
-        
-      - name: Check sushi version
-        run: sushi -v
-        
-      - name: Remove fsh-sushi and dependencies
-        run: npm rm fsh-sushi --force
-        
-      - name: Install latest version of fsh-sushi
-        run: npm install -g fsh-sushi@3.3.3
-        
-      - name: Check sushi version
-        run: sushi -v
-        
+      - name: Install specific version of fsh-sushi
+        run: |
+          mkdir sushi-install
+          npm install fsh-sushi@3.3.3 --prefix sushi-install
 
-      - name: Checkout medigree/fhir-testing to ./core
+      - name: Check sushi version
+        run: ./sushi-install/node_modules/.bin/sushi -v
+
+      - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
         with:
           repository: medigree/core
           path: core
-
-      - name: Check sushi version
-        run: sushi -v
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
         uses: actions/checkout@v2
@@ -68,12 +59,11 @@ jobs:
           entrypoint: /bin/sh
           args: -c "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
 
-
       - name: Run publisher command
         run: java -jar ./publisher.jar publisher -ig core -package-cache-folder ./fhir-package-cache
 
       - name: Run publisher command for publishing release
-        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish  -package-cache-folder ./fhir-package-cache -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
+        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source core -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
