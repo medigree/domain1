@@ -19,7 +19,7 @@ jobs:
         run: npm cache clean --force
 
       - name: Update sushi
-        run: npm install -g fsh-sushi
+        run: npm install -g fsh-sushi@3.3.3
         
       - name: Check sushi version
         run: sushi -v
@@ -28,7 +28,7 @@ jobs:
         run: npm rm fsh-sushi --force
         
       - name: Install latest version of fsh-sushi
-        run: npm install -g fsh-sushi@latest
+        run: npm install -g fsh-sushi@3.3.3
         
       - name: Check sushi version
         run: sushi -v
