@@ -1,16 +1,2 @@
 ﻿{
-  "package-id": "hl7.fhir.be.core",
-  "title": "HL7 Belgium FHIR Implementation Guide - Core profiles",
-  "canonical": "https://www.ehealth.fgov.be/standards/fhir/core",
-  "introduction": "intro text",
-  "category": "test",
-  "list": [
-    {
-      "version": "current",
-      "desc": "Continuous Integration Build",
-      "path": "http://build.fhir.org/ig/hl7-be/core/",
-      "status": "ci-build",
-      "current": true
-    }
-  ]
 }
