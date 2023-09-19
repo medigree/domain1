@@ -20,16 +20,11 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
 
-      - name: Install specific version of fsh-sushi
-        run: |
-          mkdir sushi-install
-          npm install fsh-sushi@3.3.3 --prefix sushi-install
+      - name: Install specific version of fsh-sushi inside the container
+        run: npm install -g fsh-sushi@3.3.3
 
-      - name: Check sushi version
-        run: ./sushi-install/node_modules/.bin/sushi -v
-
-      - name: Search for SUSHI in the container
-        run: find / -name sushi 2>/dev/null
+      - name: Check sushi version inside the container
+        run: sushi -v
 
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
@@ -54,7 +49,6 @@ jobs:
         with:
           repository: FHIR/ig-registry
           path: ig-registry
-
 
       - name: Create folder
         uses: docker://hl7fhir/ig-publisher-base:latest
