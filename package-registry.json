@@ -10,12 +10,12 @@
       "version-count" : 1,
       "latest" : {
         "version" : "1.0.0",
-        "date" : "2023-09-19",
+        "date" : "2023-09-20",
         "path" : "http://medigree.net/fhir/core/1.0.0"
       },
       "milestone" : {
         "version" : "1.0.0",
-        "date" : "2023-09-19",
+        "date" : "2023-09-20",
         "path" : "http://medigree.net/fhir/core/1.0.0"
       }
     }
