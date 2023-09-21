@@ -34,7 +34,9 @@ jobs:
 #        run: cp $(npm bin -g)/sushi /home/publisher/.node/bin/sushi
 
       - name: Check sushi version inside the container
-        run: sushi -v
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: sushi -v
 
 #      - name: Check updated sushi version in container
 #        run: /home/publisher/.node/bin/sushi -v
