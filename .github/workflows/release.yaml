@@ -20,26 +20,22 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
 
-      - name: Install Sushi version
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: npm install -g fsh-sushi@3.3.3 
+      - name: Install sushi
+        run: |
+          npm install -g fsh-sushi@3.3.3
 
-#      - name: Install specific version of fsh-sushi inside the container and update PATH
-#        run: |
-#          npm install -g fsh-sushi@3.3.3
-#          echo "$(npm bin -g)" >> $GITHUB_PATH
+      - name: Check updated sushi version
+        run: sushi -v
 
-#      - name: Replace container's SUSHI with the installed version
-#        run: cp $(npm bin -g)/sushi /home/publisher/.node/bin/sushi
+#      - name: Install Sushi version in container
+#        uses: docker://hl7fhir/ig-publisher-base:latest
+#        with:
+#          args: npm install -g fsh-sushi@3.3.3 
 
-      - name: Check sushi version inside the container
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: sushi -v
-
-#      - name: Check updated sushi version in container
-#        run: /home/publisher/.node/bin/sushi -v
+#      - name: Check sushi version inside the container
+#        uses: docker://hl7fhir/ig-publisher-base:latest
+#        with:
+#          args: sushi -v
 
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
