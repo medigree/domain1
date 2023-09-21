@@ -1,6 +1,5 @@
 ﻿/__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json: line 0, col 0, Error - Conformance resource /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json - the canonical URL (http://medigree.net/fhir/core/ImplementationGuide/medigree.fhir.core) does not match the URL (http://medigree.net/fhir/core) (INVALID)
 /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json: line 0, col 0, Error - Resource id/url mismatch: medigree.fhir.core/http://medigree.net/fhir/core (INVARIANT)
-/__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json: line 0, col 0, Warning - Unknown Parameters: [apply-wg=true] (INVALID)
 /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json: line 0, col 0, Error - URL Mismatch http://medigree.net/fhir/core/ImplementationGuide/medigree.fhir.core vs http://medigree.net/fhir/core (BUSINESSRULE)
 /__w/domain1/domain1/core/fsh-generated/resources/StructureDefinition-Requirement.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /__w/domain1/domain1/core/fsh-generated/resources/TestScript-TS1.json: line 1, col 1659, Warning - Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed (INVARIANT)
@@ -12,6 +11,6 @@
 FHIRtestingIG : Validation Results
 =========================================
 
-err = 6, warn = 10, info = 1
-IG Publisher Version: 1.4.6
-Generated Wed Sep 20 05:42:17 UTC 2023. FHIR version 4.0.1 for medigree.fhir.core#1.0.0 (canonical = http://medigree.net/fhir/core)
+err = 6, warn = 9, info = 1
+IG Publisher Version: 1.4.7
+Generated Thu Sep 21 16:40:54 UTC 2023. FHIR version 4.0.1 for medigree.fhir.core#1.0.0 (canonical = http://medigree.net/fhir/core)
