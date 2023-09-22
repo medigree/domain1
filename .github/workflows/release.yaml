@@ -42,9 +42,6 @@ jobs:
           repository: FHIR/ig-registry
           path: ig-registry
 
-      - name: Run publisher command
-        run: java -jar ./publisher.jar publisher -ig core
-
       - name: Create folder
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
