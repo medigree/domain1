@@ -1,6 +1,5 @@
 {
   "version" : "1.0.0",
-  "date" : "20230922152526",
-  "notForPublication" : true,
+  "date" : "20230922204853",
   "name" : "medigree.fhir.core.r4b"
 }

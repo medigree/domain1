@@ -3,11 +3,11 @@
 
 err = 6, warn = 9, info = 1
 IG Publisher Version: 1.4.8
-Generated Fri Sep 22 15:26:38 UTC 2023. FHIR version 4.0.1 for medigree.fhir.core#1.0.0 (canonical = http://medigree.net/fhir/core)
+Generated Fri Sep 22 20:49:26 UTC 2023. FHIR version 4.0.1 for medigree.fhir.core#1.0.0 (canonical = http://medigree.net/fhir/core)
  Build Errors : 0 / 7 / 0
- /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core : 3 / 0 / 1
- /__w/domain1/domain1/core/fsh-generated/resources/StructureDefinition-Requirement : 0 / 1 / 1
- /__w/domain1/domain1/core/fsh-generated/resources/TestScript-TS1 : 3 / 1 / 2
+ /tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-medigree.fhir.core : 3 / 0 / 1
+ /tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/resources/StructureDefinition-Requirement : 0 / 1 / 1
+ /tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/resources/TestScript-TS1 : 3 / 1 / 2
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -18,9 +18,9 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json ==
-ERROR: ImplementationGuide.where(url = 'http://medigree.net/fhir/core'): Conformance resource /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json - the canonical URL (http://medigree.net/fhir/core/ImplementationGuide/medigree.fhir.core) does not match the URL (http://medigree.net/fhir/core)
+ERROR: ImplementationGuide.where(url = 'http://medigree.net/fhir/core'): Conformance resource /tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-medigree.fhir.core.json - the canonical URL (http://medigree.net/fhir/core/ImplementationGuide/medigree.fhir.core) does not match the URL (http://medigree.net/fhir/core)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: medigree.fhir.core/http://medigree.net/fhir/core
-ERROR: /__w/domain1/domain1/core/fsh-generated/resources/ImplementationGuide-medigree.fhir.core: URL Mismatch http://medigree.net/fhir/core/ImplementationGuide/medigree.fhir.core vs http://medigree.net/fhir/core
+ERROR: /tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-medigree.fhir.core: URL Mismatch http://medigree.net/fhir/core/ImplementationGuide/medigree.fhir.core vs http://medigree.net/fhir/core
 == fsh-generated/resources/StructureDefinition-Requirement.json ==
 WARNING: StructureDefinition.where(url = 'http://medigree.net/fhir/core/StructureDefinition/Requirement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/TestScript-TS1.json ==
