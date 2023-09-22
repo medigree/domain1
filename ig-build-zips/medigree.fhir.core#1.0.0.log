@@ -1,4 +1,4 @@
-FHIR IG Publisher Version 1.4.7 (Git# 9a8186c13572). Built 2023-09-21T08:47:59.885Z (8 hours old)
+FHIR IG Publisher Version 1.4.8 (Git# 7611db7ffbb0). Built 2023-09-21T20:37:07.367Z (18 hours old)
 Detected Java version: 21-ea from /usr/local/openjdk-21 on amd64 (64bit). 1732MB available
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -go-publish -package-cache-folder ./fhir-package-cache -source core -web /__w/domain1/domain1/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates /__w/domain1/domain1/webroot/templates
@@ -6,38 +6,38 @@ Parameters: -go-publish -package-cache-folder ./fhir-package-cache -source core 
 Publication Run: publish core to /__w/domain1/domain1/webroot
 Run Number: 1
 Relative directory for IG is '/core'
-All checks passed. Do the publication build from /__w/domain1/domain1/core and publish to /tmp/web-root/run-20230921/core
+All checks passed. Do the publication build from /__w/domain1/domain1/core and publish to /tmp/web-root/run-20230922/core
 Prepare Build space in /tmp/medigree.fhir.core#1.0.0
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.core#1.0.0)
-FHIR IG Publisher Version 1.4.7 (Git# 9a8186c13572). Built 2023-09-21T08:47:59.885Z (8 hours old)   
+FHIR IG Publisher Version 1.4.8 (Git# 7611db7ffbb0). Built 2023-09-21T20:37:07.367Z (18 hours old)  
 Detected Java version: 21-ea from /usr/local/openjdk-21 on Linux/amd64 (64bit). 1732MB available    
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.core#1.0.0 -resetTx -publish http://medigree.net/fhir/core/1.0.0 -no-exit
-Start Clock @ Thursday, September 21, 2023, 4:52:31 PM Coordinated Universal Time (2023-09-21T16:52:31Z)
+Start Clock @ Friday, September 22, 2023, 3:26:40 PM Coordinated Universal Time (2023-09-22T15:26:40Z)
                                                                                                     
-Build FHIR IG from /tmp/medigree.fhir.core#1.0.0                                                     (00:00.021 / 00:00.022, 39Mb)
-Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.004 / 00:00.028, 39Mb)
-API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.002 / 00:00.029, 39Mb)
-Package Cache: /root/.fhir/packages                                                                  (00:00.007 / 00:00.037, 39Mb)
-Run Sushi on /tmp/medigree.fhir.core#1.0.0                                                           (00:00.003 / 00:00.041, 39Mb)
-Sushi: info  Running SUSHI v2.10.2 (implements FHIR Shorthand specification v2.0.0)                  (00:00.522 / 00:00.563, 40Mb)
-Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.564, 40Mb)
-Sushi: info    --require-latest                                                                      (00:00.002 / 00:00.567, 40Mb)
-Sushi: info    --out /tmp/medigree.fhir.core#1.0.0                                                   (00:00.001 / 00:00.569, 40Mb)
-Sushi: info    /tmp/medigree.fhir.core#1.0.0                                                         (00:00.001 / 00:00.570, 40Mb)
-Sushi: (node:650) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.590 / 00:01.161, 41Mb)
-Sushi: (node:650) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency
-error Current SUSHI version (2.10.2) is not the latest version. Upgrade to the latest version (3.4.0) or run SUSHI again without the --require-latest flag. (00:00.001 / 00:01.162, 41Mb)
-Sushi: (Use `node --trace-warnings ...` to show where the warning was created)                       (00:00.001 / 00:01.163, 41Mb)
-Sushi: (node:650) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.004 / 00:01.168, 41Mb)
-Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.008 / 00:01.176, 41Mb)
-Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.000 / 00:01.176, 41Mb)
-Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.001 / 00:01.178, 41Mb)
-Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.001 / 00:01.179, 41Mb)
-                                                                                                     (00:00.001 / 00:01.180, 41Mb)
-Use -? to get command line help                                                                      (00:00.001 / 00:01.182, 41Mb)
-                                                                                                     (00:00.001 / 00:01.183, 41Mb)
-Stack Dump (for debugging):                                                                          (00:00.001 / 00:01.184, 41Mb)
+Build FHIR IG from /tmp/medigree.fhir.core#1.0.0                                                     (00:00.029 / 00:00.029, 39Mb)
+Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.012 / 00:00.042, 40Mb)
+API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.001 / 00:00.044, 40Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.006 / 00:00.050, 40Mb)
+Run Sushi on /tmp/medigree.fhir.core#1.0.0                                                           (00:00.003 / 00:00.054, 40Mb)
+Sushi: info  Running SUSHI v2.10.2 (implements FHIR Shorthand specification v2.0.0)                  (00:00.480 / 00:00.534, 41Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.536, 41Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.537, 41Mb)
+Sushi: info    --out /tmp/medigree.fhir.core#1.0.0                                                   (00:00.001 / 00:00.539, 41Mb)
+Sushi: info    /tmp/medigree.fhir.core#1.0.0                                                         (00:00.001 / 00:00.540, 41Mb)
+Sushi: (node:652) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:01.020 / 00:01.561, 42Mb)
+Sushi: (node:652) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency
+error Current SUSHI version (2.10.2) is not the latest version. Upgrade to the latest version (3.4.0) or run SUSHI again without the --require-latest flag. (00:00.001 / 00:01.562, 42Mb)
+Sushi: (Use `node --trace-warnings ...` to show where the warning was created)                       (00:00.001 / 00:01.563, 42Mb)
+Sushi: (node:652) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.005 / 00:01.568, 42Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.007 / 00:01.575, 42Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.000 / 00:01.576, 42Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.001 / 00:01.578, 42Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.000 / 00:01.579, 42Mb)
+                                                                                                     (00:00.001 / 00:01.580, 42Mb)
+Use -? to get command line help                                                                      (00:00.001 / 00:01.582, 42Mb)
+                                                                                                     (00:00.001 / 00:01.583, 42Mb)
+Stack Dump (for debugging):                                                                          (00:00.001 / 00:01.584, 42Mb)
 org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
 	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
 	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
@@ -54,35 +54,35 @@ org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit 
 	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11778)
 Prepare Build space in /tmp/medigree.fhir.core#1.0.0-milestone
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.core#1.0.0-milestone) (milestone build)
-FHIR IG Publisher Version 1.4.7 (Git# 9a8186c13572). Built 2023-09-21T08:47:59.885Z (8 hours old)   
+FHIR IG Publisher Version 1.4.8 (Git# 7611db7ffbb0). Built 2023-09-21T20:37:07.367Z (18 hours old)  
 Detected Java version: 21-ea from /usr/local/openjdk-21 on Linux/amd64 (64bit). 1732MB available    
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.core#1.0.0-milestone -publish http://medigree.net/fhir/core/1.0.0 -milestone -no-exit
-Start Clock @ Thursday, September 21, 2023, 4:52:34 PM Coordinated Universal Time (2023-09-21T16:52:34Z)
+Start Clock @ Friday, September 22, 2023, 3:26:43 PM Coordinated Universal Time (2023-09-22T15:26:43Z)
                                                                                                     
-Build FHIR IG from /tmp/medigree.fhir.core#1.0.0-milestone                                           (00:00.003 / 00:00.004, 57Mb)
-Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.000 / 00:00.004, 57Mb)
-API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.000 / 00:00.005, 57Mb)
-Package Cache: /root/.fhir/packages                                                                  (00:00.000 / 00:00.006, 57Mb)
-Run Sushi on /tmp/medigree.fhir.core#1.0.0-milestone                                                 (00:00.000 / 00:00.007, 57Mb)
-Sushi: info  Running SUSHI v2.10.2 (implements FHIR Shorthand specification v2.0.0)                  (00:00.489 / 00:00.496, 58Mb)
-Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.498, 58Mb)
-Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.499, 58Mb)
-Sushi: info    --out /tmp/medigree.fhir.core#1.0.0-milestone                                         (00:00.001 / 00:00.500, 58Mb)
-Sushi: info    /tmp/medigree.fhir.core#1.0.0-milestone                                               (00:00.001 / 00:00.501, 58Mb)
-Sushi: (node:673) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.597 / 00:01.099, 58Mb)
-Sushi: (node:673) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency
-error Current SUSHI version (2.10.2) is not the latest version. Upgrade to the latest version (3.4.0) or run SUSHI again without the --require-latest flag. (00:00.001 / 00:01.100, 58Mb)
-Sushi: (Use `node --trace-warnings ...` to show where the warning was created)                       (00:00.001 / 00:01.101, 58Mb)
-Sushi: (node:673) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.003 / 00:01.104, 58Mb)
-Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.005 / 00:01.110, 58Mb)
-Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.000 / 00:01.111, 58Mb)
-Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.000 / 00:01.111, 58Mb)
-Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.001 / 00:01.113, 58Mb)
-                                                                                                     (00:00.000 / 00:01.113, 58Mb)
-Use -? to get command line help                                                                      (00:00.000 / 00:01.114, 58Mb)
-                                                                                                     (00:00.000 / 00:01.115, 58Mb)
-Stack Dump (for debugging):                                                                          (00:00.000 / 00:01.116, 58Mb)
+Build FHIR IG from /tmp/medigree.fhir.core#1.0.0-milestone                                           (00:00.002 / 00:00.002, 58Mb)
+Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.000 / 00:00.004, 58Mb)
+API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.002 / 00:00.005, 58Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.001 / 00:00.006, 58Mb)
+Run Sushi on /tmp/medigree.fhir.core#1.0.0-milestone                                                 (00:00.000 / 00:00.007, 58Mb)
+Sushi: info  Running SUSHI v2.10.2 (implements FHIR Shorthand specification v2.0.0)                  (00:00.458 / 00:00.466, 59Mb)
+Sushi: info  Arguments:                                                                              (00:00.002 / 00:00.468, 59Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.469, 59Mb)
+Sushi: info    --out /tmp/medigree.fhir.core#1.0.0-milestone                                         (00:00.001 / 00:00.471, 59Mb)
+Sushi: info    /tmp/medigree.fhir.core#1.0.0-milestone                                               (00:00.001 / 00:00.472, 59Mb)
+Sushi: (node:675) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.580 / 00:01.053, 59Mb)
+Sushi: (Use `node --trace-warnings ...` to show where the warning was created)                       (00:00.000 / 00:01.055, 59Mb)
+Sushi: (node:675) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:00.001 / 00:01.056, 59Mb)
+Sushi: (node:675) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency
+error Current SUSHI version (2.10.2) is not the latest version. Upgrade to the latest version (3.4.0) or run SUSHI again without the --require-latest flag. (00:00.001 / 00:01.054, 59Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.008 / 00:01.065, 59Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.000 / 00:01.065, 59Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.001 / 00:01.067, 59Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.000 / 00:01.067, 59Mb)
+                                                                                                     (00:00.000 / 00:01.068, 59Mb)
+Use -? to get command line help                                                                      (00:00.000 / 00:01.069, 59Mb)
+                                                                                                     (00:00.001 / 00:01.070, 59Mb)
+Stack Dump (for debugging):                                                                          (00:00.000 / 00:01.071, 59Mb)
 org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
 	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
 	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
@@ -97,24 +97,24 @@ org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit 
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:228)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:121)
 	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11778)
-Keep a copy of the build directory at /tmp/web-root/run-20230921/ig-build-zips/medigree.fhir.core#1.0.0.zip
+Keep a copy of the build directory at /tmp/web-root/run-20230922/ig-build-zips/medigree.fhir.core#1.0.0.zip
 
-ok. All checks passed. Publish v1.0.0 to /tmp/web-root/run-20230921/core/1.0.0
-Copy the IG to /tmp/web-root/run-20230921/core/1.0.0
-Update /tmp/web-root/run-20230921/core/package-list.json
+ok. All checks passed. Publish v1.0.0 to /tmp/web-root/run-20230922/core/1.0.0
+Copy the IG to /tmp/web-root/run-20230922/core/1.0.0
+Update /tmp/web-root/run-20230922/core/package-list.json
 Publish Box Statement: This page is part of the Testing (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://medigree.net/fhir/core/history.html">Directory of published versions</a>
   .. 19 files checked, 19 updated
   .. 9 clones checked, 18 updated
   .. 3 redirections (3 created/updated)
-This is a milestone release - publish v1.0.0 to /tmp/web-root/run-20230921/core
+This is a milestone release - publish v1.0.0 to /tmp/web-root/run-20230922/core
 Publish Box Statement: This page is part of the Testing (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://medigree.net/fhir/core/history.html">Directory of published versions</a>
   .. 19 files checked, 19 updated
   .. 9 clones checked, 18 updated
   .. 3 redirections (3 created/updated)
 Check for Files to delete
   ... 0 files
-Copy to new IG to /tmp/web-root/run-20230921/core
-Update history page at /tmp/web-root/run-20230921/core from /__w/domain1/domain1/./history-template and /__w/domain1/domain1/webroot/templates
-Build is complete. Copy from /tmp/web-root/run-20230921
+Copy to new IG to /tmp/web-root/run-20230922/core
+Update history page at /tmp/web-root/run-20230922/core from /__w/domain1/domain1/./history-template and /__w/domain1/domain1/webroot/templates
+Build is complete. Copy from /tmp/web-root/run-20230922
 medigree.fhir.core (http://medigree.net/fhir/core): Testing @ https//build.fhir.org/ig/medigree/core
   release: Releases 1.0.0/4.0.1 @ http://medigree.net/fhir/core/1.0.0

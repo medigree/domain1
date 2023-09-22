@@ -12,5 +12,5 @@ FHIRtestingIG : Validation Results
 =========================================
 
 err = 6, warn = 9, info = 1
-IG Publisher Version: 1.4.7
-Generated Thu Sep 21 16:52:29 UTC 2023. FHIR version 4.0.1 for medigree.fhir.core#1.0.0 (canonical = http://medigree.net/fhir/core)
+IG Publisher Version: 1.4.8
+Generated Fri Sep 22 15:26:38 UTC 2023. FHIR version 4.0.1 for medigree.fhir.core#1.0.0 (canonical = http://medigree.net/fhir/core)
