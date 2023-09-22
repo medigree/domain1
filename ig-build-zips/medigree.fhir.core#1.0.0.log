@@ -13,62 +13,70 @@ FHIR IG Publisher Version 1.4.8 (Git# 7611db7ffbb0). Built 2023-09-21T20:37:07.3
 Detected Java version: 21-ea from /usr/local/openjdk-21 on Linux/amd64 (64bit). 1732MB available    
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.core#1.0.0 -resetTx -publish http://medigree.net/fhir/core/1.0.0 -no-exit
-Start Clock @ Friday, September 22, 2023, 8:48:08 PM Coordinated Universal Time (2023-09-22T20:48:08Z)
+Start Clock @ Friday, September 22, 2023, 8:50:30 PM Coordinated Universal Time (2023-09-22T20:50:30Z)
                                                                                                     
-Build FHIR IG from /tmp/medigree.fhir.core#1.0.0                                                     (00:00.027 / 00:00.028, 39Mb)
-Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.009 / 00:00.037, 40Mb)
-API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.000 / 00:00.038, 40Mb)
-Package Cache: /root/.fhir/packages                                                                  (00:00.005 / 00:00.043, 40Mb)
-Run Sushi on /tmp/medigree.fhir.core#1.0.0                                                           (00:00.002 / 00:00.046, 40Mb)
-Sushi: info  Running SUSHI v3.4.0 (implements FHIR Shorthand specification v3.0.0-ballot)            (00:00.503 / 00:00.550, 41Mb)
-Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.551, 41Mb)
-Sushi: info    --require-latest                                                                      (00:00.003 / 00:00.554, 41Mb)
-Sushi: info    --out /tmp/medigree.fhir.core#1.0.0                                                   (00:00.000 / 00:00.555, 41Mb)
-Sushi: info    /tmp/medigree.fhir.core#1.0.0                                                         (00:00.000 / 00:00.556, 41Mb)
-Sushi: info  Using configuration file: /tmp/medigree.fhir.core#1.0.0/sushi-config.yaml               (00:00.618 / 00:01.174, 41Mb)
-Sushi: info  Importing FSH text...                                                                   (00:00.153 / 00:01.328, 41Mb)
-Sushi: info  Preprocessed 6 documents with 0 aliases.                                                (00:00.079 / 00:01.408, 41Mb)
-Sushi: info  Imported 1 definitions and 2 instances.                                                 (00:00.007 / 00:01.415, 41Mb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.tools#current...                   (00:00.002 / 00:01.417, 41Mb)
-Sushi: info  Found hl7.fhir.uv.tools#current in /github/home/.fhir/packages.                         (00:00.056 / 00:01.474, 41Mb)
-Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:00.261 / 00:01.735, 41Mb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.terminology.r4#5.3.0...                    (00:00.537 / 00:02.273, 41Mb)
-Sushi: info  Found hl7.terminology.r4#5.3.0 in /github/home/.fhir/packages.                          (00:00.612 / 00:02.886, 41Mb)
-Sushi: info  Loaded package hl7.terminology.r4#5.3.0                                                 (00:00.000 / 00:02.887, 41Mb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...             (00:00.448 / 00:03.336, 41Mb)
-Sushi: info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /github/home/.fhir/packages.                   (00:00.668 / 00:04.004, 41Mb)
-Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0                                          (00:00.000 / 00:04.005, 41Mb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.r4.core#4.0.1...                      (00:00.001 / 00:04.006, 41Mb)
-Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /github/home/.fhir/packages.                            (00:01.290 / 00:05.297, 41Mb)
-Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.002 / 00:05.299, 41Mb)
-Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. To see the unprocessed files in the logs, run SUSHI with the "--log-level debug" flag. (00:00.050 / 00:05.349, 41Mb)
-Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.002 / 00:05.352, 41Mb)
-Sushi: info  Converted 1 FHIR StructureDefinitions.                                                  (00:00.035 / 00:05.387, 41Mb)
-Sushi: info  Converted 2 FHIR instances.                                                             (00:00.290 / 00:05.678, 41Mb)
-Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.002 / 00:05.680, 41Mb)
-Sushi: info  Exported 2 FHIR resources as JSON.                                                      (00:00.016 / 00:05.696, 41Mb)
-Sushi: info  Assembling Implementation Guide sources...                                              (00:00.001 / 00:05.698, 41Mb)
-Sushi: info  Generated ImplementationGuide-medigree.fhir.core.json                                   (00:00.004 / 00:05.702, 41Mb)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:05.703, 41Mb)
-Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.001 / 00:05.705, 41Mb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.707, 41Mb)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:05.708, 41Mb)
-Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:05.709, 41Mb)
-Sushi: | |       1       |      0       |      0       |       0       | |                           (00:00.001 / 00:05.710, 41Mb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.711, 41Mb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.712, 41Mb)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.002 / 00:05.715, 41Mb)
-Sushi: | |-------------------------------------------------------------| |                           (00:00.007 / 00:05.722, 41Mb)
-Sushi: | |         0          |         0         |         2          | |                           (00:00.000 / 00:05.723, 41Mb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:05.724, 41Mb)
-Sushi: |                                                                 |                           (00:00.000 / 00:05.725, 41Mb)
-Sushi: ===================================================================                           (00:00.000 / 00:05.726, 41Mb)
-Sushi: | A whale of a job!                      0 Errors      0 Warnings |                           (00:00.000 / 00:05.726, 41Mb)
-Sushi: ===================================================================                           (00:00.001 / 00:05.728, 41Mb)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.539 / 00:06.268, 48Mb)
-Load Template from #local-template                                                                   (00:00.514 / 00:06.783, 21Mb)
- Load Template from openhie.fhir.template#current                                                    (00:00.005 / 00:06.788, 21Mb)
-  Load Template from fhir.base.template#current                                                      (00:01.030 / 00:07.820, 23Mb)
+Build FHIR IG from /tmp/medigree.fhir.core#1.0.0                                                     (00:00.021 / 00:00.022, 39Mb)
+Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.010 / 00:00.032, 40Mb)
+API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.001 / 00:00.034, 40Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.005 / 00:00.039, 40Mb)
+Run Sushi on /tmp/medigree.fhir.core#1.0.0                                                           (00:00.004 / 00:00.044, 40Mb)
+Sushi: info  Running SUSHI v3.4.0 (implements FHIR Shorthand specification v3.0.0-ballot)            (00:00.517 / 00:00.561, 41Mb)
+Sushi: info  Arguments:                                                                              (00:00.002 / 00:00.563, 41Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.565, 41Mb)
+Sushi: info    --out /tmp/medigree.fhir.core#1.0.0                                                   (00:00.001 / 00:00.566, 41Mb)
+Sushi: info    /tmp/medigree.fhir.core#1.0.0                                                         (00:00.001 / 00:00.567, 41Mb)
+Sushi: info  Using configuration file: /tmp/medigree.fhir.core#1.0.0/sushi-config.yaml               (00:00.526 / 00:01.094, 41Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.153 / 00:01.247, 41Mb)
+Sushi: info  Preprocessed 6 documents with 0 aliases.                                                (00:00.113 / 00:01.361, 41Mb)
+Sushi: info  Imported 1 definitions and 2 instances.                                                 (00:00.007 / 00:01.369, 41Mb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.tools#current...                   (00:00.002 / 00:01.371, 41Mb)
+Sushi: info  Found hl7.fhir.uv.tools#current in /github/home/.fhir/packages.                         (00:00.063 / 00:01.435, 41Mb)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:00.261 / 00:01.696, 41Mb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.terminology.r4#5.3.0...                    (00:00.392 / 00:02.089, 41Mb)
+Sushi: info  Found hl7.terminology.r4#5.3.0 in /github/home/.fhir/packages.                          (00:00.644 / 00:02.733, 41Mb)
+Sushi: info  Loaded package hl7.terminology.r4#5.3.0                                                 (00:00.001 / 00:02.735, 41Mb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...             (00:00.397 / 00:03.133, 41Mb)
+Sushi: info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /github/home/.fhir/packages.                   (00:00.694 / 00:03.827, 41Mb)
+Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0                                          (00:00.001 / 00:03.829, 41Mb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.r4.core#4.0.1...                      (00:00.001 / 00:03.830, 41Mb)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /github/home/.fhir/packages.                            (00:01.298 / 00:05.129, 41Mb)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.002 / 00:05.131, 41Mb)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. To see the unprocessed files in the logs, run SUSHI with the "--log-level debug" flag. (00:00.052 / 00:05.184, 41Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.002 / 00:05.186, 41Mb)
+Sushi: info  Converted 1 FHIR StructureDefinitions.                                                  (00:00.031 / 00:05.218, 41Mb)
+Sushi: info  Converted 2 FHIR instances.                                                             (00:00.288 / 00:05.506, 41Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.002 / 00:05.508, 41Mb)
+Sushi: info  Exported 2 FHIR resources as JSON.                                                      (00:00.009 / 00:05.518, 41Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.001 / 00:05.520, 41Mb)
+Sushi: info  Generated ImplementationGuide-medigree.fhir.core.json                                   (00:00.003 / 00:05.524, 41Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:05.525, 41Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.001 / 00:05.527, 41Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.002 / 00:05.529, 41Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.002 / 00:05.531, 41Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:05.532, 41Mb)
+Sushi: | |       1       |      0       |      0       |       0       | |                           (00:00.000 / 00:05.533, 41Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:05.533, 41Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:05.534, 41Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:05.535, 41Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:05.536, 41Mb)
+Sushi: | |         0          |         0         |         2          | |                           (00:00.000 / 00:05.536, 41Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:05.537, 41Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:05.538, 41Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:05.539, 41Mb)
+Sushi: | You're making waves now!               0 Errors      0 Warnings |                           (00:00.000 / 00:05.539, 41Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:05.540, 41Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.565 / 00:06.106, 47Mb)
+Load Template from #local-template                                                                   (00:00.554 / 00:06.661, 21Mb)
+ Load Template from openhie.fhir.template#current                                                    (00:00.009 / 00:06.671, 21Mb)
+Installing openhie.fhir.template#current to the package cache
+  Fetching:
+
+Installing openhie.fhir.template#current done.
+  Load Template from fhir.base.template#current                                                      (00:01.341 / 00:08.012, 38Mb)
+Installing fhir.base.template#current to the package cache
+  Fetching:
+
+Installing fhir.base.template#current done.
 
 onLoad.findSpreadsheets:
 
@@ -79,38 +87,66 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /tmp/medigree.fhir.core#1.0.0                                                        (00:02.775 / 00:10.595, 99Mb)
+Root directory: /tmp/medigree.fhir.core#1.0.0                                                        (00:03.252 / 00:11.265, 88Mb)
 Core Package hl7.fhir.r4.core#4.0.1
-Terminology Cache is at /tmp/medigree.fhir.core#1.0.0/input-cache/txcache. Clearing now              (00:05.050 / 00:15.646, 258Mb)
-Connect to Terminology Server at http://tx.fhir.org                                                  (00:00.002 / 00:15.648, 258Mb)
+Installing hl7.fhir.r4.core#4.0.1 to the package cache
+  Fetching:
+
+Installing hl7.fhir.r4.core#4.0.1 done.
+Terminology Cache is at /tmp/medigree.fhir.core#1.0.0/input-cache/txcache. Clearing now              (00:17.433 / 00:28.699, 242Mb)
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:00.002 / 00:28.701, 242Mb)
+Installing hl7.fhir.pubpack#0.1.5 to the package cache
+  Fetching:
+
+Installing hl7.fhir.pubpack#0.1.5 done.
 Load Package hl7.fhir.pubpack#0.1.5
+Installing hl7.fhir.xver-extensions#0.0.12 to the package cache
+  Fetching:
+
+Installing hl7.fhir.xver-extensions#0.0.12 done.
 Load Package hl7.fhir.xver-extensions#0.0.12
+Installing hl7.terminology.r4#5.3.0 to the package cache
+  Fetching:
+
+Installing hl7.terminology.r4#5.3.0 done.
 Load Package hl7.terminology.r4#5.3.0
+Installing hl7.fhir.uv.extensions.r4#1.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions.r4#1.0.0 done.
 Load Package hl7.fhir.uv.extensions.r4#1.0.0
-Version mismatch. This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0 (will try to run anyway) (00:04.592 / 00:20.241, 546Mb)
+Installing hl7.fhir.uv.tools#current to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.tools#current done.
+Version mismatch. This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0 (will try to run anyway) (00:07.912 / 00:36.613, 483Mb)
 Load Package hl7.fhir.uv.tools#current
 Load R5 Specials
-Initialization complete                                                                              (00:01.159 / 00:21.401, 705Mb)
-Fetch http://medigree.net/fhir/core/package-list.json for version check                              (00:00.002 / 00:21.403, 705Mb)
-Load Content                                                                                         (00:00.283 / 00:21.687, 705Mb)
+Installing hl7.fhir.r5.core#5.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.r5.core#5.0.0 done.
+Initialization complete                                                                              (00:03.443 / 00:40.057, 638Mb)
+Fetch http://medigree.net/fhir/core/package-list.json for version check                              (00:00.002 / 00:40.060, 638Mb)
+Load Content                                                                                         (00:00.155 / 00:40.216, 639Mb)
 loadPrePages from FetchedFile[/tmp/medigree.fhir.core#1.0.0/input/includes] as /tmp/medigree.fhir.core#1.0.0/input/includes
 loadPrePages from FetchedFile[/tmp/medigree.fhir.core#1.0.0/fsh-generated/includes] as /tmp/medigree.fhir.core#1.0.0/fsh-generated/includes
 loadPrePages from FetchedFile[/tmp/medigree.fhir.core#1.0.0/input/pagecontent] as /tmp/medigree.fhir.core#1.0.0/input/pagecontent
-Processing Conformance Resources                                                                     (00:00.225 / 00:21.913, 733Mb)
-Load Dependency Info                                                                                 (00:00.001 / 00:21.914, 733Mb)
-Load Info                                                                                            (00:00.002 / 00:21.916, 733Mb)
-Load Resources                                                                                       (00:00.002 / 00:21.919, 733Mb)
-Load Paths                                                                                           (00:00.118 / 00:22.037, 757Mb)
-Generating Snapshots                                                                                 (00:00.001 / 00:22.038, 757Mb)
-Check R4 / R4B                                                                                       (00:00.259 / 00:22.298, 332Mb)
-Propagating status                                                                                   (00:00.014 / 00:22.312, 333Mb)
-Generating Narratives                                                                                (00:00.002 / 00:22.314, 333Mb)
-Validating Conformance Resources                                                                     (00:00.445 / 00:22.760, 468Mb)
-Validating Resources                                                                                 (00:02.200 / 00:24.960, 496Mb)
-Processing Provenance Records                                                                        (00:00.001 / 00:24.962, 496Mb)
-Generating Outputs in /tmp/medigree.fhir.core#1.0.0/output                                           (00:00.000 / 00:24.963, 496Mb)
-Generate Native Outputs                                                                              (00:00.113 / 00:25.076, 516Mb)
-Run Template                                                                                         (00:00.440 / 00:25.517, 589Mb)
+Processing Conformance Resources                                                                     (00:00.259 / 00:40.475, 667Mb)
+Load Dependency Info                                                                                 (00:00.001 / 00:40.476, 667Mb)
+Load Info                                                                                            (00:00.001 / 00:40.477, 667Mb)
+Load Resources                                                                                       (00:00.000 / 00:40.478, 667Mb)
+Load Paths                                                                                           (00:00.208 / 00:40.687, 236Mb)
+Generating Snapshots                                                                                 (00:00.000 / 00:40.688, 236Mb)
+Check R4 / R4B                                                                                       (00:00.355 / 00:41.043, 344Mb)
+Propagating status                                                                                   (00:00.005 / 00:41.049, 345Mb)
+Generating Narratives                                                                                (00:00.001 / 00:41.051, 345Mb)
+Validating Conformance Resources                                                                     (00:00.538 / 00:41.589, 484Mb)
+Validating Resources                                                                                 (00:02.316 / 00:43.906, 349Mb)
+Processing Provenance Records                                                                        (00:00.001 / 00:43.907, 349Mb)
+Generating Outputs in /tmp/medigree.fhir.core#1.0.0/output                                           (00:00.000 / 00:43.908, 349Mb)
+Generate Native Outputs                                                                              (00:00.081 / 00:43.989, 369Mb)
+Run Template                                                                                         (00:00.428 / 00:44.418, 443Mb)
 
 onGenerate.checkVersions:
      [xslt] Processing /tmp/medigree.fhir.core#1.0.0/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.core#1.0.0/template/versions.txt
@@ -194,96 +230,96 @@ onGenerate.copyDataFiles:
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                                        (00:00.711 / 00:26.228, 618Mb)
-Generate HTML Outputs                                                                                (00:00.000 / 00:26.229, 618Mb)
+Template Done                                                                                        (00:00.805 / 00:45.223, 472Mb)
+Generate HTML Outputs                                                                                (00:00.001 / 00:45.225, 472Mb)
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Generate Summaries                                                                                   (00:02.929 / 00:29.159, 515Mb)
-Generating Summary Outputs                                                                           (00:00.000 / 00:29.160, 515Mb)
-DB Cumulative Time invested: 0:0:0.59
-Sending Usage Stats to Server                                                                        (00:06.850 / 00:36.010, 1Gb)
-## Memory (MB): Use = 1029, Free = 295, Total = 1325, Max = 1732
+Generate Summaries                                                                                   (00:03.097 / 00:48.322, 610Mb)
+Generating Summary Outputs                                                                           (00:00.000 / 00:48.323, 610Mb)
+DB Cumulative Time invested: 0:0:0.40
+Sending Usage Stats to Server                                                                        (00:06.641 / 00:54.964, 501Mb)
+## Memory (MB): Use = 502, Free = 722, Total = 1225, Max = 1732
 Reclaiming memory...
-## Memory (MB): Use = 416, Free = 908, Total = 1325, Max = 1732
-Run jekyll: jekyll build --destination "/tmp/medigree.fhir.core#1.0.0/output" (in folder /tmp/medigree.fhir.core#1.0.0/temp/pages) (00:00.624 / 00:36.634, 417Mb)
-Jekyll: Source: /tmp/medigree.fhir.core#1.0.0/temp/pages                                             (00:00.391 / 00:37.026, 421Mb)
-Jekyll: Generating...                                                                                (00:00.001 / 00:37.027, 421Mb)
-Jekyll: done in 0.474 seconds.                                                                       (00:00.473 / 00:37.500, 421Mb)
+## Memory (MB): Use = 416, Free = 808, Total = 1225, Max = 1732
+Run jekyll: jekyll build --destination "/tmp/medigree.fhir.core#1.0.0/output" (in folder /tmp/medigree.fhir.core#1.0.0/temp/pages) (00:00.414 / 00:55.378, 416Mb)
+Jekyll: Source: /tmp/medigree.fhir.core#1.0.0/temp/pages                                             (00:00.465 / 00:55.844, 421Mb)
+Jekyll: Generating...                                                                                (00:00.000 / 00:55.845, 421Mb)
+Jekyll: done in 0.486 seconds.                                                                       (00:00.485 / 00:56.330, 421Mb)
 
 Installing medigree.fhir.core#1.0.0 done.
-Checking Output HTML                                                                                 (00:01.097 / 00:38.598, 554Mb)
-found 573 files                                                                                      (00:00.004 / 00:38.602, 554Mb)
+Checking Output HTML                                                                                 (00:01.329 / 00:57.660, 553Mb)
+found 573 files                                                                                      (00:00.004 / 00:57.665, 553Mb)
 ........................................
 ........................................
-  ... 573 html files, 0 pages invalid xhtml (0%)                                                     (00:02.138 / 00:40.740, 1Gb)
-  ... 11784 links, 0 broken links (0%)                                                               (00:00.001 / 00:40.742, 1Gb)
-Build final .zip                                                                                     (00:00.000 / 00:40.743, 1Gb)
-Final .zip built                                                                                     (00:00.501 / 00:41.244, 1Gb)
-Built. Times: loading: 00:00.224, generate: 00:20.955, narrative generation: 00:00.444, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.871, validation: 00:02.177 (#3), template: 00:00.710 (#3) (00:01.625 / 00:42.869, 1Gb)
+  ... 573 html files, 0 pages invalid xhtml (0%)                                                     (00:02.244 / 00:59.909, 1Gb)
+  ... 11784 links, 0 broken links (0%)                                                               (00:00.000 / 00:59.910, 1Gb)
+Build final .zip                                                                                     (00:00.000 / 00:59.911, 1Gb)
+Final .zip built                                                                                     (00:00.504 / 01:00.416, 1Gb)
+Built. Times: loading: 00:00.257, generate: 00:21.813, narrative generation: 00:00.537, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.959, validation: 00:02.303 (#3), template: 00:00.803 (#3) (00:01.873 / 01:02.289, 1Gb)
 Validation output in /tmp/medigree.fhir.core#1.0.0/output/qa.html
-Errors: 6, Warnings: 9, Info: 1, Broken Links: 0 (00:00.183 / 00:43.052, 1Gb)
-Finished. Max Memory Used = 1Gb                                                                      (00:00.003 / 00:43.056, 1Gb)
+Errors: 6, Warnings: 9, Info: 1, Broken Links: 0 (00:00.165 / 01:02.455, 1Gb)
+Finished. Max Memory Used = 1Gb                                                                      (00:00.004 / 01:02.459, 1Gb)
 Prepare Build space in /tmp/medigree.fhir.core#1.0.0-milestone
 Build IG at /__w/domain1/domain1/core: final copy suitable for publication (in /tmp/medigree.fhir.core#1.0.0-milestone) (milestone build)
 FHIR IG Publisher Version 1.4.8 (Git# 7611db7ffbb0). Built 2023-09-21T20:37:07.367Z (24 hours old)  
 Detected Java version: 21-ea from /usr/local/openjdk-21 on Linux/amd64 (64bit). 1732MB available    
 dir = /__w/domain1/domain1, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /tmp/medigree.fhir.core#1.0.0-milestone -publish http://medigree.net/fhir/core/1.0.0 -milestone -no-exit
-Start Clock @ Friday, September 22, 2023, 8:48:53 PM Coordinated Universal Time (2023-09-22T20:48:53Z)
+Start Clock @ Friday, September 22, 2023, 8:51:34 PM Coordinated Universal Time (2023-09-22T20:51:34Z)
                                                                                                     
-Build FHIR IG from /tmp/medigree.fhir.core#1.0.0-milestone                                           (00:00.002 / 00:00.002, 1Gb)
-Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.000 / 00:00.003, 1Gb)
-API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.000 / 00:00.003, 1Gb)
-Package Cache: /root/.fhir/packages                                                                  (00:00.000 / 00:00.004, 1Gb)
-Run Sushi on /tmp/medigree.fhir.core#1.0.0-milestone                                                 (00:00.000 / 00:00.005, 1Gb)
-Sushi: info  Running SUSHI v3.4.0 (implements FHIR Shorthand specification v3.0.0-ballot)            (00:00.492 / 00:00.497, 1Gb)
-Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.499, 1Gb)
-Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.500, 1Gb)
-Sushi: info    --out /tmp/medigree.fhir.core#1.0.0-milestone                                         (00:00.000 / 00:00.500, 1Gb)
-Sushi: info    /tmp/medigree.fhir.core#1.0.0-milestone                                               (00:00.000 / 00:00.501, 1Gb)
-Sushi: info  Using configuration file: /tmp/medigree.fhir.core#1.0.0-milestone/sushi-config.yaml     (00:00.561 / 00:01.063, 1Gb)
-Sushi: info  Importing FSH text...                                                                   (00:00.160 / 00:01.224, 1Gb)
-Sushi: info  Preprocessed 6 documents with 0 aliases.                                                (00:00.068 / 00:01.292, 1Gb)
-Sushi: info  Imported 1 definitions and 2 instances.                                                 (00:00.006 / 00:01.299, 1Gb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.tools#current...                   (00:00.003 / 00:01.302, 1Gb)
-Sushi: info  Found hl7.fhir.uv.tools#current in /github/home/.fhir/packages.                         (00:00.057 / 00:01.360, 1Gb)
-Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:00.261 / 00:01.621, 1Gb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.terminology.r4#5.3.0...                    (00:00.444 / 00:02.065, 1Gb)
-Sushi: info  Found hl7.terminology.r4#5.3.0 in /github/home/.fhir/packages.                          (00:00.631 / 00:02.697, 1Gb)
-Sushi: info  Loaded package hl7.terminology.r4#5.3.0                                                 (00:00.001 / 00:02.699, 1Gb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...             (00:00.397 / 00:03.096, 1Gb)
-Sushi: info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /github/home/.fhir/packages.                   (00:00.675 / 00:03.771, 1Gb)
-Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0                                          (00:00.000 / 00:03.772, 1Gb)
-Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.r4.core#4.0.1...                      (00:00.000 / 00:03.773, 1Gb)
-Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /github/home/.fhir/packages.                            (00:01.270 / 00:05.044, 1Gb)
-Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.000 / 00:05.044, 1Gb)
-Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. To see the unprocessed files in the logs, run SUSHI with the "--log-level debug" flag. (00:00.052 / 00:05.097, 1Gb)
-Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.002 / 00:05.099, 1Gb)
-Sushi: info  Converted 1 FHIR StructureDefinitions.                                                  (00:00.035 / 00:05.135, 1Gb)
-Sushi: info  Converted 2 FHIR instances.                                                             (00:00.280 / 00:05.415, 1Gb)
-Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.003 / 00:05.419, 1Gb)
-Sushi: info  Exported 2 FHIR resources as JSON.                                                      (00:00.010 / 00:05.429, 1Gb)
-Sushi: info  Assembling Implementation Guide sources...                                              (00:00.001 / 00:05.430, 1Gb)
-Sushi: info  Generated ImplementationGuide-medigree.fhir.core.json                                   (00:00.006 / 00:05.437, 1Gb)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:05.439, 1Gb)
-Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.002 / 00:05.441, 1Gb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:05.442, 1Gb)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:05.444, 1Gb)
-Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:05.445, 1Gb)
-Sushi: | |       1       |      0       |      0       |       0       | |                           (00:00.001 / 00:05.446, 1Gb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.454, 1Gb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.008 / 00:05.455, 1Gb)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.001 / 00:05.456, 1Gb)
-Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:05.457, 1Gb)
-Sushi: | |         0          |         0         |         2          | |                           (00:00.001 / 00:05.459, 1Gb)
-Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:05.462, 1Gb)
-Sushi: |                                                                 |                           (00:00.003 / 00:05.463, 1Gb)
-Sushi: ===================================================================                           (00:00.001 / 00:05.464, 1Gb)
-Sushi: | You earned a PhD in Ichthyology!       0 Errors      0 Warnings |                           (00:00.001 / 00:05.465, 1Gb)
-Sushi: ===================================================================                           (00:00.001 / 00:05.467, 1Gb)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.004 / 00:05.471, 1Gb)
-Load Template from #local-template                                                                   (00:00.016 / 00:05.487, 1Gb)
- Load Template from openhie.fhir.template#current                                                    (00:00.001 / 00:05.489, 1Gb)
-  Load Template from fhir.base.template#current                                                      (00:00.296 / 00:05.786, 1Gb)
+Build FHIR IG from /tmp/medigree.fhir.core#1.0.0-milestone                                           (00:00.003 / 00:00.003, 1Gb)
+Build Formal Publication package, intended for http://medigree.net/fhir/core/1.0.0                   (00:00.001 / 00:00.004, 1Gb)
+API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.000 / 00:00.005, 1Gb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.000 / 00:00.006, 1Gb)
+Run Sushi on /tmp/medigree.fhir.core#1.0.0-milestone                                                 (00:00.001 / 00:00.007, 1Gb)
+Sushi: info  Running SUSHI v3.4.0 (implements FHIR Shorthand specification v3.0.0-ballot)            (00:00.503 / 00:00.511, 1Gb)
+Sushi: info  Arguments:                                                                              (00:00.003 / 00:00.515, 1Gb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.516, 1Gb)
+Sushi: info    --out /tmp/medigree.fhir.core#1.0.0-milestone                                         (00:00.000 / 00:00.517, 1Gb)
+Sushi: info    /tmp/medigree.fhir.core#1.0.0-milestone                                               (00:00.000 / 00:00.518, 1Gb)
+Sushi: info  Using configuration file: /tmp/medigree.fhir.core#1.0.0-milestone/sushi-config.yaml     (00:00.833 / 00:01.351, 1Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.150 / 00:01.501, 1Gb)
+Sushi: info  Preprocessed 6 documents with 0 aliases.                                                (00:00.071 / 00:01.572, 1Gb)
+Sushi: info  Imported 1 definitions and 2 instances.                                                 (00:00.007 / 00:01.579, 1Gb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.tools#current...                   (00:00.007 / 00:01.587, 1Gb)
+Sushi: info  Found hl7.fhir.uv.tools#current in /github/home/.fhir/packages.                         (00:00.057 / 00:01.644, 1Gb)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:00.259 / 00:01.904, 1Gb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.terminology.r4#5.3.0...                    (00:00.540 / 00:02.444, 1Gb)
+Sushi: info  Found hl7.terminology.r4#5.3.0 in /github/home/.fhir/packages.                          (00:00.647 / 00:03.091, 1Gb)
+Sushi: info  Loaded package hl7.terminology.r4#5.3.0                                                 (00:00.003 / 00:03.096, 1Gb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...             (00:00.410 / 00:03.506, 1Gb)
+Sushi: info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /github/home/.fhir/packages.                   (00:00.738 / 00:04.245, 1Gb)
+Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0                                          (00:00.002 / 00:04.247, 1Gb)
+Sushi: info  Checking /github/home/.fhir/packages for hl7.fhir.r4.core#4.0.1...                      (00:00.001 / 00:04.248, 1Gb)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /github/home/.fhir/packages.                            (00:01.216 / 00:05.464, 1Gb)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.000 / 00:05.465, 1Gb)
+Sushi: info  Found 6 files in input/* resource folders that were neither XML nor JSON. These files were not processed as resources by SUSHI. To see the unprocessed files in the logs, run SUSHI with the "--log-level debug" flag. (00:00.046 / 00:05.511, 1Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.002 / 00:05.514, 1Gb)
+Sushi: info  Converted 1 FHIR StructureDefinitions.                                                  (00:00.039 / 00:05.553, 1Gb)
+Sushi: info  Converted 2 FHIR instances.                                                             (00:00.285 / 00:05.839, 1Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.003 / 00:05.843, 1Gb)
+Sushi: info  Exported 2 FHIR resources as JSON.                                                      (00:00.006 / 00:05.849, 1Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.001 / 00:05.850, 1Gb)
+Sushi: info  Generated ImplementationGuide-medigree.fhir.core.json                                   (00:00.007 / 00:05.858, 1Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:05.859, 1Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.003 / 00:05.863, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.864, 1Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:05.865, 1Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:05.867, 1Gb)
+Sushi: | |       1       |      0       |      0       |       0       | |                           (00:00.001 / 00:05.868, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.869, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.870, 1Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.001 / 00:05.871, 1Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:05.872, 1Gb)
+Sushi: | |         0          |         0         |         2          | |                           (00:00.001 / 00:05.874, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:05.875, 1Gb)
+Sushi: |                                                                 |                           (00:00.008 / 00:05.883, 1Gb)
+Sushi: ===================================================================                           (00:00.001 / 00:05.885, 1Gb)
+Sushi: | FSHing for compliments? Super job!     0 Errors      0 Warnings |                           (00:00.001 / 00:05.886, 1Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:05.887, 1Gb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.004 / 00:05.892, 1Gb)
+Load Template from #local-template                                                                   (00:00.033 / 00:05.925, 1Gb)
+ Load Template from openhie.fhir.template#current                                                    (00:00.006 / 00:05.932, 1Gb)
+  Load Template from fhir.base.template#current                                                      (00:00.299 / 00:06.231, 1Gb)
 
 onLoad.findSpreadsheets:
 
@@ -294,38 +330,38 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /tmp/medigree.fhir.core#1.0.0-milestone                                              (00:01.847 / 00:07.633, 568Mb)
+Root directory: /tmp/medigree.fhir.core#1.0.0-milestone                                              (00:01.862 / 00:08.093, 564Mb)
 Core Package hl7.fhir.r4.core#4.0.1
-Terminology Cache is at /tmp/medigree.fhir.core#1.0.0-milestone/input-cache/txcache. 3 files in cache (00:04.110 / 00:11.744, 419Mb)
-Connect to Terminology Server at http://tx.fhir.org                                                  (00:00.002 / 00:11.747, 419Mb)
+Terminology Cache is at /tmp/medigree.fhir.core#1.0.0-milestone/input-cache/txcache. 3 files in cache (00:04.027 / 00:12.121, 692Mb)
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:00.001 / 00:12.122, 692Mb)
 Load Package hl7.fhir.pubpack#0.1.5
 Load Package hl7.fhir.xver-extensions#0.0.12
 Load Package hl7.terminology.r4#5.3.0
 Load Package hl7.fhir.uv.extensions.r4#1.0.0
-Version mismatch. This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0 (will try to run anyway) (00:03.957 / 00:15.705, 306Mb)
+Version mismatch. This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0 (will try to run anyway) (00:04.596 / 00:16.719, 476Mb)
 Load Package hl7.fhir.uv.tools#current
 Load R5 Specials
-Initialization complete                                                                              (00:00.793 / 00:16.499, 885Mb)
-Fetch http://medigree.net/fhir/core/package-list.json for version check                              (00:00.001 / 00:16.500, 885Mb)
-Load Content                                                                                         (00:00.304 / 00:16.805, 885Mb)
+Initialization complete                                                                              (00:00.854 / 00:17.574, 560Mb)
+Fetch http://medigree.net/fhir/core/package-list.json for version check                              (00:00.001 / 00:17.576, 560Mb)
+Load Content                                                                                         (00:00.299 / 00:17.875, 560Mb)
 loadPrePages from FetchedFile[/tmp/medigree.fhir.core#1.0.0-milestone/input/includes] as /tmp/medigree.fhir.core#1.0.0-milestone/input/includes
 loadPrePages from FetchedFile[/tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/includes] as /tmp/medigree.fhir.core#1.0.0-milestone/fsh-generated/includes
 loadPrePages from FetchedFile[/tmp/medigree.fhir.core#1.0.0-milestone/input/pagecontent] as /tmp/medigree.fhir.core#1.0.0-milestone/input/pagecontent
-Processing Conformance Resources                                                                     (00:00.096 / 00:16.901, 912Mb)
-Load Dependency Info                                                                                 (00:00.001 / 00:16.903, 912Mb)
-Load Info                                                                                            (00:00.000 / 00:16.903, 912Mb)
-Load Resources                                                                                       (00:00.000 / 00:16.904, 912Mb)
-Load Paths                                                                                           (00:00.041 / 00:16.945, 935Mb)
-Generating Snapshots                                                                                 (00:00.000 / 00:16.946, 935Mb)
-Check R4 / R4B                                                                                       (00:00.176 / 00:17.122, 1Gb)
-Propagating status                                                                                   (00:00.002 / 00:17.125, 1Gb)
-Generating Narratives                                                                                (00:00.000 / 00:17.125, 1Gb)
-Validating Conformance Resources                                                                     (00:00.228 / 00:17.354, 307Mb)
-Validating Resources                                                                                 (00:01.424 / 00:18.778, 825Mb)
-Processing Provenance Records                                                                        (00:00.001 / 00:18.780, 825Mb)
-Generating Outputs in /tmp/medigree.fhir.core#1.0.0-milestone/output                                 (00:00.001 / 00:18.781, 825Mb)
-Generate Native Outputs                                                                              (00:00.068 / 00:18.849, 845Mb)
-Run Template                                                                                         (00:00.348 / 00:19.198, 918Mb)
+Processing Conformance Resources                                                                     (00:00.071 / 00:17.946, 587Mb)
+Load Dependency Info                                                                                 (00:00.000 / 00:17.947, 587Mb)
+Load Info                                                                                            (00:00.001 / 00:17.948, 587Mb)
+Load Resources                                                                                       (00:00.000 / 00:17.949, 587Mb)
+Load Paths                                                                                           (00:00.047 / 00:17.996, 610Mb)
+Generating Snapshots                                                                                 (00:00.000 / 00:17.997, 610Mb)
+Check R4 / R4B                                                                                       (00:00.148 / 00:18.146, 710Mb)
+Propagating status                                                                                   (00:00.003 / 00:18.149, 711Mb)
+Generating Narratives                                                                                (00:00.001 / 00:18.151, 711Mb)
+Validating Conformance Resources                                                                     (00:00.292 / 00:18.443, 274Mb)
+Validating Resources                                                                                 (00:01.442 / 00:19.885, 308Mb)
+Processing Provenance Records                                                                        (00:00.001 / 00:19.887, 308Mb)
+Generating Outputs in /tmp/medigree.fhir.core#1.0.0-milestone/output                                 (00:00.001 / 00:19.888, 308Mb)
+Generate Native Outputs                                                                              (00:00.073 / 00:19.962, 328Mb)
+Run Template                                                                                         (00:00.348 / 00:20.310, 401Mb)
 
 onGenerate.checkVersions:
      [xslt] Processing /tmp/medigree.fhir.core#1.0.0-milestone/template/onGenerate-ig-working.xml to /tmp/medigree.fhir.core#1.0.0-milestone/template/versions.txt
@@ -409,32 +445,32 @@ onGenerate.copyDataFiles:
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                                        (00:00.489 / 00:19.688, 942Mb)
-Generate HTML Outputs                                                                                (00:00.000 / 00:19.689, 942Mb)
-Generate Summaries                                                                                   (00:01.126 / 00:20.815, 448Mb)
-Generating Summary Outputs                                                                           (00:00.001 / 00:20.816, 448Mb)
-DB Cumulative Time invested: 0:0:0.34
-Sending Usage Stats to Server                                                                        (00:06.014 / 00:26.831, 837Mb)
-## Memory (MB): Use = 837, Free = 557, Total = 1395, Max = 1732
+Template Done                                                                                        (00:00.549 / 00:20.860, 425Mb)
+Generate HTML Outputs                                                                                (00:00.001 / 00:20.862, 425Mb)
+Generate Summaries                                                                                   (00:00.845 / 00:21.707, 732Mb)
+Generating Summary Outputs                                                                           (00:00.001 / 00:21.708, 732Mb)
+DB Cumulative Time invested: 0:0:0.41
+Sending Usage Stats to Server                                                                        (00:06.123 / 00:27.832, 448Mb)
+## Memory (MB): Use = 448, Free = 838, Total = 1287, Max = 1732
 Reclaiming memory...
-## Memory (MB): Use = 418, Free = 976, Total = 1395, Max = 1732
-Run jekyll: jekyll build --destination "/tmp/medigree.fhir.core#1.0.0-milestone/output" (in folder /tmp/medigree.fhir.core#1.0.0-milestone/temp/pages) (00:00.398 / 00:27.229, 418Mb)
-Jekyll: Source: /tmp/medigree.fhir.core#1.0.0-milestone/temp/pages                                   (00:00.380 / 00:27.610, 419Mb)
-Jekyll: Generating...                                                                                (00:00.001 / 00:27.611, 419Mb)
-Jekyll: done in 0.476 seconds.                                                                       (00:00.475 / 00:28.086, 419Mb)
+## Memory (MB): Use = 419, Free = 867, Total = 1287, Max = 1732
+Run jekyll: jekyll build --destination "/tmp/medigree.fhir.core#1.0.0-milestone/output" (in folder /tmp/medigree.fhir.core#1.0.0-milestone/temp/pages) (00:00.392 / 00:28.224, 419Mb)
+Jekyll: Source: /tmp/medigree.fhir.core#1.0.0-milestone/temp/pages                                   (00:00.381 / 00:28.606, 420Mb)
+Jekyll: Generating...                                                                                (00:00.001 / 00:28.615, 420Mb)
+Jekyll: done in 0.488 seconds.                                                                       (00:00.486 / 00:29.094, 420Mb)
 
-Installing medigree.fhir.core#1.0.0Checking Output HTML                                                                                 (00:00.230 / 00:28.316, 507Mb)
-found 573 files                                                                                      (00:00.003 / 00:28.320, 508Mb)
+Installing medigree.fhir.core#1.0.0Checking Output HTML                                                                                 (00:00.230 / 00:29.325, 508Mb)
+found 573 files                                                                                      (00:00.004 / 00:29.330, 508Mb)
 ........................................
 ........................................
-  ... 573 html files, 0 pages invalid xhtml (0%)                                                     (00:01.711 / 00:30.032, 838Mb)
-  ... 11784 links, 0 broken links (0%)                                                               (00:00.000 / 00:30.033, 839Mb)
-Build final .zip                                                                                     (00:00.000 / 00:30.033, 839Mb)
-Final .zip built                                                                                     (00:00.496 / 00:30.530, 842Mb)
-Built. Times: loading: 00:00.096, generate: 00:15.406, narrative generation: 00:00.227, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.862, validation: 00:01.419 (#3), template: 00:00.488 (#3) (00:01.780 / 00:32.310, 815Mb)
+  ... 573 html files, 0 pages invalid xhtml (0%)                                                     (00:01.790 / 00:31.121, 900Mb)
+  ... 11784 links, 0 broken links (0%)                                                               (00:00.000 / 00:31.121, 900Mb)
+Build final .zip                                                                                     (00:00.000 / 00:31.122, 900Mb)
+Final .zip built                                                                                     (00:00.495 / 00:31.618, 903Mb)
+Built. Times: loading: 00:00.070, generate: 00:15.229, narrative generation: 00:00.291, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.875, validation: 00:01.437 (#3), template: 00:00.549 (#3) (00:01.560 / 00:33.178, 841Mb)
 Validation output in /tmp/medigree.fhir.core#1.0.0-milestone/output/qa.html
-Errors: 6, Warnings: 9, Info: 1, Broken Links: 0 (00:00.067 / 00:32.378, 839Mb)
-Finished. Max Memory Used = 1Gb                                                                      (00:00.002 / 00:32.381, 839Mb)
+Errors: 6, Warnings: 9, Info: 1, Broken Links: 0 (00:00.094 / 00:33.272, 864Mb)
+Finished. Max Memory Used = 1Gb                                                                      (00:00.012 / 00:33.285, 865Mb)
 Keep a copy of the build directory at /tmp/web-root/run-20230922/ig-build-zips/medigree.fhir.core#1.0.0.zip
 
 ok. All checks passed. Publish v1.0.0 to /tmp/web-root/run-20230922/core/1.0.0
