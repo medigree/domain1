@@ -16,7 +16,7 @@ jobs:
       - name: Gather prerequisites
         run: >
           gosu publisher /home/publisher/bin/with-latest-sushi.sh &&
-          _updatePublisher.sh -y
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "../publisher.jar" --create-dirs
 
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
