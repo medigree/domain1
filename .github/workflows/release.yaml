@@ -12,32 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: hl7fhir/ig-publisher-base:latest
-      env:
-        MAP_NODE_UID: no
-        
     steps:
-      - name: Update the image to the latest publisher
-        run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
-
-      - name: Clear npm cache
-        run: npm cache clean --force
-
-      - name: Install sushi
-        run: |
-          npm install -g fsh-sushi@3.3.3
-
-      - name: Check updated sushi version
-        run: sushi -v
-
-#      - name: Install Sushi version in container
-#        uses: docker://hl7fhir/ig-publisher-base:latest
-#        with:
-#          args: npm install -g fsh-sushi@3.3.3 
-
-#      - name: Check sushi version inside the container
-#        uses: docker://hl7fhir/ig-publisher-base:latest
-#        with:
-#          args: sushi -v
+      - name: Gather prerequisites
+        run: >
+          gosu publisher /home/publisher/bin/with-latest-sushi.sh &&
+          _updatePublisher.sh -y
 
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
@@ -63,6 +42,9 @@ jobs:
           repository: FHIR/ig-registry
           path: ig-registry
 
+      - name: Run publisher command
+        run: java -jar ./input-cache/publisher.jar publisher -ig core
+
       - name: Create folder
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
@@ -80,3 +62,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./webroot
+
+
