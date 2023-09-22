@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: hl7fhir/ig-publisher-base:latest
-
+      env:
+        MAP_NODE_UID: no
+        
     steps:
       - name: Update the image to the latest publisher
         run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
