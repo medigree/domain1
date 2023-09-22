@@ -16,7 +16,7 @@ jobs:
       - name: Gather prerequisites
         run: >
           gosu publisher /home/publisher/bin/with-latest-sushi.sh &&
-          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "../publisher.jar" --create-dirs
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./publisher.jar" --create-dirs
 
       - name: Checkout medigree/core to ./core
         uses: actions/checkout@v2
@@ -43,7 +43,7 @@ jobs:
           path: ig-registry
 
       - name: Run publisher command
-        run: java -jar ./input-cache/publisher.jar publisher -ig core
+        run: java -jar ./publisher.jar publisher -ig core
 
       - name: Create folder
         uses: docker://hl7fhir/ig-publisher-base:latest
